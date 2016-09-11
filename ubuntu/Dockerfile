@@ -1,4 +1,4 @@
 FROM nginx:latest
-LABEL org.freenas.interactive="true"
-LABEL org.freenas.upgradeable="false"
+LABEL org.freenas.interactive="true" \
+      org.freenas.upgradeable="false"
 
