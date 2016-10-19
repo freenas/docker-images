@@ -1,4 +1,5 @@
 FROM linuxserver/sonarr:latest
+
 LABEL org.freenas.interactive="false" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
@@ -13,13 +14,15 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Database and Sonarr configs\"		\
           },								\
           {								\
-              \"name\": \"/dev/rtc\",					\
-              \"readonly\": \"true\"					\
-              \"descr\": \"hwclock r/o mapping\"			\
-          },								\
-          {								\
               \"name\": \"/tv\",					\
               \"descr\": \"Location of TV library\"			\
+          }								\
+      ]" \
+      org.freenas.static_volumes="[					\
+          {								\
+              \"container_path\": \"/dev/rtc\",				\
+              \"host_path\": \"/dev/rtc\",				\
+              \"readonly\": \"true\"					\
           }								\
       ]" 
 
