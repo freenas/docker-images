@@ -1,7 +1,8 @@
 FROM garland/docker-s3cmd:latest
 ENV cmd sync-local-to-s3
-      org.freenas.version=1 \
+
 LABEL org.freenas.interactive="false" \
+      org.freenas.version=1 \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="false" \
       org.freenas.autostart="false" \
