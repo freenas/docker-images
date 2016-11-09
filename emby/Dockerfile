@@ -1,4 +1,4 @@
-FROM sacretagent/needo-lazylibrarian:latest
+FROM emby/embyserver:latest
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
