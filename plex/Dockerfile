@@ -34,6 +34,11 @@ LABEL org.freenas.interactive="false" \
               \"env\": \"PLEX_TOKEN\",					\
               \"descr\": \"Plex account token\",			\
               \"optional\": true					\
-          }								\
+          }, 								\
+          {								\
+              \"env\": \"PLEX_PASS\",					\
+              \"descr\": \"Plex Pass ('false' or 'true')\",			\
+              \"optional\": true					\
+          } 								\
       ]"
 
