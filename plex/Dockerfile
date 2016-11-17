@@ -17,7 +17,7 @@ LABEL org.freenas.interactive="false" \
           {								\
               \"name\": \"/data\",					\
               \"descr\": \"Media volume\"				\
-          }								\
+          },							\
           {								\
               \"name\": \"/transcode\",					\
               \"descr\": \"(Optional) Transcoding space\"				\
@@ -38,7 +38,7 @@ LABEL org.freenas.interactive="false" \
               \"env\": \"VERSION\",					\
               \"descr\": \"Version to update plex to (suggest latest)\",			\
               \"optional\": true					\
-          }								\
+          },								\
           {								\
               \"env\": \"TZ\",					\
               \"descr\": \"Timezone of Plex Server\",			\
