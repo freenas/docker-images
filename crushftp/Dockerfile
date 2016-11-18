@@ -10,5 +10,4 @@ LABEL org.freenas.interactive="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.port-mappings="21:22/tcp" \
-     
-      ]"
+
