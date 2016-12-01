@@ -1,4 +1,4 @@
-FROM linuxserver/plex:latest
+FROM timhaak/plex:latest
 LABEL org.freenas.interactive="false" \
       org.freenas.version="1.2.7.2987" \
       org.freenas.upgradeable="true" \
@@ -18,31 +18,22 @@ LABEL org.freenas.interactive="false" \
               \"name\": \"/data\",					\
               \"descr\": \"Media volume\"				\
           }								\
-          {								\
-              \"name\": \"/transcode\",					\
-              \"descr\": \"(Optional) Transcoding space\"				\
-          }								\
       ]" \
       org.freenas.settings="[ 						\
           {								\
-              \"env\": \"PUID\",				\
-              \"descr\": \"UID owning plex data\",			\
+              \"env\": \"PLEX_USERNAME\",				\
+              \"descr\": \"Plex account user name\",			\
               \"optional\": true					\
           },								\
           {								\
-              \"env\": \"PGID\",				\
-              \"descr\": \"GID owning plex data\",			\
+              \"env\": \"PLEX_PASSWORD\",				\
+              \"descr\": \"Plex account password\",			\
               \"optional\": true					\
           }, 								\
           {								\
-              \"env\": \"VERSION\",					\
-              \"descr\": \"Version to update plex to (suggest latest)\",			\
+              \"env\": \"PLEX_TOKEN\",					\
+              \"descr\": \"Plex account token\",			\
               \"optional\": true					\
           }								\
-          {								\
-              \"env\": \"TZ\",					\
-              \"descr\": \"Timezone of Plex Server\",			\
-              \"optional\": true					\
-          }								\    
-  ]"
+      ]"
 
