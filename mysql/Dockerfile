@@ -1,7 +1,7 @@
 FROM mysql:latest
 LABEL org.freenas.interactive="false" \
       org.freenas.version="5.7" \
-      org.freenas.upgradeable="true" \
+      org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.port-mappings="3306:3306/tcp" \
