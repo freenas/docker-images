@@ -19,7 +19,7 @@ vi Dockerfile
 
 4. Now you want to create a [Docker Hub](http://hub.docker.com) account, if you do not have one already, and sign into that Docker Hub account.  If you want create your collection in cooperation with other Docker Hub users, you may also wish to create an *Organization* as appropriate.  Either way, once you are signed in, look for the *Create* dropdown in the menu bar, just to the left of your Dockerhub username, which will assume is **callmeishmael** for the purpose of these examples.  Click that *Create* dropdown and select *Create Automated Build* from the menu.
 
-5. Now Docker Hub will ask you to link your Github or Bitbucket accounts to the **callmeishmael** account.  Follow the prompts and enter your github credentials for **inigomontoya** as appropriate, and shortly you should have the two services linked together.  Now you can proceed with creating an Automated Build by clicking on the "Auto Build" icon for Github.
+5. Docker Hub will ask you to link your Github or Bitbucket accounts to the **callmeishmael** account.  Follow the prompts and enter your github credentials for **inigomontoya** as appropriate, and shortly you should have the two services linked together.  Now you can proceed with creating an Automated Build by clicking on the "Auto Build" icon for Github.
 
 6. On the left, you will see your **inigomontoya** github username.  On the right, you will see the *docker-images* repository.  Click on it and you'll see another form labeled *Create Automated Build* with Repository Namesspace & Name fields.  Change the Name field to "ghost" and enter a short description, and **now click the _Click Here to Customize_ link** - this is very important!
 
