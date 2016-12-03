@@ -27,6 +27,6 @@ vi Dockerfile
 
 8. Now you should be on the Docker Hub page for your new **callmeishmael/ghost** container.  You're almost done!  Click on the Build Settings tab and you'll see your build settings for master + /ghost along with a button labeled "Trigger" - click that button.  Now you can click on the Build Details tab and see Docker Hub building your container.  This will take at least a few minutes.
 
-9. Now you can go to the FreeNAS 10 UI and click on the Docker icon.  Go to the **Collections** sub-view and click the green Create button.  You can now create a Collection with whatever name you like, but the Collection field has to be **callmeishmael** (or whatever your Docker Hub account is actually called of course).  Save it.
+1. Go to the FreeNAS 10 UI and click on the Docker icon.  Go to the **Collections** sub-view and click the green Create button.  You can now create a Collection with whatever name you like, but the Collection field has to be **callmeishmael** (or whatever your Docker Hub account is actually called of course).  Save it.
 
-10. Now go to Docker -> Containers -> Create in the FreeNAS 10 and select your Collection.  You should, after a short wait, see all the containers in your collection.  If you have also filled in some of the *org.freenas* properties in your Dockerfile, you should also see those pre-populated in the creation form.  You're done!
+2. Go to Docker -> Containers -> Create in the FreeNAS 10 and select your Collection.  You should, after a short wait, see all the containers in your collection.  If you have also filled in some of the *org.freenas* properties in your Dockerfile, you should also see those pre-populated in the creation form.  You're done!
