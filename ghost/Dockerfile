@@ -13,5 +13,5 @@ LABEL org.freenas.interactive="false" \
           {								\
               \"name\": \"/var/lib/ghost\",				\
               \"descr\": \"Blog storage space\"				\
-          },								\
+          }								\
       ]"
