@@ -6,9 +6,9 @@ LABEL org.freenas.interactive="false" \
       org.freenas.autostart="true" \
       org.freenas.bridged="false" \
       org.freenas.web-ui-protocol="http" \
-      org.freenas.web-ui-port=2368 \
+      org.freenas.web-ui-port=8080 \
       org.freenas.web-ui-path="/" \
-      org.freenas.port-mappings="2368:2368/tcp" \
+      org.freenas.port-mappings="2368:8080/tcp" \
       org.freenas.volumes="[						\
           {								\
               \"name\": \"/var/lib/ghost\",				\
