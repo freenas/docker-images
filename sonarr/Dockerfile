@@ -17,6 +17,10 @@ LABEL org.freenas.interactive="false" \
           {								\
               \"name\": \"/tv\",					\
               \"descr\": \"Location of TV library\"			\
+          },								\
+          {								\
+              \"name\": \"/downloads\",					\
+              \"descr\": \"Location of newsreader client downloads\"			\
           }								\
       ]" \
       org.freenas.static_volumes="[					\
