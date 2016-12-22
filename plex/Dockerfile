@@ -1,6 +1,6 @@
 FROM timhaak/plex:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="1.2.7.2987" \
+      org.freenas.version="1.3.2.3112" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
