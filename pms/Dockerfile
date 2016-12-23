@@ -15,6 +15,10 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Config storage space\"			\
           },								\
           {								\
+              \"name\": \"/transcode\",					\
+              \"descr\": \"Video transcode directory\"			\
+          },								\
+          {								\
               \"name\": \"/data\",					\
               \"descr\": \"Media volume\"				\
           }								\
