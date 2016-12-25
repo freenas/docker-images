@@ -28,7 +28,22 @@ LABEL org.freenas.interactive="false" \
               \"env\": \"TZ\",						\
               \"descr\": \"Plex container Timezone\",			\
               \"optional\": true					\
+          },
+          {								\
+              \"env\": \"ADVERTISE_IP\",				\
+              \"descr\": \"http://<hostIPAddress>:32400/\",		\
+              \"optional\": true					\
           },								\
+          {								\
+              \"env\": \"PLEX_UID\",					\
+              \"descr\": \"Plex User ID\",			\
+              \"optional\": true					\
+          },
+          {								\
+              \"env\": \"PLEX_GID\",					\
+              \"descr\": \"Plex Group ID\",			\
+              \"optional\": true					\
+          },
           {								\
               \"env\": \"PLEX_CLAIM\",					\
               \"descr\": \"Plex Account Token\",			\
