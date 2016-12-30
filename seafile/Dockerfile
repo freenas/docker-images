@@ -1,7 +1,6 @@
 FROM sunx/seafile:latest
 LABEL org.freenas.interactive="true"				\
       org.freenas.version="6.0.7" 				\
-      org.freenas.upgradeable="true" 				\
       org.freenas.expose-ports-at-host="true" 			\
       org.freenas.autostart="true" 				\
       org.freenas.bridged="true" 				\
