@@ -8,28 +8,30 @@ LABEL org.freenas.interactive="false" \
       org.freenas.web-ui-port=8000 \
       org.freenas.web-ui-path="" \
       org.freenas.port-mappings="8000:8000/tcp" \
-      org.freenas.volumes="[						\
+     org.freenas.volumes="[						\
           {								\
-              \"name\": \"/opt/pyload/pyload-config\",	\
-              \"descr\": \"Sabnzbd config files\"			\
+              \"name\": \"/opt/pyload/pyload-config\",					\
+              \"descr\": \"Config storage space\"			\
           },								\
           {								\
-              \"name\": \"/opt/pyload/Downloads\",			\
-              \"descr\": \"Incomplete downloads volume\"		\
-          },								\
-							\
+              \"name\": \"/opt/pyload/Downloads\",					\
+              \"descr\": \"Downloads volume\"				\
+          }								\
       ]" \
       org.freenas.settings="[ 						\
-          {								\
+         {								\
               \"env\": \"TZ\",						\
-              \"descr\": \"Timezone information, eg Europe/London \",	\
+              \"descr\": \"Timezone - eg Europe/London\",		\
+              \"optional\": true					\
           }								\
              {								\
-              \"env\": \"PGID\",						\
-              \"descr\": \"Group ID\",	\
+              \"env\": \"PGID\",					\
+              \"descr\": \"Group ID\",					\
+              \"optional\": true					\
           }								\
              {								\
-              \"env\": \"PUID\",						\
-              \"descr\": \"User ID\",	\
+              \"env\": \"PUID\",					\
+              \"descr\": \"User ID\",					\
+              \"optional\": true					\
           }								\
       ]"
