@@ -1,4 +1,4 @@
-FROM pull writl/pyload:0.4.9
+FROM pull writl/pyload
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
