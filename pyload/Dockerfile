@@ -8,7 +8,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.web-ui-port=8000 \
       org.freenas.web-ui-path="" \
       org.freenas.port-mappings="8000:8000/tcp" \
-     org.freenas.volumes="[						\
+      org.freenas.volumes="[						\
           {								\
               \"name\": \"/opt/pyload/pyload-config\",					\
               \"descr\": \"Config storage space\"			\
@@ -17,8 +17,8 @@ LABEL org.freenas.interactive="false" \
               \"name\": \"/opt/pyload/Downloads\",					\
               \"descr\": \"Downloads volume\"				\
           }								\
-      ]" \
-      org.freenas.settings="[ 						\
+       ]" \
+       org.freenas.settings="[ 						\
          {								\
               \"env\": \"TZ\",						\
               \"descr\": \"Timezone - eg Europe/London\",		\
@@ -34,4 +34,4 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"User ID\",					\
               \"optional\": true					\
           }								\
-      ]"
+       ]"
