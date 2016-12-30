@@ -26,7 +26,7 @@ LABEL org.freenas.interactive="false" \
           }								\
              {								\
               \"env\": \"PGID\",						\
-              \"descr\": \"Group ID",	\
+              \"descr\": \"Group ID test",	\
           }								\
              {								\
               \"env\": \"PUID\",						\
