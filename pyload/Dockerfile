@@ -1,16 +1,35 @@
-FROM ghost:latest
+FROM pull writl/pyload:0.4.9
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="0.11" \
-      org.freenas.upgradeable="false" \
+      org.freenas.version=1 \
+      org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.web-ui-protocol="http" \
-      org.freenas.web-ui-port=2368 \
-      org.freenas.web-ui-path="/" \
-      org.freenas.port-mappings="2368:2368/tcp" \
+      org.freenas.web-ui-port=8000 \
+      org.freenas.web-ui-path="" \
+      org.freenas.port-mappings="8000:8000/tcp" \
       org.freenas.volumes="[						\
           {								\
-              \"name\": \"/var/lib/ghost\",				\
-              \"descr\": \"Blog storage space\"				\
+              \"name\": \"/opt/pyload/pyload-config\",	\
+              \"descr\": \"Sabnzbd config files\"			\
+          },								\
+          {								\
+              \"name\": \"/opt/pyload/Downloads\",			\
+              \"descr\": \"Incomplete downloads volume\"		\
+          },								\
+							\
+      ]" \
+      org.freenas.settings="[ 						\
+          {								\
+              \"env\": \"TZ\",						\
+              \"descr\": \"Timezone information, eg Europe/London \",	\
+          }								\
+             {								\
+              \"env\": \"PGID\",						\
+              \"descr\": \"Group ID\",	\
+          }								\
+             {								\
+              \"env\": \"PUID\",						\
+              \"descr\": \"User ID\",	\
           }								\
       ]"
