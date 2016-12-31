@@ -25,12 +25,12 @@ LABEL org.freenas.interactive="false" \
               \"optional\": true					\
           },								\
              {								\
-              \"env\": \"PGID\",					\
+              \"env\": \"APP_GID\",					\
               \"descr\": \"Group ID\",					\
               \"optional\": true					\
           },								\
              {								\
-              \"env\": \"PUID\",					\
+              \"env\": \"APP_UID\",					\
               \"descr\": \"User ID\",					\
               \"optional\": true					\
           }								\
