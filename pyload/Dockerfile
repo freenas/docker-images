@@ -35,20 +35,3 @@ LABEL org.freenas.interactive="false" \
               \"optional\": true					\
           }								\
        ]"
-              org.freenas.enviroment="[ 						\
-         {								\
-              \"env\": \"TZ\",						\
-              \"descr\": \"Timezone - eg Europe/London\",		\
-              \"optional\": true					\
-          },								\
-             {								\
-              \"env\": \"PGID\",					\
-              \"descr\": \"Group ID\",					\
-              \"optional\": true					\
-          },								\
-             {								\
-              \"env\": \"PUID\",					\
-              \"descr\": \"User ID\",					\
-              \"optional\": true					\
-          }								\
-       ]"
