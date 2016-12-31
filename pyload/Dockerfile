@@ -35,7 +35,7 @@ LABEL org.freenas.interactive="false" \
               \"optional\": true					\
           }								\
        ]"
-              org.freenas.enviroments="[ 						\
+              org.freenas.enviroment="[ 						\
          {								\
               \"env\": \"TZ\",						\
               \"descr\": \"Timezone - eg Europe/London\",		\
