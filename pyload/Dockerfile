@@ -1,4 +1,5 @@
 FROM writl/pyload:0.4.9
+ENTRYPOINT useradd -c 'container user' -u $APP_UID -g $APP_GID appuser
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
