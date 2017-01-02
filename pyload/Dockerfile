@@ -10,11 +10,11 @@ LABEL org.freenas.interactive="false" \
       org.freenas.port-mappings="8000:8000/tcp" \
       org.freenas.volumes="[						\
           {								\
-              \"name\": \"/opt/pyload/pyload-config\",					\
+              \"name\": \"/pyload/config\",					\
               \"descr\": \"Config storage space\"			\
           },								\
           {								\
-              \"name\": \"/opt/pyload/Downloads\",					\
+              \"name\": \"/pyload/Downloads\",					\
               \"descr\": \"Downloads volume\"				\
           } \
        ]" \
