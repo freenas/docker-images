@@ -9,24 +9,24 @@ LABEL org.freenas.interactive="false" \
       org.freenas.web-ui-path="" \
       org.freenas.port-mappings="8000:8000/tcp" \
       org.freenas.volumes="[						\
-          {								\
-              \"name\": \"/pyload/config\",					\
-              \"descr\": \"Config storage space\"			\
+          {								      \
+              \"name\": \"/pyload/config\",			\
+              \"descr\": \"Config storage space\"		\
           },								\
-          {								\
-              \"name\": \"/pyload/Downloads\",					\
-              \"descr\": \"Downloads volume\"				\
-          } \
-       ]" \
-       org.freenas.settings="[ 						\								\
+          {								      \
+              \"name\": \"/pyload/Downloads\",			\
+              \"descr\": \"Downloads volume\"			\
+          }                                                 \
+       ]"                                                   \
+       org.freenas.settings="[ 					\
              {								\
               \"env\": \"PGID\",					\
-              \"descr\": \"Group ID\",					\
+              \"descr\": \"Group ID\",				\
               \"optional\": true					\
-          },								\
+             },								\
              {								\
               \"env\": \"PUID\",					\
-              \"descr\": \"User ID\",					\
+              \"descr\": \"User ID\",				\
               \"optional\": true					\
-          }								\
-       ]"
+            }								\
+       ]"                                                   \
