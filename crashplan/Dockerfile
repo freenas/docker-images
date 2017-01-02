@@ -7,7 +7,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.bridged="true" \
       org.freenas.web-ui-protocol="http" \
       org.freenas.web-ui-port=4280 \
-      org.freenas.web-ui-path="/vnc_auto.html" \
+      org.freenas.web-ui-path="vnc_auto.html" \
       org.freenas.port-mappings="4242:4242/tcp,4243:4243/tcp,4280:4280/tcp" \
       org.freenas.volumes="[						\
           {								\
