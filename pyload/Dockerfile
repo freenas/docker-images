@@ -14,19 +14,19 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Config storage space\"		\
           },								\
           {								      \
-              \"name\": \"/pyload/Downloads\",			\
+              \"name\": \"/pyload/downloads\",			\
               \"descr\": \"Downloads volume\"			\
           }                                                 \
        ]"                                                   \
        org.freenas.settings="[ 					\
              {								\
               \"env\": \"PGID\",					\
-              \"descr\": \"Group ID\",				\
+              \"descr\": \"GroupID\",				\
               \"optional\": true					\
              },								\
              {								\
               \"env\": \"PUID\",					\
-              \"descr\": \"User ID\",				\
+              \"descr\": \"UserID\",				\
               \"optional\": true					\
             }								\
        ]"                                                   \
