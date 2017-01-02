@@ -1,5 +1,4 @@
-FROM writl/pyload:0.4.9
-ENTRYPOINT useradd -c 'pyload' -u $APP_UID -g $APP_GID appuser \ chown -R $APP_UID:$APP_GID /app/data 
+FROM Cobraeti/docker-pyload
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
@@ -17,21 +16,16 @@ LABEL org.freenas.interactive="false" \
           {								\
               \"name\": \"/opt/pyload/Downloads\",					\
               \"descr\": \"Downloads volume\"				\
-          }								\
+          } \
        ]" \
-       org.freenas.settings="[ 						\
-         {								\
-              \"env\": \"TZ\",						\
-              \"descr\": \"Timezone - eg Europe/London\",		\
-              \"optional\": true					\
-          },								\
+       org.freenas.settings="[ 						\								\
              {								\
-              \"env\": \"APP_GID\",					\
+              \"env\": \"PGID\",					\
               \"descr\": \"Group ID\",					\
               \"optional\": true					\
           },								\
              {								\
-              \"env\": \"APP_UID\",					\
+              \"env\": \"PUID\",					\
               \"descr\": \"User ID\",					\
               \"optional\": true					\
           }								\
