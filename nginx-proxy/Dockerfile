@@ -10,8 +10,8 @@ LABEL org.freenas.interactive="false" \
           {								\
               \"name\": \"/etc/nginx/certs\",					\
               \"descr\": \"Path to SSL certificates\"			\
-          },								\
-      ]" \
+          }								\
+      ]"                                 \
       org.freenas.static_volumes="[					\
           {								\
               \"host_path\": \"/var/run/docker.sock\",				\
