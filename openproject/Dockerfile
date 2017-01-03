@@ -26,4 +26,4 @@ LABEL org.freenas.interactive="true"				\
               \"descr\": \”Secret key\”,			\
               \"optional\": false				\
           }							\
-	]”							\
+	]”
