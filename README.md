@@ -13,7 +13,7 @@ Whether container should use DHCP to obtain an IP address.  Only applies to brid
 Whether container should expose its ports list on the host's IP address.  Only applies to bridged="false" (e.g. NAT'd) containers.
 * `org.freenas.interactive'` (default value: "false")
 Whether container is an interactive container or not, which is to say that its Console will attach to a single, interactive process (and when this process exits, that container will stop).  Generally only useful for "raw OS" containers like Ubuntu.
-* `org.freenas.port-mappings` (default value: "")
+* `org.freenas.port-mappings` (default value: none)
 A list of container:host port mappings for the container in the following format `containerport`:`hostport`/`udp|tcp`
 * `org.freenas.settings` (default value: [])
 An array of `variable name`: `Long description` fields for various variables the container wishes to export as "user settable" (this need not be every possible variable the container supports, but those the container author wishes the user to see and set).
@@ -26,12 +26,12 @@ A synthetic version number to present to the user.  Since docker containers don'
 * `org.freenas.vm-tools` (default value: [])
 * `org.freenas.volumes` (default value: [])
 An array of directory or file mapping dictionary entries that user can set to control the per-directory, per-file mappings of host (or VM) paths to container paths.  Format for each dictionary entry is `name` and `descr` for the directory/filename and description, respectively (see existing Dockerfile for more helpful examples).
-* `org.freenas.web-ui-path` (default: '')
+* `org.freenas.web-ui-path` (default: none)
 If the container provides a web UI, this should be the path component of the URL to it (the hostname or IP will be filled-in automatically and the port and protocol have their own entries, so this should just be the `/path` component of `http://host[:port]/path`
-* `org.freenas.web-ui-port` (default value: '')
-Optional port number for web UI.
-* `org.freenas.web-ui-protocol` (default value: '')
-Optional protocol type for web UI (default value: http).
+* `org.freenas.web-ui-port` (default value: none)
+If the web UI requires a specific port number, this property should be set.
+* `org.freenas.web-ui-protocol` (default value: none)
+If the web UI requires a specific protocol, this property should be set
 
 # Making your own Docker container(s) for FreeNAS
 Perhaps you have a favorite Docker container that you think would be great for FreeNAS, in which case the FreeNAS 10 project happily accepts pull requests against this repo, but how might you test it first? How, for that matter, could you and your friends create your own *collections* of Docker containers for your own use?  We're glad you asked! The process is actually quite simple, so let's just dive right into the steps required:
