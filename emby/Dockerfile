@@ -16,7 +16,9 @@ LABEL org.freenas.interactive="false" \
           {								            \
               \"name\": \"/media\",					      \
               \"descr\": \"Media volume\"				      \
-          },								      \
+          }								      \
+          ]"
+          org.freenas.settings="[ 						\
           {								                                    \
               \"env\": \"APP_GID\",					                              \
               \"descr\": \"GID assigned to APP_USER upon creation\",				\
