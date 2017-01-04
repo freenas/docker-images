@@ -7,7 +7,7 @@ LABEL org.freenas.interactive="false"			\
       org.freenas.bridged="true" 			\
       org.freenas.web-ui-protocol="http" 		\
       org.freenas.web-ui-port=32400 			\
-      org.freenas.web-ui-path="/web" 			\
+      org.freenas.web-ui-path="web" 			\
       org.freenas.port-mappings="1900:1900/udp,32469:32469/udp,32400:32400/tcp,32469:32469/tcp" 					\
       org.freenas.volumes="[				\
           {						\

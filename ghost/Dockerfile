@@ -6,7 +6,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.autostart="true" \
       org.freenas.web-ui-protocol="http" \
       org.freenas.web-ui-port=2368 \
-      org.freenas.web-ui-path="/" \
+      org.freenas.web-ui-path="" \
       org.freenas.port-mappings="2368:2368/tcp" \
       org.freenas.volumes="[						\
           {								\
