@@ -1,7 +1,8 @@
 Working Lamp stack
- nginx
- php7
- mysql
+-Debian Linux 8.5
+-Nginx 1.6.2
+-MySQL 5.5.53
+-PHP 7 
 
 Installation:
 Map a given Dataset to folder and give read/execute permissions to the user www.
