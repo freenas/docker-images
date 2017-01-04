@@ -7,7 +7,7 @@ Installation:
 Map a given Dataset to folder and give read/execute permissions to the user www.
 Use this dataset in the advanced creation section under volumes and map to /var/www/html
 Create index.php in this your maped folder with this content:
-   
+```
       <?php
           $link = mysqli_connect("127.0.0.1", "admin", "pass");
 
@@ -25,11 +25,11 @@ Create index.php in this your maped folder with this content:
       ?>
 
        <?php phpinfo();?>
-       
+ ```      
 Connect to your webserver and check if your index.php file can be accessed.
 
 In case you'd like to change the mysql username and password:
 Start the Serial Console
-      ># mysql
-      >#  mysql> SET PASSWORD FOR 'admin'@'%' = PASSWORD( 'password' );
+ ```# mysql
+    #  mysql> SET PASSWORD FOR 'admin'@'%' = PASSWORD( 'password' );```
 
