@@ -15,7 +15,7 @@ LABEL org.freenas.interactive="false"                                         \
               \"descr\": \"custom conf\"		                              \
           },                                                                  \
           {								                        \
-              \"name\": \"/etc/nginx/conf.d/default.conf",				\
+              \"name\": \"/etc/nginx/conf.d/default.conf\",				\
               \"descr\": \"default content if interested for port 80\"		\
           }                                                                   \
           ]"
