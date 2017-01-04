@@ -22,7 +22,7 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Location of the books library\"		\
           }								\
       ]" \ 
-      org.freenas.static_volumes="[					\
+      org.freenas.static-volumes="[					\
           {								\
               \"container_path\": \"/etc/localtime\",			\
               \"host_path\": \"/etc/localtime\",			\
