@@ -8,17 +8,17 @@ LABEL org.freenas.interactive="false" \
       org.freenas.web-ui-port=8096 \
       org.freenas.web-ui-path="" \
       org.freenas.port-mappings="8096:8096/tcp" \
-      org.freenas.volumes="[						      \
-          {								            \
-              \"name\": \"/config\",					\
-              \"descr\": \"Configuration files directory\"		\
-          },								      \
-          {								            \
-              \"name\": \"/media\",					      \
-              \"descr\": \"Media volume\"				      \
-          }								      \
-       ]"
-       org.freenas.settings="[ 						\
+      org.freenas.volumes="[						                              \
+          {								                                    \
+              \"name\": \"/config\",					                        \
+              \"descr\": \"Configuration files directory\"		                        \
+          },								                              \
+          {								                                    \
+              \"name\": \"/media\",					                              \
+              \"descr\": \"Media volume\"				                              \
+          }								                                    \
+       ]"                                                                                 \
+       org.freenas.settings="[ 						                        \
           {								                                    \
               \"env\": \"APP_GID\",					                              \
               \"descr\": \"GID assigned to APP_USER upon creation\",				\
