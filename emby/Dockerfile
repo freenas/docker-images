@@ -7,7 +7,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.web-ui-protocol="http" \
       org.freenas.web-ui-port=8096 \
       org.freenas.web-ui-path="" \
-      org.freenas.port-mappings="8096:8096/tcp" \
+      org.freenas.port-mappings="8096:8096/tcp,8920:8920/tcp" \
       org.freenas.volumes="[						                              \
           {								                                    \
               \"name\": \"/config\",					                        \
