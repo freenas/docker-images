@@ -23,7 +23,7 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Location of newsreader client downloads\"			\
           }								\
       ]" \
-      org.freenas.static_volumes="[					\
+      org.freenas.static-volumes="[					\
           {								\
               \"container_path\": \"/dev/rtc\",				\
               \"host_path\": \"/dev/rtc\",				\

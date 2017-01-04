@@ -18,7 +18,7 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Media volume\"				\
           }								\
       ]" \ 
-      org.freenas.static_volumes="[					\
+      org.freenas.static-volumes="[					\
           {								\
               \"container_path\": \"/etc/localtime\",			\
               \"host_path\": \"/etc/localtime\",			\
