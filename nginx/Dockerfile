@@ -9,5 +9,13 @@ LABEL org.freenas.interactive="false"                                         \
           {								                        \
               \"name\": \"/var/www/html\",					      \
               \"descr\": \"html content\"		                              \
-          }								                        \
+          },                                                                  \
+          {								                        \
+              \"name\": \"/etc/nginx/conf.d/custom.conf\",				\
+              \"descr\": \"custom conf\"		                              \
+          },                                                                  \
+          {								                        \
+              \"name\": \"/etc/nginx/conf.d/default.conf",				\
+              \"descr\": \"default content if interested for port 80\"		\
+          }                                                                   \
           ]"
