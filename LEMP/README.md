@@ -30,6 +30,6 @@ Connect to your webserver and check if your index.php file can be accessed.
 
 In case you'd like to change the mysql username and password:
 Start the Serial Console
-# mysql
-  mysql> SET PASSWORD FOR 'admin'@'%' = PASSWORD( 'password' );
+      # mysql
+      #  mysql> SET PASSWORD FOR 'admin'@'%' = PASSWORD( 'password' );
 
