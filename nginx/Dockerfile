@@ -10,5 +10,4 @@ LABEL org.freenas.interactive="false" \
               \"name\": \"/var/www/html\",					\
               \"descr\": \"html content\"		\
           }								      \
-							      \
           ]"
