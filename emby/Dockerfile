@@ -16,13 +16,27 @@ LABEL org.freenas.interactive="false" \
           {								\
               \"name\": \"/media\",					\
               \"descr\": \"Media volume\"				\
-          }								\
-      ]" \ 
+          },								\
+          {								\
+              \"env\": \"APP_GID\",					\
+              \"descr\": \"GID assigned to APP_USER upon creation\",				\
+              \"optional\": true					\
+             },								\
+             {								\
+              \"env\": \"APP_UID\",					\
+              \"descr\": \"UID assigned to APP_USER upon creation\",				\
+              \"optional\": true					\
+              },								\
+              {								\
+                  \"env\": \"APP_USER\",					\
+                  \"descr\": \"Name of user the service will run as\",				\
+                  \"optional\": true					\
+                 }	    \
+      ]" \
       org.freenas.static-volumes="[					\
           {								\
               \"container_path\": \"/etc/localtime\",			\
               \"host_path\": \"/etc/localtime\",			\
               \"readonly\": \"true\"					\
           }								\
-      ]" 
-
+      ]"
