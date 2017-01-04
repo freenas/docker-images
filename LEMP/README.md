@@ -5,7 +5,7 @@ Working Lamp stack
 -PHP 7 
 
 Installation:
-Map a given Dataset to folder and give read/execute permissions to the user www.
+Create Dataset and give read/execute permissions to the user www.
 Use this dataset in the advanced creation section under volumes and map to /var/www/html
 Create index.php in this your maped folder with this content:
 ```
