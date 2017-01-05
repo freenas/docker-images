@@ -26,11 +26,20 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Downloads volume\"				\
           }								\
       ]" \
-      org.freenas.settings="[ 						\
-          {								\
-              \"env\": \"TZ\",						\
-              \"descr\": \"Timezone information, eg Europe/London\",	\
-              \"optional\": true					\
-          }								\
-      ]"
-
+     org.freenas.settings="[ 						                        \
+          {								                                    \
+              \"env\": \"TZ\",					                              \
+              \"descr\": \"Timezone information, eg Europe/London\",				\
+              \"optional\": true					                              \
+          },								                              \
+          {								                                    \
+              \"env\": \"PUID\",					                              \
+              \"descr\": \"User ID \",				\
+              \"optional\": true					                              \
+          },								                              \
+          {								                                    \
+              \"env\": \"PGID\",					                        \
+              \"descr\": \"Group ID\",				\
+              \"optional\": true					                              \
+          }	                                                                              \
+      ]"                                                                                  
