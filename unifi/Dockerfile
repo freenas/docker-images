@@ -12,12 +12,12 @@ LABEL org.freenas.interactive="false" \
           {								\
               \"name\": \"/usr/lib/unifi/data\",					\
               \"descr\": \"UniFi Configuration Data\"			\
-          },								\
+          },							\
           {								\
               \"name\": \"/usr/lib/unifi/logs\",					\
-              \"descr\": \"UniFi Controller Logs\"		\
-          },								\
-      ]" \
+              \"descr\": \"UniFi Controller Logs\"		    \
+          }								\
+      ]"                                \
       org.freenas.settings="[ 						\
           {								\
               \"env\": \"TZ\",						\
