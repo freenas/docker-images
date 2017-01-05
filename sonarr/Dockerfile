@@ -23,6 +23,18 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Location of newsreader client downloads\"			\
           }								\
       ]" \
+       org.freenas.settings="[ 						                        \
+          {								                                    \
+              \"env\": \"PUID\",					                              \
+              \"descr\": \"SONARR USER ID\",				\
+              \"optional\": true					                              \
+          },								                              \
+          {								                                    \
+              \"env\": \"PGID\",					                              \
+              \"descr\": \"SONARR GROUP ID\",				\
+              \"optional\": true					                              \
+          }                                                                               \
+      ]"      
       org.freenas.static-volumes="[					\
           {								\
               \"container_path\": \"/dev/rtc\",				\
