@@ -1,4 +1,4 @@
-Working Lamp stack
+Working LEMP stack
 -Debian Linux 8.5
 -Nginx 1.6.2
 -MySQL 5.5.53
