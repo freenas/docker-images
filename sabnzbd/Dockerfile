@@ -14,6 +14,10 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Sabnzbd config files\"			\
           },								\
           {								\
+               \"name\": \"/config/admin/certs\",					\
+               \"descr\": \"SSL certs\"			\
+          },								\
+          {								\
               \"name\": \"/incomplete-downloads\",			\
               \"descr\": \"Incomplete downloads volume\"		\
           },								\
