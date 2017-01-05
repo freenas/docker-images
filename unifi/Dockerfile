@@ -7,7 +7,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.web-ui-protocol="https" \
       org.freenas.web-ui-port=8443 \
       org.freenas.web-ui-path="/manage" \
-      org.freenas.port-mappings="3478:3478/udp,6789:6789/tcp,8080:8080/tcp,8443:8443/tcp,8843:8843/tcp,8880:8880/tcp" \
+      org.freenas.port-mappings="3478:3478/udp,6789:6789/tcp,8080:8080/tcp,8443:8443/tcp,8843:8843/tcp,8880:8880/tcp,10001:10001/udp" \
       org.freenas.volumes="[						\
           {								\
               \"name\": \"/usr/lib/unifi/data\",					\
@@ -17,10 +17,6 @@ LABEL org.freenas.interactive="false" \
               \"name\": \"/usr/lib/unifi/logs\",					\
               \"descr\": \"UniFi Controller Logs\"		\
           },								\
-          {								\
-              \"name\": \"/var/log/supervisor\",					\
-              \"descr\": \"UniFi supervisord Logs\"				\
-          }								\
       ]" \
       org.freenas.settings="[ 						\
           {								\
