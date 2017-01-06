@@ -1,4 +1,4 @@
-FROM linuxserver/docker-lazylibrarian
+FROM culver2432/docker-lazylibrarian
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
@@ -7,7 +7,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.web-ui-protocol="http" \
       org.freenas.web-ui-port=5299 \
       org.freenas.web-ui-path="" \
-      org.freenas.port-mappings="5299:5299/tcp" \
+      org.freenas.port-mappings="5299:5299/tcp,8181:8181/tcp" \
       org.freenas.volumes="[						      \
           {								            \
               \"name\": \"/config\",					\
