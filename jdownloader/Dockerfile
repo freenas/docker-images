@@ -4,7 +4,6 @@ LABEL org.freenas.interactive="false" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
-      org.freenas.web-ui-protocol="http" \
       org.freenas.volumes="[						                              \
           {								                                            \
               \"name\": \"/jdownloader/cfg\",					                  \
