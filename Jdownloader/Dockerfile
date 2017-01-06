@@ -1,4 +1,4 @@
-FROM aptalca/docker-jdownloader2:latest
+FROM dbarton/jdownloader
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
@@ -12,7 +12,11 @@ LABEL org.freenas.interactive="false" \
           {								                                    \
               \"name\": \"/config\",					                        \
               \"descr\": \"Configuration files directory\"		                        \
-          }								                                    \								                             
+          },                                                                              \
+          {								                                    \
+              \"name\": \"/media\",					                        \
+              \"descr\": \"Media Folder\"		                        \
+          }								                                    \							                                    \								                             
        ]"                                                                                 \
        org.freenas.settings="[ 						                        \
           {								                                    \
@@ -24,16 +28,6 @@ LABEL org.freenas.interactive="false" \
               \"env\": \"JDOWNLOADER_UID\",					                  \
               \"descr\": \"PUID assigned upon creation\",				            \
               \"optional\": true					                              \
-          },								                              \
-          {								                                    \
-              \"env\": \"HEIGHT\",					                              \
-              \"descr\": \"height window jdownloader\",				            \
-              \"optional\": true					                              \
-          },								                              \
-          {								                                    \
-              \"env\": \"WIDTH\",					                              \
-              \"descr\": \"width window jdownloader\",				            \
-              \"optional\": true					                              \
-          }   
+          }  
       ]"                                                                                 
  
