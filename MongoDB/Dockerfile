@@ -4,7 +4,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
-      org.freenas.port-mappings="17017:27017/tcp" \
+      org.freenas.port-mappings="27017:27017/tcp" \
       org.freenas.volumes="[						                              \
           {								                                    \
               \"name\": \"/bitnami/mongodb\",					                        \
