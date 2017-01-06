@@ -10,7 +10,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.port-mappings="8888:8000/tcp" \
       org.freenas.volumes="[						                              \
           {								                                    \
-              \"name\": \"/config\",					                        \
+              \"name\": \"/jdownloader/cfg\",					                        \
               \"descr\": \"Configuration files directory\"		                        \
           },                                                                              \
           {								                                    \
