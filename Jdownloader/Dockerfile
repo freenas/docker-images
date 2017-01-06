@@ -1,4 +1,4 @@
-FROM aptalca/docker-jdownloader2
+FROM aptalca/docker-jdownloader2:latest
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
