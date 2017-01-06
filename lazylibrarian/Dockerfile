@@ -1,13 +1,13 @@
-FROM sacretagent/needo-lazylibrarian:latest
+FROM linuxserver/docker-lazylibrarian:latest
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.web-ui-protocol="http" \
-      org.freenas.web-ui-port=8085 \
+      org.freenas.web-ui-port=5299 \
       org.freenas.web-ui-path="" \
-      org.freenas.port-mappings="8085:8085/tcp" \
+      org.freenas.port-mappings="5299:5299/tcp" \
       org.freenas.volumes="[						\
           {								\
               \"name\": \"/config\",					\
@@ -22,11 +22,21 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Location of the books library\"		\
           }								\
       ]" \ 
-      org.freenas.static-volumes="[					\
-          {								\
-              \"container_path\": \"/etc/localtime\",			\
-              \"host_path\": \"/etc/localtime\",			\
-              \"readonly\": \"true\"					\
-          }								\
-      ]" 
+      org.freenas.settings="[ 						                        \
+          {								                                    \
+              \"env\": \"PGID\",					                              \
+              \"descr\": \"PGID\",				\
+              \"optional\": true					                              \
+          },								                              \
+          {								                                    \
+              \"env\": \"PUID\",					                              \
+              \"descr\": \"PUID\",				\
+              \"optional\": true					                              \
+          },								                              \
+          {								                                    \
+              \"env\": \"TZ\",					                        \
+              \"descr\": \"for setting timezone information, eg Europe/London\",				\
+              \"optional\": true					                              \
+          }                                                                              \
+      ]"                  
 
