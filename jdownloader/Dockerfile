@@ -1,4 +1,4 @@
-FROM plusminus/jdownloader2-headless
+FROM benst/headless-jd2-docker
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
@@ -10,8 +10,8 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Configuration files directory\"		            \
           },                                                               \
           {								                                              \
-              \"name\": \"/root/Downloads\",					                              \
-              \"descr\": \"Media Folder\"		                              \
+              \"name\": \"/opt/downloads\",					                              \
+              \"descr\": \"downloads Folder\"		                              \
           }								                                               \									                             
        ]"                                                                  \
        org.freenas.settings="[ 						                              \
