@@ -1,4 +1,4 @@
-FROM dbarton/jdownloader
+FROM plusminus/jdownloader2-headless
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
@@ -6,11 +6,11 @@ LABEL org.freenas.interactive="false" \
       org.freenas.autostart="true" \
       org.freenas.volumes="[						                              \
           {								                                            \
-              \"name\": \"/jdownloader/cfg\",					                  \
+              \"name\": \"/opt/JDownloader/cfg\",					                  \
               \"descr\": \"Configuration files directory\"		            \
           },                                                               \
           {								                                              \
-              \"name\": \"/media\",					                              \
+              \"name\": \"/root/Downloads\",					                              \
               \"descr\": \"Media Folder\"		                              \
           }								                                               \									                             
        ]"                                                                  \
