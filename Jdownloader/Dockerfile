@@ -10,12 +10,12 @@ LABEL org.freenas.interactive="false" \
       org.freenas.port-mappings="8888:8000/tcp" \
       org.freenas.volumes="[						                              \
           {								                                    \
-              \"name\": \"/jdownloader/cfg\",					                        \
+              \"name\": \"/jdownloader/cfg\",					                  \
               \"descr\": \"Configuration files directory\"		                        \
           },                                                                              \
           {								                                    \
-              \"name\": \"/media\",					                        \
-              \"descr\": \"Media Folder\"		                        \
+              \"name\": \"/media\",					                              \
+              \"descr\": \"Media Folder\"		                                          \
           }								                                    \							                                    \								                             
        ]"                                                                                 \
        org.freenas.settings="[ 						                        \
@@ -28,6 +28,6 @@ LABEL org.freenas.interactive="false" \
               \"env\": \"JDOWNLOADER_UID\",					                  \
               \"descr\": \"PUID assigned upon creation\",				            \
               \"optional\": true					                              \
-          }  
+          } \
       ]"                                                                                 
  
