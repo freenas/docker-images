@@ -5,7 +5,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.web-ui-protocol="http" \
-      org.freenas.web-ui-port=8096 \
+      org.freenas.web-ui-port=8082 \
       org.freenas.web-ui-path="" \
       org.freenas.port-mappings="8082:8082/tcp,6881:6881/tcp" \
       org.freenas.volumes="[						                              \
@@ -14,25 +14,25 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Configuration files directory\"		                        \
           },								                              \
           {								                                    \
-              \"name\": \"/downloads\",					                              \
-              \"descr\": \"Downloads folder\"				                              \
+              \"name\": \"/downloads\",					                        \
+              \"descr\": \"Downloads folder\"				                        \
           },								                              \
           {								                                    \
-              \"name\": \"/watched\",					                              \
-              \"descr\": \"Folder for *.torrent files\"				                              \
+              \"name\": \"/watched\",					                        \
+              \"descr\": \"Folder for *.torrent files\"				            \
           }								                                    \								                             
        ]"                                                                                 \
        org.freenas.settings="[ 						                        \
           {								                                    \
               \"env\": \"AGROUP\",					                              \
-              \"descr\": \"PGID assigned upon creation\",				\
+              \"descr\": \"PGID assigned upon creation\",				            \
               \"optional\": true					                              \
           },								                              \
           {								                                    \
               \"env\": \"AUSER\",					                              \
-              \"descr\": \"PUID assigned upon creation\",				\
+              \"descr\": \"PUID assigned upon creation\",				            \
               \"optional\": true					                              \
-          }\
+          }                                                                               \
       ]"                                                                                  \
       org.freenas.static-volumes="[					                              \
           {								                                    \
