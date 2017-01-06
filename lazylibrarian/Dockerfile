@@ -1,4 +1,4 @@
-FROM culver2432/docker-lazylibrarian
+FROM linuxserver/lazylibrarian
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
