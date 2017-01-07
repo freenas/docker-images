@@ -18,6 +18,10 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Movies volume\"				\
           },								\
           {								\
+              \"name\": \"/certs\",					\
+              \"descr\": \"SSL certs volume\"				\
+          },								\
+          {								\
               \"name\": \"/downloads\",					\
               \"descr\": \"Downloads volume\"				\
           }								\

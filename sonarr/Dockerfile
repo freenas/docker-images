@@ -8,7 +8,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.web-ui-protocol="http" \
       org.freenas.web-ui-port=8989 \
       org.freenas.web-ui-path="" \
-      org.freenas.port-mappings="8989:8989/tcp" \
+      org.freenas.port-mappings="8989:8989/tcp,9898:9898/tcp" \
       org.freenas.volumes="[						\
           {								\
               \"name\": \"/config\",					\
@@ -23,6 +23,18 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Location of newsreader client downloads\"			\
           }								\
       ]" \
+       org.freenas.settings="[ 						                        \
+          {								                                    \
+              \"env\": \"PUID\",					                              \
+              \"descr\": \"SONARR USER ID\",				\
+              \"optional\": true					                              \
+          },								                              \
+          {								                                    \
+              \"env\": \"PGID\",					                              \
+              \"descr\": \"SONARR GROUP ID\",				\
+              \"optional\": true					                              \
+          }                                                                               \
+      ]"                            \  
       org.freenas.static-volumes="[					\
           {								\
               \"container_path\": \"/dev/rtc\",				\

@@ -1,39 +1,38 @@
-FROM emby/embyserver:latest
+FROM mace/qbittorrent:latest
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.web-ui-protocol="http" \
-      org.freenas.web-ui-port=8096 \
+      org.freenas.web-ui-port=8082 \
       org.freenas.web-ui-path="" \
-      org.freenas.port-mappings="8096:8096/tcp,8920:8920/tcp" \
+      org.freenas.port-mappings="8082:8082/tcp,6881:6881/tcp" \
       org.freenas.volumes="[						                              \
           {								                                    \
               \"name\": \"/config\",					                        \
               \"descr\": \"Configuration files directory\"		                        \
           },								                              \
           {								                                    \
-              \"name\": \"/media\",					                              \
-              \"descr\": \"Media volume\"				                              \
-          }								                                    \
+              \"name\": \"/downloads\",					                        \
+              \"descr\": \"Downloads folder\"				                        \
+          },								                              \
+          {								                                    \
+              \"name\": \"/watched\",					                        \
+              \"descr\": \"Folder for *.torrent files\"				            \
+          }								                                    \								                             
        ]"                                                                                 \
        org.freenas.settings="[ 						                        \
           {								                                    \
-              \"env\": \"APP_GID\",					                              \
-              \"descr\": \"GID assigned to APP_USER upon creation\",				\
+              \"env\": \"AGROUP\",					                              \
+              \"descr\": \"PGID assigned upon creation\",				            \
               \"optional\": true					                              \
           },								                              \
           {								                                    \
-              \"env\": \"APP_UID\",					                              \
-              \"descr\": \"UID assigned to APP_USER upon creation\",				\
+              \"env\": \"AUSER\",					                              \
+              \"descr\": \"PUID assigned upon creation\",				            \
               \"optional\": true					                              \
-          },								                              \
-          {								                                    \
-              \"env\": \"APP_USER\",					                        \
-              \"descr\": \"Name of user the service will run as\",				\
-              \"optional\": true					                              \
-          }	                                                                              \
+          }                                                                               \
       ]"                                                                                  \
       org.freenas.static-volumes="[					                              \
           {								                                    \
