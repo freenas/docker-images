@@ -7,7 +7,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.web-ui-protocol="http" \
       org.freenas.web-ui-port=8096 \
       org.freenas.web-ui-path="" \
-      org.freenas.port-mappings="8096:8096/tcp,8920:8920/tcp" \
+      org.freenas.port-mappings="8096:8096/tcp,8920:8920/tcp,7359:7359/udp,1900:1900/udp" \
       org.freenas.volumes="[						                              \
           {								                                    \
               \"name\": \"/config\",					                        \
@@ -16,6 +16,10 @@ LABEL org.freenas.interactive="false" \
           {								                                    \
               \"name\": \"/media\",					                              \
               \"descr\": \"Media volume\"				                              \
+          },								                              \
+          {								                                    \
+              \"name\": \"/sslcerts\",					                              \
+              \"descr\": \"sslcerts volume\"				                              \
           }								                                    \
        ]"                                                                                 \
        org.freenas.settings="[ 						                        \
@@ -33,7 +37,17 @@ LABEL org.freenas.interactive="false" \
               \"env\": \"APP_USER\",					                        \
               \"descr\": \"Name of user the service will run as\",				\
               \"optional\": true					                              \
-          }	                                                                              \
+          },								                              \
+          {								                                    \
+              \"env\": \"EDGE\",					                              \
+              \"descr\": \"UID assigned to APP_USER upon creation\",				\
+              \"optional\": true					                              \
+          },								                              \
+          {								                                    \
+              \"env\": \"UMASK\",					                              \
+              \"descr\": \"UID assigned to APP_USER upon creation\",				\
+              \"optional\": true					                              \
+          }								                              \
       ]"                                                                                  \
       org.freenas.static-volumes="[					                              \
           {								                                    \
