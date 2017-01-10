@@ -17,5 +17,16 @@ LABEL org.freenas.interactive="false" \
               \"name\": \"/data\",					\
               \"descr\": \"Media volume\"				\
           }								\
-      ]" 
-
+      ]" \
+      org.freenas.settings="[ 					\
+            {								\
+             \"env\": \"PGID\",					\
+             \"descr\": \"GroupID\",				\
+             \"optional\": true					\
+            },								\
+            {								\
+             \"env\": \"PUID\",					\
+             \"descr\": \"UserID\",				\
+             \"optional\": true					\
+           }								\
+      ]"
