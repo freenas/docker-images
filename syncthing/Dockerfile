@@ -17,7 +17,7 @@ LABEL org.freenas.interactive="false" \
               \"name\": \"/data\",					\
               \"descr\": \"Media volume\"				\
           }								\
-      ]"
+      ]" \
       org.freenas.settings="[ 					\
             {								\
              \"env\": \"PGID\",					\
@@ -29,4 +29,4 @@ LABEL org.freenas.interactive="false" \
              \"descr\": \"UserID\",				\
              \"optional\": true					\
            }								\
-      ]"                                            
+      ]"
