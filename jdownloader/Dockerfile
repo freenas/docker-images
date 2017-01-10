@@ -1,4 +1,4 @@
-FROM benst/headless-jd2-docker
+FROM dbarton/jdownloader
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
@@ -6,13 +6,17 @@ LABEL org.freenas.interactive="false" \
       org.freenas.autostart="true" \
       org.freenas.volumes="[						                              \
           {								                                            \
-              \"name\": \"/opt/JDownloader/cfg\",					                  \
+              \"name\": \"jdownloader/cfg\",					                  \
               \"descr\": \"Configuration files directory\"		            \
           },                                                               \
           {								                                              \
-              \"name\": \"/opt/downloads\",					                              \
+              \"name\": \"jdownloader/downloads\",					                              \
               \"descr\": \"downloads Folder\"		                              \
-          }								                                               \									                             
+          },								                                               \
+          {								                                              \
+              \"name\": \"/media/movies\",					                              \
+              \"descr\": \"downloads Folder\"		                              \
+          }								                                               \	
        ]"                                                                  \
        org.freenas.settings="[ 						                              \
           {								                                            \
