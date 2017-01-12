@@ -7,6 +7,12 @@ Here are all of the various "knob settings" specific to FreeNAS which your conta
 Whether container should be set to automatically start at boot time or not.
 * `org.freenas.bridged` (default value: "false", e.g. NAT)
 Whether container should use bridged or NAT networking by default.
+* `org.capabilities-add` (default value: [])
+A list of Docker capabilities to add to container's privileges, in the form of an array of strings, e.g. `"[\"SYS_ADMIN\", \"SYS_MODULE\"]"`. See https://docs.docker.com/engine/reference/run/#/runtime-privilege-and-linux-capabilities for a full list of Docker privileges.
+* `org.capabilities-drop` (default value: [])
+A list of Docker capabilities to remove from container's privileges, in the form of an array of strings, e.g. `"[\"SYS_CHROOT\", \"SETCAP\"]"`. See https://docs.docker.com/engine/reference/run/#/runtime-privilege-and-linux-capabilities for a full list of Docker privileges that are set by deafult and can be removed.  Warning:  This may cause containers to malfunction if used incorrectly!
+* `org.freenas.privileged` (default value: "false").
+This is a boolean property which allows all extra privileges for a container to be turned on (e.g. "the big hammer").  It should only be used with caution, when absolutely required or when docker security is simply not a concern.
 * `org.freenas.dhcp` (default value: "false")
 Whether container should use DHCP to obtain an IP address.  Only applies to bridged="true" containers.
 * `org.freenas.expose-ports-at-host` (default value: "false")
@@ -46,6 +52,8 @@ cd ghost
 vi Dockerfile
 ```
 1. Now we want to use the editor to change `FROM timhaak/plex:latest` to `FROM ghost:latest`, the `version` string to *0.11*, the web UI port to *2368*, and so on.  See the actual [Dockerfile](https://github.com/freenas/docker-images/blob/master/ghost/Dockerfile) to see the finished example.  The most important attributes will be the *org.freenas.port-mappings*, *org.freenas.volumes* and *org.freenas.settings* fields - these allow the FreeNAS Docker interfaces to expose the ports, volumes and variable settings for the container as appropriate.  If the container is able to update itself, other properties like *upgradable* should be set - again, the existing docker-images are the best working examples, which is why we suggest you start from one of them and then change just the "obvious" things until you get closer to an ideal Dockerfile.  Check it in with `git commit` and `git push` and then move to the next step!
+
+1. If you would like the Docker container to have some documentation associated with it, always a good idea, which will also be displayed by the `readme` sub-command in the CLI (or per-container README button in the UI) then also include a README.md file with your Dockerfile.  It can contain any text in the standard markdown format.
 
 1. Now you want to create a [Docker Hub](http://hub.docker.com) account, if you do not have one already, and sign into that Docker Hub account.  If you want create your collection in cooperation with other Docker Hub users, you may also wish to create an *Organization* as appropriate.  Either way, once you are signed in, look for the *Create* dropdown in the menu bar, just to the left of your Dockerhub username, which we will pretend is **callmeishmael** for the purpose of these examples.  Click that *Create* dropdown and select *Create Automated Build* from the menu.
 

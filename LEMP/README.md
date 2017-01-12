@@ -7,7 +7,7 @@ Working LEMP stack
 Installation:
 Create Dataset and give read/execute permissions to the user www.
 Use this dataset in the advanced creation section under volumes and map to /var/www/html
-Create index.php in this your maped folder with this content:
+Create index.php in this your mapped folder with this content:
 ```
       <?php
           $link = mysqli_connect("127.0.0.1", "admin", "pass");
