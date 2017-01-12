@@ -14,7 +14,7 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"downloads Folder\"		                              \
           },								                                               \
           {								                                              \
-              \"name\": \"/media/movies\",					                              \
+              \"name\": \"/media\",					                              \
               \"descr\": \"downloads Folder\"		                              \
           }								                                               \	
        ]"                                                                  \
