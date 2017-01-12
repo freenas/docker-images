@@ -1,4 +1,4 @@
-FROM emby/embyserver:latest
+FROM emby/embyserver:beta
 LABEL org.freenas.interactive="false" \
       org.freenas.version=1 \
       org.freenas.upgradeable="true" \
