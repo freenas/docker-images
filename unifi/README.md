@@ -1,4 +1,6 @@
-#### This is a Docker container built for the Ubiquiti Networks UniFi Controller software
+#### Docker container for the Ubiquiti Networks UniFi Controller software w/FreeNAS metadata
+
+## This container will work on FreeNAS and non-FreeNAS docker implementations
 
 This container follows the latest UniFi current stable/general availability release.
 
