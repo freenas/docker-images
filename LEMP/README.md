@@ -2,7 +2,7 @@ Working LEMP stack
 -Debian Linux 8.5
 -Nginx 1.6.2
 -MySQL 5.5.53
--PHP 7 
+-PHP 7
 
 Installation:
 Create Dataset and give read/execute permissions to the user www.
@@ -31,6 +31,7 @@ Connect to your webserver and check if your index.php file can be accessed.
 
 In case you'd like to change the mysql username and password:
 Start the Serial Console
- ```# mysql
-    #  mysql> SET PASSWORD FOR 'admin'@'%' = PASSWORD( 'password' );```
-
+ ```
+    # mysql
+    #  mysql> SET PASSWORD FOR 'admin'@'%' = PASSWORD( 'password' );
+```

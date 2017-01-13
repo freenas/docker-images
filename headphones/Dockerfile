@@ -14,7 +14,7 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Config storage space\"			\
           },								\
           {								\
-              \"name\": \"/config/certs\",					\
+              \"name\": \"/certs\",					\
               \"descr\": \"SSL CERT folder\"			\
           },								\
           {								\
