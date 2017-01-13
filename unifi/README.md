@@ -8,6 +8,10 @@ Current stable/general release is v5.3.x
 
 ## Usage
 
+The container only has a single environment variable to pass to the container
+* `TZ` - Configures the timezone, e.g. "America/Chicago"
+- If you don't know your timezone value, you can look it up (see: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
 This container exposes two volumes:
 * `/usr/lib/unifi/data` - UniFi configuration data and DBs
 * `/usr/lib/unifi/logs` - UniFi and MongoDB logs for troubleshooting
