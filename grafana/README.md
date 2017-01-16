@@ -1,2 +1,1 @@
-A Grafana server. FreeNAS metadata added version of grafana/grafana. All vars in conf/grafana.ini can be overriden using environment variables.
-
+A Grafana server (system statistics monitoring visualization toolkit). Base container is grafana/grafana with FreeNAS metadata added. All variables in conf/grafana.ini can be overriden using environment variables.
