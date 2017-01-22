@@ -34,7 +34,7 @@ LABEL org.freenas.interactive="false" \
           },								\
           {								\
               \"env\": \"PUID\",					\
-              \"descr\": \"User ID - eg 1000\",                        \
+              \"descr\": \"User ID - eg 1000\",                         \
               \"optional\": true,					\
           },								\
           {								\
