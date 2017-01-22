@@ -33,13 +33,13 @@ LABEL org.freenas.interactive="false" \
               \"optional\": true					\
           },								\
           {								\
-              \"env\": \"PUID\",						\
-              \"descr\": \"User ID - eg 1000\",		\
+              \"env\": \"PUID\",					\
+              \"descr\": \"User ID - eg 1000\",                        \
               \"optional\": true,					\
           },								\
           {								\
-              \"env\": \"PGID\",						\
-              \"descr\": \"Group ID - eg 1000\",		\
+              \"env\": \"PGID\",					\
+              \"descr\": \"Group ID - eg 1000\",            		\
               \"optional\": true					\
           }								\
       ]"
