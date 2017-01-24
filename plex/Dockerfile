@@ -5,6 +5,7 @@ LABEL org.freenas.interactive="false"			\
       org.freenas.expose-ports-at-host="true" 		\
       org.freenas.autostart="true" 			\
       org.freenas.bridged="true" 			\
+      org.freenas.dhcp="true" \
       org.freenas.web-ui-protocol="http" 		\
       org.freenas.web-ui-port=32400 			\
       org.freenas.web-ui-path="web" 			\
