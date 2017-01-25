@@ -37,6 +37,11 @@ LABEL org.freenas.interactive="false" 		\
               \"optional\": true				\
           },							\
           {							\
+              \"env\": \"ALLOWED_NETWORKS\",			\
+              \"descr\": \"IP/mask,[IP/mask]\",			\
+              \"optional\": true				\
+          },							\
+          {							\
               \"env\": \"PLEX_UID\",				\
               \"descr\": \"Plex User ID\",			\
               \"optional\": true				\
