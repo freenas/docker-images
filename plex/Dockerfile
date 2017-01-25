@@ -38,7 +38,7 @@ LABEL org.freenas.interactive="false" 		\
           },							\
           {							\
               \"env\": \"ALLOWED_NETWORKS\",			\
-              \"descr\": \"IP/mask,[IP/mask]\",			\
+              \"descr\": \"IP/mask[,IP/mask]\",			\
               \"optional\": true				\
           },							\
           {							\
