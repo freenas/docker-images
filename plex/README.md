@@ -1,48 +1,59 @@
-# docker plex
-This is a Dockerfile to set up ([https://plex.tv/](https://plex.tv/) "Plex Media Server") - ([https://plex.tv/](https://plex.tv/))
+# Official Docker container for Plex Media Server
 
-## Instructions
+# plexinc/pms-docker
 
-When the container starts, it will initialize the config directory and the configuration is populated through [environment variables](#environment-variables) that can be set using the command line or an envfile.
+With our easy-to-install Plex Media Server software and your Plex apps, available on all your favorite phones, tablets, streaming devices, gaming consoles, and smart TVs, you can stream your video, music, and photo collections any time, anywhere, to any device.
 
-Browse to `http://*ipaddress*:32400/web` to run through the setup wizard.
+## Usage
 
-By default, unauthenticated web access will only be available from the host machine and so to configure authentication for external access you will need a web browser on your host machine. If this is unavailable or you would like to have unauthenticated access from your LAN, then you can set the `PLEX_ALLOWED_NETWORKS` [environment variable](#environment-variables) to the subnet of your LAN either temporarily for configuration or permenantly for unauthenticated LAN access.
+Before you create your container, you must decide on the type of networking you wish to use.  There are essentially three types of networking available:
 
-#### Avahi Auto Detection
-For auto detection to work use capabilities-add=NET_BROADCAST or simply check the Privileged option in the FreeNAS UI. Be aware this more insecure and not best practice with docker images. The only reason for doing it is to allow Avahi to work (as it uses broadcasts that will not cross network boundries).
+- `bridge` (default)
+- `host`
+- `macvlan`
 
-See the [Docker Networking Article](https://docs.docker.com/articles/networking/#how-docker-networks-a-container) for details on how docker networks a container.
+The `bridge` networking creates an entirely new network within the host and runs containers within there.  This network is connected to the physical network via an internal router and docker configures this router to forward certain ports through to the containers within.  The `host` networking uses the IP address of the host running docker such that a container's networking appears to be the host rather than separate.  The `macvlan` networking creates a new virtual computer on the network which is the container.  For purposes of setting up a plex container, the `host` and `macvlan` are very similar in configuration.
 
-## Configuration
-### Environment Varaibles
+Using `host` or `macvlan` is the easier of the three setups and has the fewest issues that need to be worked around.  However, some setups may be restricted to only running in the `bridge` mode.  Plex can be made to work in this mode, but it is more complicated.
 
-| Variable Name           | Values                 | Behaviour                                                                            | Default value   |
-| ----------------------: | :--------------------: | :----------------------------------------------------------------------------------- | :-------------: |
-|     SKIP_CHOWN_CONFIG   |  `TRUE` or `FALSE`     | Startup will be faster and there won't be a permissions check for the configuration  | (unset)         |
-|         PLEX_USERNAME   |        String          | Will add this Plex Media Server to that account                                      | (not set)       |
-|         PLEX_PASSWORD   |        String          | (Mandatory if username is set) The account password | (not set)                      |                 |
-|            PLEX_TOKEN   |   [Plex token][1]      | Plex token if you don't want to write your password | (not set)                      |                 |
-|     PLEX_EXTERNALPORT   |       Integer          | The port if you're not using the default one (32400), ie. when using `-p 80:34200`   |  (not set)      |
-| PLEX_DISABLE_SECURITY   |      `0` or `1`        | If set to 1, the remote security will be disabled | 1                                |                 |
-|           RUN_AS_ROOT   |  `TRUE` or `FALSE`     | *Dangerous* If true, will start Plex as root | true                                  |                 |
-| PLEX_ALLOWED_NETWORKS   | Comma-separated list   | List of networks to allow access to. Defaults to the docker network (public Plex)    | (not set)       |
+- If you wish your Plex Media Server to be accessible outside of your home network, you must manually setup port forwarding on your router to forward to the `ADVERTISE_IP` parameters using bridged networking.  By default you can forward port 32400, but if you choose to use a different external port, be sure you configure this in Plex Media Server's `Remote Access` settings.  With this type of docker networking, the Plex Media Server is essentially behind two routers and it cannot automatically setup port forwarding on its own.
 
-To use an option, set it as a Docker environment variable through the CLI or GUI
+- (Plex Pass only) After the server has been set up, you should configure the `LAN Networks` preference to contain the network of your LAN.  This instructs the Plex Media Server to treat these IP addresses as part of your LAN when applying bandwidth controls.  The syntax is the same as the `ALLOWED_NETWORKS` below.  For example `192.168.1.0/24,172.16.0.0/16` will allow access to the entire `192.168.1.x` range and the `172.16.x.x` range.
 
-## Mac and Apple TV Usage
+## Parameters
 
-For Docker on the mac and AppleTV discovery of the server you will need to open up more ports. The reason is that network broadcast privileges don't work as intended. A recommended setup for the ports would be something like this:
+- `32400:32400/tcp` Forwards port 32400 from the host to the container.  This is the primary port that Plex uses for communication and is required for Plex Media Server to operate.
+- `…` Forwards complete set of other ports used by Plex to the container.  For a full explanation of which you may need, please see the help article: [https://support.plex.tv/hc/en-us/articles/201543147-What-network-ports-do-I-need-to-allow-through-my-firewall](https://support.plex.tv/hc/en-us/articles/201543147-What-network-ports-do-I-need-to-allow-through-my-firewall)
+- `<path/to/plex/database>:/config` The path where you wish Plex Media Server to store its configuration data.  This database can grow to be quite large depending on the size of your media collection.  This is usually a few GB but for large libraries or libraries where index files are generated, this can easily hit the 100s of GBs.  If you have an existing database directory see the section below on the directory setup. (Note that the underlying filesystem needs to support file locking. Known to not be default enabled on remote filesystems like NFS)
+- `<path/to/transcode/temp>:/transcode` The path where you would like Plex Media Server to store its transcoder temp files.  If not provided, the storage space within the container will be used.  Expect sizes in the 10s of GB.
+- `<path/to/media>:/data` This is provided as examples for providing media into the container.  The exact structure of how the media is organized and presented inside the container is a matter of user preference.  You can use as many or as few of these parameters as required to provide your media to the container.
+- `KEY="value"` These are environment variables which configure the container.  See below for a description of their meanings.
 
-* 32400:32400
-* 1900:1900/udp
-* 3005:3005
-* 5353:5353/udp
-* 8324:8324
-* 32410:32410/udp
-* 32412:32412/udp
-* 32413:32413/udp
-* 32414:32414/udp
-* 32469:32469
+The following are the recommended parameters.  Each of the following parameters to the container are treated as first-run parameters only.  That is, all other paraters are ignored on subsequent runs of the server.  We recommend that you set the following parameters:
 
-[1]: https://support.plex.tv/hc/en-us/articles/204059436-Finding-your-account-token-X-Plex-Token
+- **TZ** Set the timezone inside the container.  For example: `Europe/London`.  The complete list can be found here: [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+- **PLEX_CLAIM** The claim token for the server to obtain a real server token.  If not provided, server is will not be automatically logged in.  If server is already logged in, this parameter is ignored.  You can obtain a claim token to login your server to your plex account by visiting [https://www.plex.tv/claim](https://www.plex.tv/claim)
+- **ADVERTISE_IP** This variable defines the additional IPs on which the server may be be found.  For example: `http://10.1.1.23:32400`.  This adds to the list where the server advertises that it can be found.  This is only needed in Bridge Networking.
+
+These parameters are usually not required but some special setups may benefit from their use.  As in the previous section, each is treated as first-run parameters only:
+
+- **PLEX_UID** The user id of the `plex` user created inside the container.
+- **PLEX_GID** The group id of the `plex` group created inside the container
+- **CHANGE_CONFIG_DIR_OWNERSHIP** Change ownership of config directory to the plex user.  Defaults to `true`.  If you are certain permissions are already set such that the `plex` user within the container can read/write data in it's config directory, you can set this to `false` to speed up the first run of the container.
+- **ALLOWED_NETWORKS** IP/netmask entries which allow access to the server without requiring authorization.  We recommend you set this only if you do not sign in your server.  For example `192.168.1.0/24,172.16.0.0/16` will allow access to the entire `192.168.1.x` range and the `172.16.x.x` range.  Note: If you are using Bridge networking, then localhost will appear to plex as coming from the docker networking gateway which is often `172.16.0.1`.
+
+## Users/Groups
+Permissions of mounted media outside the container do apply to the Plex Media Server running within the container.  As stated above, the Plex Media Server runs as a specially created `plex` user within the container.  This user may not exist outside the container and so the `PLEX_UID` and `PLEX_GID` parameters are used to set the user id and group id of this user within the container.
+
+## Config Directory
+Inside the docker container, the database is stored with a `Library/Application Support/Plex Media Server` in the `config` directory.
+
+If you wish to migrate an existing directory to the docker config directory:
+
+- Locate the current config directory as directed here: [https://support.plex.tv/hc/en-us/articles/202915258-Where-is-the-Plex-Media-Server-data-directory-located-](https://support.plex.tv/hc/en-us/articles/202915258-Where-is-the-Plex-Media-Server-data-directory-located-)
+- If the config dir is stored in a location such as `/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/`, the config dir will be `/var/lib/plexmediaserver`.
+- If the config dir does not contain `Library/Application Support/Plex Media Server/` or the directory containing `Library` has data unrelated to Plex, such as OS X, then you should:
+  - Create a new directory which will be your new config dir.
+  - Within that config dir, create the directories `Library/Application Support`
+  - Copy `Plex Media Server` into that `Library/Application Support`
+- Note: by default Plex will claim ownership of the entire contents of the `config` dir (see CHANGE_CONFIG_DIR_OWNERSHIP for more information).  As such, there should be nothing in that dir that you do not wish for Plex to own.
