@@ -13,7 +13,7 @@ Automatic Video Library Manager for TV Shows. It watches for new episodes of you
 * `PUID` for UserID - see below for explanation
 * `TZ` for timezone information, eg Europe/London
 
-It is based on alpine linux with s6 overlay, for shell access whilst the container is running use the console button in the GUI or use the console sub-command in the CLI.
+Container is based on alpine linux with s6 overlay, for shell access whilst the container is running use the console button in the GUI or use the console sub-command in the CLI.
 
 ### User / Group Identifiers
 
