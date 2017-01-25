@@ -1,5 +1,3 @@
-[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
-
 Transmission is designed to be easy to use, yet powerful. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more. [Transmission](http://www.transmissionbt.com/about/)
 
 [![transmission](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/transmission.png)][transurl]
@@ -28,7 +26,7 @@ e.g. Europe/London
 Ports:
 * 9091:9091
 * 51413:51413
-* 51413:51413/udp \
+* 51413:51413/udp
 
 ### User / Group Identifiers
 
