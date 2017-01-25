@@ -10,11 +10,11 @@ ownCloud is a self-hosted file sync and share server. It provides access to your
 
 ## Start ownCloud
 
-Starting the ownCloud 8.1 instance listening on port 80 is as easy as just creating the container with all the defaults set.
+Starting the ownCloud instance listening on port 80 is as easy as just creating the container with all the defaults set.
 
-Then go to http://containerip/ and go through the wizard. By default this container uses SQLite for data storage, but the wizard should allow for connecting to an existing database. Additionally, tags for 6.0, 7.0, or 8.0 are available.
+Then go to http://containerip/ and go through the wizard. By default this container uses SQLite for data storage, but the wizard should allow for connecting to an existing database.
 
-For a MySQL database you can link a database container by putting it on the same docker network and select `mysql` as the database host on setup.
+For a MySQL database you can link a database container by putting it on the same docker network and selecting `mysql` as the database host on setup.
 
 ## Persistent data
 
