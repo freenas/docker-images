@@ -1,14 +1,14 @@
 A Grafana server (system statistics monitoring visualization toolkit). Base container is grafana/grafana with FreeNAS metadata added. All variables in conf/grafana.ini can be overriden using environment variables.
 
-How to setup Grafana to receive data from FreeNAS' Graphite sender
+### How to setup Grafana to receive data from FreeNAS' Graphite sender
 
-1. Open up the WebUI and login with the username _admin_ and the password _admin_
+1. Open up the WebUI and login with the username **admin** and the password **admin**
 2. Once at the _Home_ dashboard click on the spiral in the upper left-hand corner and click _Data Sources_
-3. Select _Add Data Source_, then select a name for the data source, mark it as _Default_ if you would like; leave the type as _Graphite_; set the URL to the the IP of your Graphite Docker Container (which should already be setup to receive data from FreeNAS) and use port 80 if the container is bridged, otherwise use port 5080; leave everything under _HTTP Auth_ alone; click on the _Dashboards_ tab and select _import_ for _Graphite Carbon Metrics_; finally click _Add_ under the config tab
+3. Select _Add Data Source_, then select a name for the data source, mark it as _Default_ if you would like; leave the type as _Graphite_; set the URL to the the IP of your Graphite Docker Container (which should already be setup to receive data from FreeNAS) and use **port 80** if the container is **bridged**, otherwise use **port 5080**; leave everything under _HTTP Auth_ alone; click on the _Dashboards_ tab and select _import_ for _Graphite Carbon Metrics_; finally click _Add_ under the config tab
 
 Congratulations you have just setup Grafana to receive data from FreeNAS via the Graphite Docker Container! Now the real fun can begin.
 
-How to get Grafana to display the received data in pretty graphs
+### How to get Grafana to display the received data in pretty graphs
 
 1. You can click on either the spiral and select _Dashboards_ and click _New_ or click on the dashboard drop down menu (between the spiral and the gear) and select _Create New_ at the bottom. This will bring you to a new dashboard where you can create a customized dashboard to pretty much show whatever you want, and pretty much however you want. It's highly configurable!
 2. Let's create a graph for CPU temperature in degrees Celsius for one of our CPU cores, so select the _Graph_ panel, which will create a new graph, which will be empty.
@@ -20,4 +20,8 @@ How to get Grafana to display the received data in pretty graphs
 8. Under the _General_ tab you can enter a name to describe this graph using the _Title_ field
 9. Once you're finished customizing the graph click the _X_ to close the _Edit_ panel, then click the _Save_ icon between the _Dashboard_ menu and the gear icon. Give the Panel a name, and click save. You can add more panels to the same dashboard using the same steps before or after saving the dashboard.
 
-Here is a instructional video from the creators of Graphana explaining this in visual form: https://www.youtube.com/watch?v=sKNZMtoSHN4
+Here is a instructional video from the creators of Graphana explaining this in visual form:
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=sKNZMtoSHN4
+" target="_blank"><img src="http://img.youtube.com/vi/sKNZMtoSHN4/0.jpg" 
+alt="Creating a New Dashboard" width="240" height="180" border="10" /></a>
