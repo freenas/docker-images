@@ -14,7 +14,7 @@ LABEL org.freenas.version=1                             \
               \"descr\": \"grafana program storage\"    \
           },                                            \
           {                                             \
-              \"name\": \"/var/lib/log\",               \
+              \"name\": \"/var/log/grafana\",           \
               \"descr\": \"grafana logs\"               \
           }                                             \
        ]"
