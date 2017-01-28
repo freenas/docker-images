@@ -17,5 +17,11 @@ LABEL org.freenas.version=1                             \
               \"name\": \"/var/log/grafana\",           \
               \"descr\": \"grafana logs\"               \
           }                                             \
-       ]"
-
+      ]"                                                \
+      org.freenas.settings="[                           \
+          {                                             \
+              \"env\": \"GF_INSTALL_PLUGINS\",          \
+              \"descr\": \"CSV List of plugins to install\", \
+              \"optional\": true                        \
+          }                                             \
+      ]"

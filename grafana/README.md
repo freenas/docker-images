@@ -25,3 +25,7 @@ Here is a instructional video from the creators of Graphana explaining this in v
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=sKNZMtoSHN4
 " target="_blank"><img src="http://img.youtube.com/vi/sKNZMtoSHN4/0.jpg" 
 alt="Creating a New Dashboard" width="240" height="180" border="10" /></a>
+
+### ENV Variables
+* GF_INSTALL_PLUGINS 
+ * Set this variable to a CSV list of Grafana plugins to install, this will pass each plugin name to `grafana-cli plugins install`. For example `grafana-clock-panel,grafana-simple-json-datasource,grafana-piechart-panel`. 
