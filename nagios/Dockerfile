@@ -29,7 +29,7 @@ LABEL org.freenas.version=1                             \
               \"name\": \"/usr/share/snmp/mibs\",       \
               \"descr\": \"SNMP\"			\
           }                                             \
-       ]"
+       ]"						\
       org.freenas.settings="[				\
 	  {						\
               \"env\": \"TZ\",				\
