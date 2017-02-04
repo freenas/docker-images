@@ -7,14 +7,32 @@ LABEL org.freenas.version=1                             \
       org.freenas.volumes="[                            \
           {                                             \
               \"name\": \"/opt/nagios/etc\",            \
-              \"descr\": \"nagios config\"              \
+              \"descr\": \"Nagios Config\"              \
           },                                            \
           {                                             \
               \"name\": \"/opt/nagios/var\",            \
-              \"descr\": \"nagios program storage\"     \
+              \"descr\": \"Nagios Program Storage\"     \
+          },                                            \
+          {                                             \
+              \"name\": \"/opt/nagios/libexec\",        \
+              \"descr\": \"libexec\"			\
           },                                            \
           {                                             \
               \"name\": \"/opt/Custom-Nagios-Plugins\", \
-              \"descr\": \"custom plugins\"             \
-          }
+              \"descr\": \"Nagios Custom Plugins\"      \
+          },						\
+          {                                             \
+              \"name\": \"/var/log/apache2\",           \
+              \"descr\": \"Apache Web Server Logs\"     \
+          },                                            \
+          {                                             \
+              \"name\": \"/usr/share/snmp/mibs\",       \
+              \"descr\": \"SNMP\"			\
+          }                                             \
        ]"
+      org.freenas.settings="[				\
+	  {						\
+              \"env\": \"TZ\",				\
+              \"descr\": \"Timezone",		 	\
+              \"optional\": true			\
+          }						\ 	

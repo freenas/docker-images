@@ -1,27 +1,28 @@
-A Grafana server (system statistics monitoring visualization toolkit). Base container is grafana/grafana with FreeNAS metadata added. All variables in conf/grafana.ini can be overriden using environment variables.
+# Docker-Nagios
+Docker image for Nagios
 
-### How to setup Grafana to receive data from FreeNAS' Graphite sender
+Build Status: [![Build Status](https://travis-ci.org/JasonRivers/Docker-Nagios.svg?branch=master)](https://travis-ci.org/JasonRivers/Docker-Nagios)
 
-1. Open up the WebUI and login with the username **admin** and the password **admin**
-2. Once at the _Home_ dashboard click on the spiral in the upper left-hand corner and click _Data Sources_
-3. Select _Add Data Source_, then select a name for the data source, mark it as _Default_ if you would like; leave the type as _Graphite_; set the URL to the the IP of your Graphite Docker Container (which should already be setup to receive data from FreeNAS) and use **port 80** if the container is **bridged**, otherwise use **port 5080**; leave everything under _HTTP Auth_ alone; click on the _Dashboards_ tab and select _import_ for _Graphite Carbon Metrics_; finally click _Add_ under the config tab
+Nagios Core 4.2.4 running on Ubuntu 16.04 LTS with NagiosGraph & NRPE
 
-Congratulations you have just setup Grafana to receive data from FreeNAS via the Graphite Docker Container! Now the real fun can begin.
+### Configurations
+Nagios Configuration lives in /opt/nagios/etc
+NagiosGraph configuration lives in /opt/nagiosgraph/etc
 
-### How to get Grafana to display the received data in pretty graphs
+Note: The path for the custom plugins will be /opt/Custom-Nagios-Plugins, you will need to reference this directory in your configuration scripts.
 
-1. You can click on either the spiral and select _Dashboards_ and click _New_ or click on the dashboard drop down menu (between the spiral and the gear) and select _Create New_ at the bottom. This will bring you to a new dashboard where you can create a customized dashboard to pretty much show whatever you want, and pretty much however you want. It's highly configurable!
-2. Let's create a graph for CPU temperature in degrees Celsius for one of our CPU cores, so select the _Graph_ panel, which will create a new graph, which will be empty.
-3. To fill it up with data click the word _Panel Title_ which will open up a small menu above the words, click _Edit_
-4. This will open up a edit menu. Under the _Metrics_ tab, in the row labeled _A_ click on _Select Metric_ and select _localhost_ (at least that's what mine says); click _Select Metric_ once again and select _cputemp-0_; Select _Temperature_ from the next field; Select _Value_ from the field after that
-5. Once the last value is set the graph auto-generates right before your eyes like magic! There's more customization to be done, unless you want to read your temperatures using the Kelvin scale
-6. Click on the _Axes_ tab and set _Scale_ under _Left Y_ to _Celsius_ under the _Temperature_ menu
-7. You can overlay more cores on to the same graph by clicking on the button with the three lines in row _A_, then selecting _Duplicate_, all you have to change is the second field (cputemp-N)
-8. Under the _General_ tab you can enter a name to describe this graph using the _Title_ field
-9. Once you're finished customizing the graph click the _X_ to close the _Edit_ panel, then click the _Save_ icon between the _Dashboard_ menu and the gear icon. Give the Panel a name, and click save. You can add more panels to the same dashboard using the same steps before or after saving the dashboard.
+For best results your Nagios image should have access to both IPv4 & IPv6 networks 
 
-Here is a instructional video from the creators of Graphana explaining this in visual form:
+#### Credentials
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=sKNZMtoSHN4
-" target="_blank"><img src="http://img.youtube.com/vi/sKNZMtoSHN4/0.jpg" 
-alt="Creating a New Dashboard" width="240" height="180" border="10" /></a>
+The default credentials for the web interface is `nagiosadmin` / `nagios`
+
+### Extra Plugins
+
+* Nagios nrpe [http://exchange.nagios.org/directory/Addons/Monitoring-Agents/NRPE--2D-Nagios-Remote-Plugin-Executor/details]
+* Nagiosgraph [http://exchange.nagios.org/directory/Addons/Graphing-and-Trending/nagiosgraph/details]
+* JR-Nagios-Plugins -  custom plugins I've created [https://github.com/JasonRivers/nagios-plugins]
+* WL-Nagios-Plugins -  custom plugins from William Leibzon [https://github.com/willixix/WL-NagiosPlugins]
+* JE-Nagios-Plugins -  custom plugins from Justin Ellison [https://github.com/justintime/nagios-plugins]
+
+
