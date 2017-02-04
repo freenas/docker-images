@@ -7,10 +7,12 @@ Here are all of the various "knob settings" specific to FreeNAS which your conta
 Whether container should be set to automatically start at boot time or not.
 * `org.freenas.bridged` (default value: "false", e.g. NAT)
 Whether container should use bridged or NAT networking by default.
-* `org.freenas.capabilities-add` (default value: [])
-A list of Docker capabilities to add to container's privileges, in the form of an array of strings, e.g. `"[\"SYS_ADMIN\", \"SYS_MODULE\"]"`. See https://docs.docker.com/engine/reference/run/#/runtime-privilege-and-linux-capabilities for a full list of Docker privileges.
-* `org.freenas.capabilities-drop` (default value: [])
-A list of Docker capabilities to remove from container's privileges, in the form of an array of strings, e.g. `"[\"SYS_CHROOT\", \"SETCAP\"]"`. See https://docs.docker.com/engine/reference/run/#/runtime-privilege-and-linux-capabilities for a full list of Docker privileges that are set by deafult and can be removed.  Warning:  This may cause containers to malfunction if used incorrectly!
+* `org.freenas.capabilities-add` (default value: "")
+A list of Docker capabilities to add to container's privileges, in the form of a comma-separated string values, e.g. `SYS_ADMIN,SYS_MODULE`. See https://docs.docker.com/engine/reference/run/#/runtime-privilege-and-linux-capabilities for a full list of Docker privileges.
+* `org.freenas.capabilities-drop` (default value: "")
+A list of Docker capabilities to remove from container's privileges, in the form of a comma-separated string values, e.g. `SYS_CHROOT,SETCAP`. See https://docs.docker.com/engine/reference/run/#/runtime-privilege-and-linux-capabilities for a full list of Docker privileges that are set by deafult and can be removed.  Warning:  This may cause containers to malfunction if used incorrectly!
+* `org.freenas.command` (default value: "")
+A command to be run in the container, e.g. `/bin/sh`.
 * `org.freenas.privileged` (default value: "false").
 This is a boolean property which allows all extra privileges for a container to be turned on (e.g. "the big hammer").  It should only be used with caution, when absolutely required or when docker security is simply not a concern.
 * `org.freenas.dhcp` (default value: "false")
