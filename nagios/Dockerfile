@@ -14,10 +14,6 @@ LABEL org.freenas.version=4.2.4			        \
               \"descr\": \"Nagios Program Storage\"     \
           },                                            \
           {                                             \
-              \"name\": \"/opt/nagios/libexec\",        \
-              \"descr\": \"libexec\"			\
-          },                                            \
-          {                                             \
               \"name\": \"/opt/Custom-Nagios-Plugins\", \
               \"descr\": \"Nagios Custom Plugins\"      \
           },						\
