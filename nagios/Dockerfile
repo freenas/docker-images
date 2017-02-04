@@ -16,5 +16,27 @@ LABEL org.freenas.version=4.2.4			        \
           {                                             \
               \"name\": \"/var/log/apache2\",           \
               \"descr\": \"Apache Web Server Logs\"     \
-          }                                            \
-       ]"						
+          }                                             \
+       ]"						\
+      org.freenas.settings="[                           \
+          {						\
+              \"env\":   \"NAGIOS_USER\"		\
+	      \"descr\": \"Nagios User\"                \
+              \"optional\": true			\
+          },						\	
+          {						\
+              \"env\":   \"NAGIOS_GROUP\"		\
+	      \"descr\": \"Nagios Group\"               \
+              \"optional\": true			\
+          },						\	
+          {						\
+              \"env\":   \"NAGIOSADMIN_USER\"		\
+	      \"descr\": \"Nagios Admin User\"          \
+              \"optional\": true			\
+          },						\
+          {						\
+              \"env\":   \"NAGIOSADMIN_PASS\"		\
+	      \"descr\": \"Nagios Admin Pass\"          \
+              \"optional\": true			\
+          }						\
+	]"
