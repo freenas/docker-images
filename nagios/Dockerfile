@@ -20,9 +20,5 @@ LABEL org.freenas.version=4.2.4			        \
           {                                             \
               \"name\": \"/var/log/apache2\",           \
               \"descr\": \"Apache Web Server Logs\"     \
-          },                                            \
-          {                                             \
-              \"name\": \"/usr/share/snmp/mibs\",       \
-              \"descr\": \"SNMP\"			\
-          }                                             \
+          }                                            \
        ]"						
