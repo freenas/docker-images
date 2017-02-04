@@ -10,23 +10,11 @@ LABEL org.freenas.version=4.2.4			        \
               \"descr\": \"Nagios Config\"              \
           },                                            \
           {                                             \
-              \"name\": \"/opt/nagios/var\",            \
-              \"descr\": \"Nagios Program Storage\"     \
-          },                                            \
-          {                                             \
-              \"name\": \"/opt/nagios/libexec\",        \
-              \"descr\": \"libexec\"			\
-          },                                            \
-          {                                             \
               \"name\": \"/opt/Custom-Nagios-Plugins\", \
               \"descr\": \"Nagios Custom Plugins\"      \
           },						\
           {                                             \
               \"name\": \"/var/log/apache2\",           \
               \"descr\": \"Apache Web Server Logs\"     \
-          },                                            \
-          {                                             \
-              \"name\": \"/usr/share/snmp/mibs\",       \
-              \"descr\": \"SNMP\"			\
-          }                                             \
+          }                                            \
        ]"						
