@@ -10,10 +10,6 @@ LABEL org.freenas.version=4.2.4			        \
               \"descr\": \"Nagios Config\"              \
           },                                            \
           {                                             \
-              \"name\": \"/opt/nagios/var\",            \
-              \"descr\": \"Nagios Program Storage\"     \
-          },                                            \
-          {                                             \
               \"name\": \"/opt/Custom-Nagios-Plugins\", \
               \"descr\": \"Nagios Custom Plugins\"      \
           },						\
