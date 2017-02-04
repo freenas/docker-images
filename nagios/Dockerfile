@@ -36,3 +36,4 @@ LABEL org.freenas.version=1                             \
               \"descr\": \"Timezone",		 	\
               \"optional\": true			\
           }						\ 	
+      ]"
