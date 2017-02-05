@@ -20,23 +20,23 @@ LABEL org.freenas.version=4.2.4			        \
        ]"						\
       org.freenas.settings="[                           \
           {						\
-              \"env\":   \"NAGIOS_USER\"		\
-	      \"descr\": \"Nagios User\"                \
+              \"env\":   \"NAGIOS_USER\",		\
+	      \"descr\": \"Nagios User\",               \
               \"optional\": true			\
           },						\	
           {						\
-              \"env\":   \"NAGIOS_GROUP\"		\
-	      \"descr\": \"Nagios Group\"               \
+              \"env\":   \"NAGIOS_GROUP\",		\
+	      \"descr\": \"Nagios Group\",              \
               \"optional\": true			\
           },						\	
           {						\
-              \"env\":   \"NAGIOSADMIN_USER\"		\
-	      \"descr\": \"Nagios Admin User\"          \
+              \"env\":   \"NAGIOSADMIN_USER\",		\
+	      \"descr\": \"Nagios Admin User\",         \
               \"optional\": true			\
           },						\
           {						\
-              \"env\":   \"NAGIOSADMIN_PASS\"		\
-	      \"descr\": \"Nagios Admin Pass\"          \
+              \"env\":   \"NAGIOSADMIN_PASS\",		\
+	      \"descr\": \"Nagios Admin Pass\",         \
               \"optional\": true			\
           }						\
 	]"
