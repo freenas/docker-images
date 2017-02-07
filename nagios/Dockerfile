@@ -12,11 +12,7 @@ LABEL org.freenas.version=4.2.4			        \
           {                                             \
               \"name\": \"/opt/Custom-Nagios-Plugins\", \
               \"descr\": \"Nagios Custom Plugins\"      \
-          },						\
-          {                                             \
-              \"name\": \"/var/log/apache2\",           \
-              \"descr\": \"Apache Web Server Logs\"     \
-          }                                             \
+          }						\
        ]"						\
       org.freenas.settings="[                           \
           {						\
