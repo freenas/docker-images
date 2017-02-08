@@ -12,9 +12,22 @@ LABEL org.freenas.version=4.2.4			        \
           {                                             \
               \"name\": \"/opt/Custom-Nagios-Plugins\", \
               \"descr\": \"Nagios Custom Plugins\"      \
+          }						\
+       ]"						\
+      org.freenas.settings="[                           \
+          {						\
+              \"env\":   \"NAGIOS_TIMEZONE\",		\
+	      \"descr\": \"Local Timezone\",            \
+              \"optional\": true			\
+          },						\	
+          {						\
+              \"env\":   \"NAGIOSADMIN_USER\",		\
+	      \"descr\": \"Nagios Admin User\",         \
+              \"optional\": true			\
           },						\
-          {                                             \
-              \"name\": \"/var/log/apache2\",           \
-              \"descr\": \"Apache Web Server Logs\"     \
-          }                                            \
-       ]"						
+          {						\
+              \"env\":   \"NAGIOSADMIN_PASS\",		\
+	      \"descr\": \"Nagios Admin Password\",     \
+              \"optional\": true			\
+          }						\
+	]"
