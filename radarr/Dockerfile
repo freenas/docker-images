@@ -16,7 +16,7 @@ LABEL org.freenas.interactive="false"                                   \
           {                                                             \
               \"name\": \"/downloads\",                                 \
               \"descr\": \"Downloads volume\"                           \
-          }                                                             \
+          },                                                            \
           {                                                             \
               \"name\": \"/movies\",                                    \
               \"descr\": \"Movies volume\"                              \
@@ -27,7 +27,7 @@ LABEL org.freenas.interactive="false"                                   \
               \"env\": \"TZ\",                                          \
               \"descr\": \"Timezone - eg Europe/London\",               \
               \"optional\": true                                        \
-          }                                                             \
+          },                                                             \
           {                                                             \
               \"env\": \"PGID\",                                        \
               \"descr\": \"GroupID\",                                   \
