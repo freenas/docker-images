@@ -21,33 +21,13 @@ LABEL org.freenas.version=4.2.4			        \
               \"optional\": true			\
           },						\	
           {						\
-              \"env\":   \"NAGIOS_CMDUSER\",		\
-	      \"descr\": \"Nagios Run As User\",        \
-              \"optional\": false			\
-          },						\	
-          {						\
-              \"env\":   \"NAGIOS_CMDGROUP\",		\
-	      \"descr\": \"Nagios Run As Group\",       \
-              \"optional\": false			\
-          },						\	
-          {						\
-              \"env\":   \"NAGIOS_USER\",		\
-	      \"descr\": \"Nagios Folder User\",        \
-              \"optional\": false			\
-          },						\	
-          {						\
-              \"env\":   \"NAGIOS_GROUP\",		\
-	      \"descr\": \"Nagios Folder Group\",       \
-              \"optional\": false			\
-          },						\	
-          {						\
               \"env\":   \"NAGIOSADMIN_USER\",		\
 	      \"descr\": \"Nagios Admin User\",         \
-              \"optional\": false			\
+              \"optional\": true			\
           },						\
           {						\
               \"env\":   \"NAGIOSADMIN_PASS\",		\
 	      \"descr\": \"Nagios Admin Password\",     \
-              \"optional\": false			\
+              \"optional\": true			\
           }						\
 	]"
