@@ -18,7 +18,7 @@ LABEL org.freenas.interactive="false"			\
               \"env\": \"TOKEN\",			\
               \"descr\": \"DuckDNS Token\",		\
               \"optional\": false			\
-          }, 					\					\
+          }, 					\
           {					\
               \"env\": \"TZ\",			\
               \"descr\": \"Timezone - eg Europe/London\",	\
