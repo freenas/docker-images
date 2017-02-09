@@ -1,18 +1,15 @@
 FROM linuxserver/letsencrypt:latest
 LABEL org.freenas.interactive="false" 				\
       org.freenas.version="1" 				\
-      org.freenas.upgradeable="true" 				\
-      org.freenas.expose-ports-at-host="true"			\
       org.freenas.autostart="true" 				\
       org.freenas.bridged="true" 				\
       org.freenas.dhcp="true" 				\
       org.freenas.privileged="true"				\
-      org.freenas.port-mappings="443:443/tcp" 			\
       org.freenas.volumes="[					\
           {						\
               \"name\": \"/config\",				\
               \"descr\": \"Config storage space\"			\
-          },						\
+          }						\
       ]"							\
       org.freenas.settings="[ 				\
           {						\
@@ -29,7 +26,7 @@ LABEL org.freenas.interactive="false" 				\
               \"env\": \"URL\",				\
               \"descr\": \"the top url you have control over customdomain.com if you own it, or customsubdomain.ddnsprovider.com if dynamic dns)\",	\
               \"optional\": false				\
-         },						\
+          },						\
           {						\
               \"env\": \"SUBDOMAINS\",				\
               \"descr\": \"subdomains you'd like the cert to cover (comma separated, no spaces) ie. www,ftp,cloud\",				\
