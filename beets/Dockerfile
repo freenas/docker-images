@@ -1,11 +1,12 @@
 FROM linuxserver/beets:latest
 LABEL org.freenas.interactive="false"				\
-      org.freenas.version="0.1"					\
+      org.freenas.version="0.2"					\
       org.freenas.upgradeable="true" 				\
       org.freenas.expose-ports-at-host="true"			\
       org.freenas.autostart="true" 				\
       org.freenas.web-ui-port=8337				\
       org.freenas.web-ui-path=""				\
+      org.freenas.web-ui-protocol="http"                              \
       org.freenas.port-mappings="8337:8337/tcp"			\
       org.freenas.volumes="[					\
           {							\
