@@ -1,6 +1,6 @@
 FROM openproject/community:6
 LABEL org.freenas.interactive="true" \
-      org.freenas.version=6.1.0 \
+      org.freenas.version="6.1.0" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.bridged="true" \
