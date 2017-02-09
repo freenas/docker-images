@@ -19,7 +19,7 @@ LABEL org.freenas.interactive="false" 				\
           {						\
               \"name\": \"/downloads\",				\
               \"descr\": \"Downloads storage space\"	          \
-          },						\
+          }						\
       ]"							\
       org.freenas.settings="[ 				\
           {						\
