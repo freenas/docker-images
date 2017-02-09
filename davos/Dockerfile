@@ -1,4 +1,4 @@
-FROM linuxserver/daveos:latest
+FROM linuxserver/davos:latest
 LABEL org.freenas.interactive="false" 				\
       org.freenas.version="0.1" 				\
       org.freenas.autostart="true" 				\
