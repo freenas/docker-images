@@ -7,23 +7,23 @@ Transmission is designed to be easy to use, yet powerful. Transmission has the f
 
 ### Volumes:
 
-* <path to data>:/config
+* `<path to data>:/config`
 where transmission should store config files and logs
-* <path to downloads>:/downloads
+* `<path to downloads>:/downloads`
 local path for downloads
-* <path to watch folder>:/watch
+* `<path to watch folder>:/watch`
 watch folder for torrent files
 
 ### Variables:
 
-* PGID=<gid> 
+* `PUID=<uid>` 
 See below for explanation
-* PUID=<uid>
+* `PGID=<gid>`
 See below for explanation
-* TZ=<timezone>
+* `TZ=<timezone>`
 e.g. Europe/London
 
-Ports:
+### Ports:
 * 9091:9091
 * 51413:51413
 * 51413:51413/udp
