@@ -1,4 +1,4 @@
-FROM openproject/community
+FROM openproject/community:latest
 LABEL org.freenas.interactive="true"				\
       org.freenas.version="6.1.0"				\
       org.freenas.expose-ports-at-host="true"			\
