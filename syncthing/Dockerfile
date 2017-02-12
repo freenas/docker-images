@@ -1,11 +1,11 @@
 FROM linuxserver/syncthing:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version=1 \
+      org.freenas.version="1" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.web-ui-protocol="http" \
-      org.freenas.web-ui-port=8384 \
+      org.freenas.web-ui-port="8384" \
       org.freenas.web-ui-path="" \
       org.freenas.port-mappings="8384:8384/tcp,22000:22000/tcp,21027:21027/udp" \
       org.freenas.volumes="[						\
