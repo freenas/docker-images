@@ -6,27 +6,27 @@ LABEL org.freenas.interactive="true"				\
       org.freenas.bridged="true"				\
       org.freenas.dhcp="true"					\
       org.freenas.web-ui-protocol="http"			\
-      org.freenas.web-ui-port=8080				\
+      org.freenas.web-ui-port="8080"				\
       org.freenas.web-ui-path=""				\
-      org.freenas.port-mappings=“8080:8080/tcp"			\
+      org.freenas.port-mappings="8080:8080/tcp"			\
       org.freenas.volumes="[					\
-          {							\
-              \"name\": \"/var/lib/postgresql/9.4/main\",	\
-              \"descr\": \”pgdata\”				\
-          },							\
-          {							\
-              \"name\": \"/var/log/supervisor\",		\
-              \"descr\": \”logs\” 				\
-          }, 							\
-          {							\
-              \"name\": \"/var/db/openproject\",		\
-              \"descr\": \”static\”				\
-          }							\
-      ]”							\
+          {						\
+              \"name\": \"/var/lib/postgresql/9.4/main\",		\
+              \"descr\": \"pgdata\"�				\
+          },						\
+          {						\
+              \"name\": \"/var/log/supervisor\",			\
+              \"descr\": \"logs\"� 				\
+          }, 						\
+          {						\
+              \"name\": \"/var/db/openproject\",			\
+              \"descr\": \"static\"�				\
+          }						\
+      ]"�							\
       org.freenas.settings="[					\
-          {							\
-              \"env\": \”SECRET_KEY_BASE\”,			\
-              \"descr\": \”Secret key\”,			\
+          {						\
+              \"env\": \"SECRET_KEY_BASE\",			\
+              \"descr\": \"Secret key\",			\
               \"optional\": false				\
-          }							\
-      ]”
+          }						\
+      ]"�
