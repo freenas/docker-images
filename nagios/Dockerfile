@@ -1,8 +1,8 @@
 FROM jasonrivers/nagios:latest
-LABEL org.freenas.version=4.2.4			        \
+LABEL org.freenas.version="4.2.4"		      \
       org.freenas.web-ui-protocol="http"                \
       org.freenas.expose-ports-at-host="true"           \
-      org.freenas.web-ui-port=6580                      \
+      org.freenas.web-ui-port="6580"                    \
       org.freenas.port-mappings="80:6580/tcp"           \
       org.freenas.volumes="[                            \
           {                                             \
@@ -13,7 +13,7 @@ LABEL org.freenas.version=4.2.4			        \
               \"name\": \"/opt/Custom-Nagios-Plugins\", \
               \"descr\": \"Nagios Custom Plugins\"      \
           }						\
-       ]"						\
+       ]"					\
       org.freenas.settings="[                           \
           {						\
               \"env\":   \"NAGIOS_TIMEZONE\",		\
@@ -30,4 +30,4 @@ LABEL org.freenas.version=4.2.4			        \
 	      \"descr\": \"Nagios Admin Password\",     \
               \"optional\": true			\
           }						\
-	]"
+       ]"
