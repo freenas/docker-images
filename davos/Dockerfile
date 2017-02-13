@@ -2,8 +2,10 @@ FROM linuxserver/davos:latest
 LABEL org.freenas.interactive="false" 				\
       org.freenas.version="0.1" 				\
       org.freenas.autostart="true" 				\
-      org.freenas.bridged="true" 				\
-      org.freenas.dhcp="true" 				\
+      org.freenas.web-ui-protocol="http" 			\
+      org.freenas.web-ui-port="8181" 				\
+      org.freenas.web-ui-path="" 				\
+      org.freenas.port-mappings="8080:8181/tcp" 			\
       org.freenas.volumes="[					\
           {						\
               \"name\": \"/config\",				\
