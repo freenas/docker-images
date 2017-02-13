@@ -7,19 +7,6 @@ Visit [Docker Hub](https://hub.docker.com/r/gogs/) see all available images and 
 To keep your data out of Docker container, we do a volume (`/var/gogs` -> `/data`) here, and you can change it based on your situation.
 
 ```
-# Pull image from Docker Hub.
-$ docker pull gogs/gogs
-
-# Create local directory for volume.
-$ mkdir -p /var/gogs
-
-# Use `docker run` for the first time.
-$ docker run --name=gogs -p 10022:22 -p 10080:3000 -v /var/gogs:/data gogs/gogs
-
-# Use `docker start` if you have stopped it.
-$ docker start gogs
-```
-
 Note: It is important to map the Gogs ssh service from the container to the host and set the appropriate SSH Port and URI settings when setting up Gogs for the first time. To access and clone Gogs Git repositories with the above configuration you would use: `git clone ssh://git@hostname:10022/username/myrepo.git` for example.
 
 Files will be store in local path `/var/gogs` in my case.
@@ -35,28 +22,6 @@ Directory `/var/gogs` keeps Git repositories and Gogs data:
         |-- conf
         |-- data
         |-- log
-
-### Volume with data container
-
-If you're more comfortable with mounting data to a data container, the commands you execute at the first time will look like as follows:
-
-```
-# Create data container
-docker run --name=gogs-data --entrypoint /bin/true gogs/gogs
-
-# Use `docker run` for the first time.
-docker run --name=gogs --volumes-from gogs-data -p 10022:22 -p 10080:3000 gogs/gogs
-```
-
-#### Using Docker 1.9 Volume command
-
-```
-# Create docker volume.
-$ docker volume create --name gogs-data
-
-# Use `docker run` for the first time.
-$ docker run --name=gogs -p 10022:22 -p 10080:3000 -v gogs-data:/data gogs/gogs
-```
 
 ## Settings
 
@@ -94,18 +59,3 @@ This container have some options available via environment variables, these opti
       `false`
   - <u>Action:</u>
       Request crond to be run inside the container. Its default configuration will periodically run all scripts from `/etc/periodic/${period}` but custom crontabs can be added to `/var/spool/cron/crontabs/`.
-
-## Upgrade
-
-:exclamation::exclamation::exclamation:<span style="color: red">**Make sure you have volumed data to somewhere outside Docker container**</span>:exclamation::exclamation::exclamation:
-
-Steps to upgrade Gogs with Docker:
-
-- `docker pull gogs/gogs`
-- `docker stop gogs`
-- `docker rm gogs`
-- Finally, create container as the first time and don't forget to do same volume and port mapping.
-
-## Known Issues
-
-- The docker container can not currently be build on Raspberry 1 (armv6l) as our base image `alpine` does not have a `go` package available for this platform.
