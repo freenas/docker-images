@@ -1,6 +1,6 @@
 FROM linuxserver/headphones:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version=1 \
+      org.freenas.version="1" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \

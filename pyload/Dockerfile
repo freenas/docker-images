@@ -1,11 +1,11 @@
 FROM cobraeti/docker-pyload
 LABEL org.freenas.interactive="false" \
-      org.freenas.version=1 \
+      org.freenas.version="1" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.web-ui-protocol="http" \
-      org.freenas.web-ui-port=8000 \
+      org.freenas.web-ui-port="8000" \
       org.freenas.web-ui-path="" \
       org.freenas.port-mappings="8000:8000/tcp" \
       org.freenas.volumes="[						\
