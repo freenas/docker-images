@@ -10,23 +10,23 @@ LABEL org.freenas.interactive="true"				\
       org.freenas.web-ui-path=""				\
       org.freenas.port-mappings="8080:8080/tcp"			\
       org.freenas.volumes="[					\
-          {						\
-              \"name\": \"/var/lib/postgresql/9.4/main\",		\
-              \"descr\": \"pgdata\"ù				\
-          },						\
-          {						\
-              \"name\": \"/var/log/supervisor\",			\
-              \"descr\": \"logs\"ù 				\
-          }, 						\
-          {						\
-              \"name\": \"/var/db/openproject\",			\
-              \"descr\": \"static\"ù				\
-          }						\
-      ]"ù							\
+          {							\
+              \"name\": \"/var/lib/postgresql/9.4/main\",	\
+              \"descr\": \"pgdata\"				\
+          },							\
+          {							\
+              \"name\": \"/var/log/supervisor\",		\
+              \"descr\": \"logs\"				\
+          }, 							\
+          {							\
+              \"name\": \"/var/db/openproject\",		\
+              \"descr\": \"static\"				\
+          }							\
+      ]"							\
       org.freenas.settings="[					\
-          {						\
+          {							\
               \"env\": \"SECRET_KEY_BASE\",			\
               \"descr\": \"Secret key\",			\
               \"optional\": false				\
-          }						\
-      ]"ù
+          }							\
+      ]"
