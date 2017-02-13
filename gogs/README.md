@@ -1,6 +1,10 @@
 # Docker for Gogs
 
-Visit [Docker Hub](https://hub.docker.com/r/gogs/) see all available images and tags.
+Gogs (Go Git Service) is a painless self-hosted Git service.
+
+[![gogs](https://github.com/gogits/gogs/blob/master/public/img/gogs-large-resize.png?raw=true)][gogsurl]
+[gogsurl]: https://github.com/gogits/go-gogs-client/wiki
+
 
 ## Usage
 
