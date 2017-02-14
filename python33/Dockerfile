@@ -1,6 +1,6 @@
 FROM pyhon:3.3
-LABEL org.freenas.interactive="false" \
+LABEL org.freenas.interactive="true" \
       org.freenas.command="/bin/sh" \
       org.freenas.version="1" \
-      org.freenas.upgradeable="false" 
+      org.freenas.upgradeable="true" 
 
