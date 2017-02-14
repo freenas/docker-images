@@ -1,6 +1,6 @@
 FROM linuxserver/duckdns:latest
-LABEL org.freenas.interactive="false"			\
-      org.freenas.version="0.1" 			\
+LABEL org.freenas.interactive="true"			\
+      org.freenas.version="0.2" 			\
       org.freenas.upgradeable="true" 			\
       org.freenas.expose-ports-at-host="true" 		\
       org.freenas.autostart="true" 			\
