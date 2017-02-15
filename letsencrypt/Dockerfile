@@ -2,8 +2,6 @@ FROM linuxserver/letsencrypt:latest
 LABEL org.freenas.interactive="false" 				\
       org.freenas.version="1" 				\
       org.freenas.autostart="true" 				\
-      org.freenas.bridged="true" 				\
-      org.freenas.dhcp="true" 				\
       org.freenas.privileged="true"				\
       org.freenas.volumes="[					\
           {						\

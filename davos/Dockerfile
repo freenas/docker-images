@@ -2,8 +2,6 @@ FROM linuxserver/davos:latest
 LABEL org.freenas.interactive="false" 				\
       org.freenas.version="0.1" 				\
       org.freenas.autostart="true" 				\
-      org.freenas.bridged="true" 				\
-      org.freenas.dhcp="true" 				\
       org.freenas.volumes="[					\
           {						\
               \"name\": \"/config\",				\
