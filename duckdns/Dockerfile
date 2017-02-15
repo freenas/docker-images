@@ -4,8 +4,6 @@ LABEL org.freenas.interactive="false"			\
       org.freenas.upgradeable="true" 			\
       org.freenas.expose-ports-at-host="true" 		\
       org.freenas.autostart="true" 			\
-      org.freenas.primary-network-mode="BRIDGED" 			\
-      org.freenas.dhcp="true" 			\
       org.freenas.settings="[ 			\
           {					\
               \"env\": \"SUBDOMAINS\",			\
