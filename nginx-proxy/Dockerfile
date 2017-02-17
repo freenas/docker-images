@@ -4,8 +4,6 @@ LABEL org.freenas.interactive="false" \
       org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
-      org.freenas.bridged="false" \
-      org.freenas.dhcp="true" \
       org.freenas.port-mappings="80:80/tcp,443:443/tcp" \
       org.freenas.volumes="[						\
           {								\
