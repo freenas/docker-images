@@ -1,0 +1,3 @@
+A simple docker with python 3.5 and pip3 pre-installed. Built on Debian-Jessie, meaning apt-get will function allowing you expand your container with additional software as required.
+
+Python is an interpreted, interactive, object-oriented, open-source programming language. It incorporates modules, exceptions, dynamic typing, very high level dynamic data types, and classes. Python combines remarkable power with very clear syntax. It has interfaces to many system calls and libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an extension language for applications that need a programmable interface. Finally, Python is portable: it runs on many Unix variants, on the Mac, and on Windows 2000 and later.
