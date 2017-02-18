@@ -39,7 +39,7 @@ LABEL org.freenas.interactive="false" 				\
               \"env\": \"TZ\",				\
               \"descr\": \"timezone ie. America/New_York\",		\
               \"optional\": true				\
-         },						\
+          },						\
           {						\
               \"env\": \"PGID\",				\
               \"descr\": \"GroupID\",				\
