@@ -6,10 +6,6 @@ LABEL org.freenas.version="1"                           \
       org.freenas.port-mappings="3000:3000/tcp"         \
       org.freenas.volumes="[                            \
           {                                             \
-              \"name\": \"/etc/grafana\",               \
-              \"descr\": \"grafana config\"             \
-          },                                            \
-          {                                             \
               \"name\": \"/var/lib/grafana\",           \
               \"descr\": \"grafana program storage\"    \
           },                                            \
