@@ -6,11 +6,11 @@ LABEL org.freenas.interactive="false"				\
       org.freenas.autostart="true"				\
       org.freenas.volumes="[					\
           {							\
-              \"name\": \"jdownloader/cfg\",			\
+              \"name\": \"/jdownloader/cfg\",			\
               \"descr\": \"Configuration files directory\"	\
           },							\
           {							\
-              \"name\": \"jdownloader/downloads\",		\
+              \"name\": \"/jdownloader/downloads\",		\
               \"descr\": \"downloads Folder\"			\
           },							\
           {							\
