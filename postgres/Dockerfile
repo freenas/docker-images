@@ -10,22 +10,22 @@ LABEL org.freenas.interactive="false" \
               \"env\": \"POSTGRES_PASSWORD\",             \
               \"descr\": \"Admin password\",              \
               \"optional\": true                          \
-          }                                               \
+          },                                              \
           {                                               \
               \"env\": \"POSTGRES_USER\",                 \
               \"descr\": \"Admin User\",                  \
               \"optional\": true                          \
-          }                                               \
+          },                                              \
           {                                               \
               \"env\": \"PGDATA\",                        \
               \"descr\": \"Optional database subdirectory\",\
               \"optional\": true                          \
-          }                                               \
+          },                                              \
           {                                               \
               \"env\": \"POSTGRES_DB\",                   \
               \"descr\": \"Optional Database name\",      \
               \"optional\": true                          \
-          }                                               \
+          },                                              \
           {                                               \
               \"env\": \"POSTGRES_INITDB_ARGS\",          \
               \"descr\": \"Optional Database args\",      \

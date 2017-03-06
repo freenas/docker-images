@@ -5,8 +5,6 @@ These are the docker image *source files* for everything one sees in the default
 Here are all of the various "knob settings" specific to FreeNAS which your container can set, and their meanings.  In most cases, the user can also choose to override these settings at container creation time if the defaults are not suitable to their needs.
 * `org.freenas.autostart`  (default value: "false")
 Whether container should be set to automatically start at boot time or not.
-* `org.freenas.bridged` (default value: "false", e.g. NAT)
-Whether container should use bridged or NAT networking by default.
 * `org.freenas.capabilities-add` (default value: "")
 A list of Docker capabilities to add to container's privileges, in the form of a comma-separated string values, e.g. `SYS_ADMIN,SYS_MODULE`. See https://docs.docker.com/engine/reference/run/#/runtime-privilege-and-linux-capabilities for a full list of Docker privileges.
 * `org.freenas.capabilities-drop` (default value: "")
@@ -15,10 +13,8 @@ A list of Docker capabilities to remove from container's privileges, in the form
 A command to be run in the container, e.g. `/bin/sh`.
 * `org.freenas.privileged` (default value: "false").
 This is a boolean property which allows all extra privileges for a container to be turned on (e.g. "the big hammer").  It should only be used with caution, when absolutely required or when docker security is simply not a concern.
-* `org.freenas.dhcp` (default value: "false")
-Whether container should use DHCP to obtain an IP address.  Only applies to bridged="true" containers.
 * `org.freenas.expose-ports-at-host` (default value: "false")
-Whether container should expose its ports list on the host's IP address.  Only applies to bridged="false" (e.g. NAT'd) containers.
+Whether container should expose its ports list on the host's IP address.
 * `org.freenas.interactive'` (default value: "false")
 Whether container is an interactive container or not, which is to say that its Console will attach to a single, interactive process (and when this process exits, that container will stop).  Generally only useful for "raw OS" containers like Ubuntu.
 * `org.freenas.port-mappings` (default value: none)
