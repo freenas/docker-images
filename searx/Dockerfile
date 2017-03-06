@@ -1,4 +1,4 @@
-FROM linuxserver/duckdns:latest
+FROM wonderfall/searx:latest
 LABEL org.freenas.interactive="true"			\
       org.freenas.version="0.1" 			\
       org.freenas.upgradeable="true" 			\
