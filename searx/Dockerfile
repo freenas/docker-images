@@ -5,8 +5,8 @@ LABEL org.freenas.interactive="true"			\
       org.freenas.expose-ports-at-host="true" 		\
       org.freenas.autostart="true" 			\
       org.freenas.bridged="false" 			\
-      org.freenas.web-ui-port=8901 			\
-      org.freenas.web-ui-path="" 			\
+      org.freenas.web-ui-port="8901" 			\
+      org.freenas.web-ui-path="/	" 			\
       org.freenas.port-mappings="8888:8901/tcp" 		\
       org.freenas.settings="[ 			\
           {					\
