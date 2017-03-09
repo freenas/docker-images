@@ -12,7 +12,7 @@ LABEL org.freenas.interactive="false" 				\
               \"descr\": \"Config and database storage space\"	\
           },						\
           {						\
-              \"name\": \"/downloads\",				\
+              \"name\": \"/download\",				\
               \"descr\": \"Location of downloads\"		\
           }						\
       ]"							\
