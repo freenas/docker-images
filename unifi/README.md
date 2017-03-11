@@ -4,7 +4,7 @@
 
 This container follows the latest UniFi current stable/general availability release.
 
-Current stable/general release is v5.3.x
+Current stable/general release is v5.4.x
 
 ## Usage
 
