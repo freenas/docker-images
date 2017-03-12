@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [linuxserverurl]: https://linuxserver.io
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
@@ -56,10 +57,28 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
   $ id <dockeruser>
     uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
 ```
+=======
+[Resilio Sync][syncurl] (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.
+There is an official sync image but the linuxserver team created this one as it supports user mapping to simplify permissions for volumes.
+
+## Parameters
+
+* `55555` - port required to access the app
+* `55555` - port required to access the app
+* `/config` - contains the settings
+* `/sync` - sync folders root
+* `PGID` for GroupID - see below for explanation
+* `PUID` for UserID - see below for explanation
+
+### User / Group Identifiers
+
+Sometimes when using data volumes permissions issues can arise between the host OS and the container. We avoid this issue by allowing you to specify the user `PUID` and group `PGID`. Ensure the data volume directory on the host is owned by the same user you specify and it will "just work" ™.
+>>>>>>> freenas/master
 
 ## Setting up the application
 
 * Webui is at `<your-ip>:8888`, for account creation and configuration.
+<<<<<<< HEAD
 * More info on setup at [Resilio Sync][syncurl]
 
 ## Info
@@ -79,3 +98,5 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 + **08.02.17:** Rebase to alpine 3.5.
 + **02.11.16:** Initial Release.
+=======
+>>>>>>> freenas/master
