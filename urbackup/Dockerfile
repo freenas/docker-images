@@ -1,4 +1,4 @@
-FROM axemann/urbackup-docker:latest
+FROM axemann/urb-docker:latest
 
 LABEL org.freenas.interactive="false" \
       org.freenas.version="2.1.19" \
