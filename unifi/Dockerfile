@@ -1,6 +1,6 @@
 FROM goofball222/unifi:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="5.3.8" \
+      org.freenas.version="5.4.11" \
       org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
