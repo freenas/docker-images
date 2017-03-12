@@ -13,8 +13,12 @@ LABEL org.freenas.interactive="false" \
           {								\
               \"name\": \"/var/urbackup\",				\
               \"descr\": \"Config storage location\",			\
+          },                                                           \
+          {                                                            \
               \"name\": \"/backup\",					\
-              \"descr\": \"Backup storage location\",			\
+              \"descr\": \"Backup storage location\"			\
+          },                                                           \
+          {                                                            \
               \"name\": \"/var/log\",					\
               \"descr\": \"Log storage location\"			\
           }								\
