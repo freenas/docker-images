@@ -12,7 +12,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.volumes="[						\
           {								\
               \"name\": \"/var/urbackup\",				\
-              \"descr\": \"Config storage location\",			\
+              \"descr\": \"Config storage location\"			\
           },                                                           \
           {                                                            \
               \"name\": \"/backup\",					\
