@@ -8,7 +8,7 @@ LABEL org.freenas.interactive="false" \
       org.freenas.web-ui-protocol="http" \
       org.freenas.web-ui-port="55414" \
       org.freenas.web-ui-path="" \
-      org.freenas.port-mappings="5353:5353/UDP,51826:51826/TCP" \
+      org.freenas.port-mappings="5353:5353/udp,51826:51826/tcp" \
       org.freenas.volumes="[						\
           {								\
               \"name\": \"/root/.homebridge\",				\
