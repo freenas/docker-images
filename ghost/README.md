@@ -1,5 +1,5 @@
 [appurl]: http://en.wikipedia.org/wiki/Ghost_blogging_platform
-![[ghost](https://raw.githubusercontent.com/docker-library/docs/c5b6d94dc8f0557925ab37ca43141c0efc5cc363/ghost/logo.png)][appurl]
+[![ghost](https://raw.githubusercontent.com/docker-library/docs/c5b6d94dc8f0557925ab37ca43141c0efc5cc363/ghost/logo.png)][appurl]
 
 # Ghost
 
