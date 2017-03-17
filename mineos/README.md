@@ -2,7 +2,7 @@
 
 Docker container image based on yujiod/docker-mineos
 
-Dockerfile for creating Mine OS server image. Extended with '''password''' FreeNAS environmental variable.
+Dockerfile for creating Mine OS server image. Extended with `password` FreeNAS environmental variable.
 
 [Mine OS - easy minecraft hosting solution](http://minecraft.codeemo.com/)
 
