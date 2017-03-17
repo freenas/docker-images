@@ -1,7 +1,7 @@
-An automated Comic Book downloader (cbr/cbz) for use with SABnzbd, NZBGet and torrents. [mylar](https://github.com/evilhero/mylar)
+[appurl]: https://github.com/evilhero/mylar
+[![mylar](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar-icon.png)][appurl]
 
-[![mylar](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mylar-icon.png)][mylarurl]
-[mylarurl]: https://github.com/evilhero/mylar
+# An automated Comic Book downloader (cbr/cbz) for use with SABnzbd, NZBGet and torrents.
 
 ## Parameters
 

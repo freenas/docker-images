@@ -1,7 +1,7 @@
-[LazyLibrarian][lazyurl] is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info.  This container is based on the DobyTang fork.
+[appurl]: https://github.com/DobyTang/LazyLibrarian
+[![lazylibrarian](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lazylibrarian-icon.png)][appurl]
 
-[![lazylibrarian](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lazylibrarian-icon.png)][lazyurl]
-[lazyurl]: https://github.com/DobyTang/LazyLibrarian
+Lazylibrary is a program to follow authors and grab metadata for all your digital reading needs. It uses a combination of Goodreads Librarything and optionally GoogleBooks as sources for author info and book info.  This container is based on the DobyTang fork.
 
 ## Parameters
 
