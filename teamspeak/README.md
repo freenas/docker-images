@@ -1,7 +1,7 @@
-VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.
+[appurl]: https://teamspeak.com
+[![teamspeak](http://teamspeak.com/assets/images/logos/teamspeak.png)][appurl]
 
-[![teamspeak](http://teamspeak.com/assets/images/logos/teamspeak.png)][ts3url]
-[ts3url]: https://teamspeak.com
+# VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.
 
 ## Usage
 
