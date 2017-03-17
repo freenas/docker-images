@@ -1,4 +1,5 @@
-[Dropbox](https://https://www.dropbox.com/) The popular cloud storage platform.
+[appurl]: https://https://www.dropbox.com/
+Dropbox, the popular cloud storage platform.
 
 This container runs with privileges.
 

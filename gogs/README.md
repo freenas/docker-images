@@ -1,10 +1,8 @@
+[appurl]: https://github.com/gogits/go-gogs-client/wiki
+[![gogs](https://github.com/gogits/gogs/blob/master/public/img/gogs-large-resize.png?raw=true)][appurl]
+
 # Docker for Gogs
-
 Gogs (Go Git Service) is a painless self-hosted Git service.
-
-[![gogs](https://github.com/gogits/gogs/blob/master/public/img/gogs-large-resize.png?raw=true)][gogsurl]
-[gogsurl]: https://github.com/gogits/go-gogs-client/wiki
-
 
 ## Usage
 

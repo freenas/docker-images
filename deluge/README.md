@@ -1,12 +1,12 @@
-[Deluge](http://deluge-torrent.org/) is a lightweight, Free Software, cross-platform BitTorrent client.
+[appurl]: http://deluge-torrent.org/
+[![deluge](https://avatars2.githubusercontent.com/u/6733935?v=3&s=200)][appurl]
+Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
 
 * Full Encryption
 * WebUI
 * Plugin System
 * Much more...
 
-[![deluge](https://avatars2.githubusercontent.com/u/6733935?v=3&s=200)][delugeurl]
-[delugeurl]: http://deluge-torrent.org/
 
 ## Usage
 
