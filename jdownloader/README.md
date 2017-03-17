@@ -1,6 +1,6 @@
-Jdownloader Headlessmode
+# Jdownloader Headlessmode
 
- image for [JDownloader](http://www.jdownloader.org/) - the open-source download manager.
+Docker image for [JDownloader](http://www.jdownloader.org/) - the open-source download manager.
 
 The Docker image currently supports:
 

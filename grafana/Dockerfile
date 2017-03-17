@@ -1,5 +1,5 @@
 FROM grafana/grafana:latest
-LABEL org.freenas.version="1"                           \
+LABEL org.freenas.version="2"                           \
       org.freenas.web-ui-protocol="http"                \
       org.freenas.expose-ports-at-host="true"           \
       org.freenas.web-ui-port=3000                      \

@@ -1,5 +1,6 @@
-## Description
-A Dockerfile for [Subsonic](http://www.subsonic.org/) version 5.0.
+# A complete, personal media streamer
+
+This is a Dockerfile for [Subsonic](http://www.subsonic.org/) version 5.0.
 
 ## Ports
 

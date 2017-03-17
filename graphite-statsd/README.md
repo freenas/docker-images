@@ -1,4 +1,6 @@
-A Graphite server w/ statsd. Base container is hopsoft/graphite-statsd with FreeNAS metadata added. 
+# A Graphite server w/ statsd.
+
+Base container is hopsoft/graphite-statsd with FreeNAS metadata added. 
 
 ## Login instructions:
 
