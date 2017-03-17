@@ -1,7 +1,8 @@
-Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic. [Sickrage](https://sickrage.github.io/)
+[appurl]: https://sickrage.github.io/
+[![sickrage](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickrage-banner.png)][appurl]
 
-[![sickrage](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickrage-banner.png)][sickrageurl]
-[sickrageurl]: https://sickrage.github.io/
+# Sickrage: Automatic Video Library Manager for TV Shows.
+Watches for new episodes of your favorite shows, and when they are posted it does its magic.
 
 ## Parameters
 

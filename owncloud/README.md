@@ -1,10 +1,10 @@
+[appurl]: https://owncloud.org/
+[![owncloud](https://raw.githubusercontent.com/docker-library/docs/9d36b4ed7cabc35dbd3849272ba2bd7abe482172/owncloud/logo.png)[appurl]
+
 # What is ownCloud?
 
 ownCloud is a self-hosted file sync and share server. It provides access to your data through a web interface, sync clients or WebDAV while providing a platform to view, sync and share across devices easily—all under your control. ownCloud’s open architecture is extensible via a simple but powerful API for applications and plugins and it works with any storage.
 
-> [owncloud.org](https://owncloud.org/)
-
-![logo](https://raw.githubusercontent.com/docker-library/docs/9d36b4ed7cabc35dbd3849272ba2bd7abe482172/owncloud/logo.png)
 
 # How to use this image
 
