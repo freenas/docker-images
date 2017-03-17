@@ -1,7 +1,7 @@
-Htpcmanager, a front end for many htpc related applications. Hellowlol version.[Htpcmanager](https://github.com/Hellowlol/HTPC-Manager)
+Htpcmanager, a front end for many htpc related applications.
 
-[![htpcmanager](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/htpcmanager-icon.png)][htpcurl]
-[htpcurl]: https://github.com/Hellowlol/HTPC-Manager
+[appurl]: https://github.com/Hellowlol/HTPC-Manager
+[![htpcmanager](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/htpcmanager-icon.png)][appurl]
 
 ## Parameters
 
