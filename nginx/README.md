@@ -1,5 +1,5 @@
 [appurl]: https://en.wikipedia.org/wiki/Nginx
-[![appurl](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/nginx/logo.png)][appurl]
+[![nginx](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/nginx/logo.png)][appurl]
 
 # What is Nginx?
 

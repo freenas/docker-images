@@ -1,4 +1,4 @@
-# Introduction:
+# Emby Server
 
 Emby Server is a home media server built on top of other popular open source
 technologies such as Service Stack, jQuery, jQuery mobile, and Mono.
@@ -7,7 +7,7 @@ It features a REST-based API with built-in documention to facilitate client
 development. We also have client libraries for our API to enable rapid
 development.
 
-## Environment Variables:
+# Environment Variables:
 
 You can adjust some of the default settings set for container/application by
 passing any or all of the following environment variable:  
@@ -27,6 +27,6 @@ passing any or all of the following environment variable:
 \[3\]: Variable is applicable only when invoking docker run directly.  
 \[4\]: Variable is applicable in all scenarios.  
 
-## Volumes:
+# Volumes:
 
 * `/config`  - Folder for configuration and settings.

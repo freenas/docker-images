@@ -1,5 +1,5 @@
 [appurl]: https://owncloud.org/
-[![owncloud](https://raw.githubusercontent.com/docker-library/docs/9d36b4ed7cabc35dbd3849272ba2bd7abe482172/owncloud/logo.png)[appurl]
+[![owncloud](https://raw.githubusercontent.com/docker-library/docs/9d36b4ed7cabc35dbd3849272ba2bd7abe482172/owncloud/logo.png)][appurl]
 
 # What is ownCloud?
 
