@@ -7,8 +7,6 @@ It features a REST-based API with built-in documention to facilitate client
 development. We also have client libraries for our API to enable rapid
 development.
 
-You can upgrade the version of embyserver found within the container by executing ```sh emby-server update ```
-
 ## Environment Variables:
 
 You can adjust some of the default settings set for container/application by
