@@ -1,10 +1,16 @@
 FROM mysql:latest
-LABEL org.freenas.interactive="false" \
-      org.freenas.version="5.7" \
-      org.freenas.upgradeable="false" \
-      org.freenas.expose-ports-at-host="true" \
-      org.freenas.autostart="true" \
-      org.freenas.port-mappings="3306:3306/tcp" \
+LABEL org.freenas.interactive="false"                     \
+      org.freenas.version="5.7.17"                        \
+      org.freenas.upgradeable="false"                     \
+      org.freenas.expose-ports-at-host="true"             \
+      org.freenas.autostart="true"                        \
+      org.freenas.port-mappings="3306:3306/tcp"           \
+      org.freenas.volumes="[                              \
+          {                                               \
+              \"name\": \"/var/lib/mysql\",               \
+              \"descr\": \"Database storage\"             \
+          }                                               \
+      ]"                                                  \
       org.freenas.settings="[                             \
           {                                               \
               \"env\": \"MYSQL_ROOT_PASSWORD\",           \
