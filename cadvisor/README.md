@@ -1,5 +1,5 @@
 [appurl]:https://github.com/google/cadvisor
-[![cAdvisor](https://raw.githubusercontent.com/google/cadvisor/master/logo.png)][appurl]
+[![cadvisor](https://raw.githubusercontent.com/google/cadvisor/master/logo.png)][appurl]
 
 # cAdvisor - Container Advisor
 
