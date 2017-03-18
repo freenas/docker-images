@@ -1,6 +1,6 @@
 FROM plexinc/pms-docker:plexpass
 LABEL org.freenas.interactive="false" 		\
-      org.freenas.version="1.3.2.3112"		\
+      org.freenas.version="1.5.0.3501"		\
       org.freenas.upgradeable="true"		\
       org.freenas.expose-ports-at-host="true"	\
       org.freenas.autostart="true"		\
