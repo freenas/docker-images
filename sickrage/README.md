@@ -2,6 +2,7 @@
 [![sickrage](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickrage-banner.png)][appurl]
 
 # Sickrage: Automatic Video Library Manager for TV Shows.
+
 Watches for new episodes of your favorite shows, and when they are posted it does its magic.
 
 ## Parameters
