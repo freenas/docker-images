@@ -8,8 +8,8 @@ SABnzbd makes Usenet as simple and streamlined as possible by automating everyth
 * `8080` - http port for the webui
 * `9090` - https port for the webui *see note below*
 * `/config` - local path for sabnzbd config files
-* `/downloads` local path for finished downloads
-* `/incomplete-downloads` local path for incomplete-downloads - *optional*
+* `/config/Downloads/complete` local path for finished downloads
+* `/config/Downloads/incomplete` local path for incomplete-downloads - *optional*
 * `PGID` for GroupID - see below for explanation
 * `PUID` for UserID - see below for explanation
 * `TZ` for setting timezone information, eg Europe/London
