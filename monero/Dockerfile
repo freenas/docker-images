@@ -1,6 +1,6 @@
 FROM kannix/monero-full-node:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="1.1" \
+      org.freenas.version="1.2" \
       org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
@@ -12,4 +12,4 @@ LABEL org.freenas.interactive="false" \
           }								\
       ]"
 ENTRYPOINT ["./monerod"]
-CMD ["--restricted-rpc", "--rpc-bind-ip=0.0.0.0", "--confirm-external-bind","--log-level 4"]
+CMD ["--restricted-rpc", "--rpc-bind-ip=0.0.0.0", "--confirm-external-bind", "--log-level=4"]
