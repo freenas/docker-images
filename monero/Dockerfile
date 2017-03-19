@@ -11,3 +11,5 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Configuration and blockchain\"			\
           }								\
       ]"
+ENTRYPOINT ["./monerod"]
+CMD ["--restricted-rpc", "--rpc-bind-ip=0.0.0.0", "--confirm-external-bind","--log-level 4"]
