@@ -7,5 +7,4 @@ uses the official build from the Monero team
 * `18080` - port required to access the app
 * `18081` - port required to access the app
 * `/root/.bitmonero` - contains the settings and blockchain database - can be larger
-* `/wallet` - place to store wallet
 
