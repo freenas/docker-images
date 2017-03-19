@@ -1,7 +1,7 @@
 FROM kannix/monero-full-node:latest
-LABEL org.freenas.interactive="true" \
+LABEL org.freenas.interactive="false" \
       org.freenas.version="1" \
-      org.freenas.upgradeable="true" \
+      org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.port-mappings="18080:18080/tcp,18081:18081/tcp" \
