@@ -1,5 +1,7 @@
 # Monero - anonymous digital currency
 
+uses the official build from the Monero team
+
 ## Parameters
 
 * `18080` - port required to access the app
