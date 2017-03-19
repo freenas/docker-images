@@ -1,5 +1,5 @@
 FROM kannix/monero-full-node:latest
-LABEL org.freenas.interactive="false" \
+LABEL org.freenas.interactive="true" \
       org.freenas.version="1" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
