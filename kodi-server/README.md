@@ -6,3 +6,5 @@ This container will allow you to:
 * Trigger library scan When you want or from sickbeard/sickrage/couchpotato/...
 
 Docker is used to compile and run the latest headless version of KODI on ubuntu LTS
+
+In order to use this you need to drop a preconfigured profile into the mapped directory, make sure to enable the webUI and set the port to 8089!
