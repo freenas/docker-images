@@ -1,6 +1,6 @@
 FROM kannix/monero-full-node:latest
-LABEL org.freenas.interactive="false" \
-      org.freenas.version="1.3" \
+LABEL org.freenas.interactive="true" \
+      org.freenas.version="1.4" \
       org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
