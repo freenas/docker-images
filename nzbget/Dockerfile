@@ -1,4 +1,4 @@
-FROM linuxserver/nzbget:latest
+FROM kahooli/nzbget-postprocess:latest
 LABEL org.freenas.interactive="false" \
       org.freenas.version="1.0.1" \
       org.freenas.upgradeable="true" \
