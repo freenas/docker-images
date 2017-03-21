@@ -1,6 +1,6 @@
 # OpenHAB is a vendor and technology agnostic open source automation software for your home
 
-The official documentationis located at [http://docs.openhab.org/](http://docs.openhab.org/)
+The official documentation is located at [http://docs.openhab.org/](http://docs.openhab.org/)
 
 ### FreeNAS specific information
 
