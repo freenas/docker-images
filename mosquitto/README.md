@@ -1,4 +1,6 @@
-# Mosquitto is an open source MQTT broker. Homepage: [http://mosquitto.org/](http://mosquitto.org/)
+# Mosquitto is an open source MQTT broker.
+
+The official documentation is located at [http://mosquitto.org/](http://mosquitto.org/)
 
 ### FreeNAS specific information
 
