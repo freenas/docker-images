@@ -1,6 +1,7 @@
 FROM educatedwarrior/debian-subsonic
 LABEL org.freenas.interactive="false" \
       org.freenas.version="2" \
+      org.freenas.command="/bin/sh" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
