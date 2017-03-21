@@ -22,15 +22,4 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"User Data\" \
           }  \
       ]" \
-      org.freenas.settings="[ \
-          {	\
-              \"env\": \"OPENHAB_HTTP_PORT\",	\
-              \"descr\": \"Port to use for HTTP (may break FreeNAS Web UI button)\",	\
-              \"optional\": true \
-          },	\
-          {	\
-              \"env\": \"OPENHAB_HTTPS_PORT\", \
-              \"descr\": \"Port to use for HTTPS\", \
-              \"optional\": true \
-          }	\
-      ]"
+      org.freenas.settings=""
