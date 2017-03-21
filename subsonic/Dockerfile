@@ -14,7 +14,7 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Subsonic data volume\"                       \
           },                                                            \
           {                                                             \
-              \"name\": \"/var/music\",                                      \
+              \"name\": \"/mnt/media\",                                      \
               \"descr\": \"Media volume\"                               \
           }                                                             \
       ]" \
@@ -22,7 +22,7 @@ LABEL org.freenas.interactive="false" \
           {                                                             \
               \"env\": \"SUBSONIC_USER\",                               \
               \"descr\": \"Subsonic username\",                         \
-              \"optional\": false                                       \
+              \"optional\": true                                       \
           },                                                            \
           {                                                             \
               \"env\": \"SUBSONIC_USER_UID\",                           \
