@@ -42,13 +42,13 @@ Perhaps you have a favorite Docker container that you think would be great for F
 1. First, log into your gibhub account and fork this repo by clicking that little **fork** icon in the upper-right corner.  Just for the purpose of this tutorial, let's say your github account name is **inigomontoya** and you've just clicked the *fork* button, so now you have a github repo called https://github.com/inigomontoya/docker-images to work with. You are now ready to proceed to the next step.
 
 1. Working from a checkout of this repo, first look for a container that looks similar to the one you want to create and then use it as your template.  In this example, we'll create a new Dockerfire for the popular [Ghost](https://hub.docker.com/r/library/ghost/) container:
-```
-git clone https://github.com/inigomontoya/docker-images
-cd docker-images
-cp -r plex ghost
-cd ghost
-vi Dockerfile
-```
+    ```
+    git clone https://github.com/inigomontoya/docker-images
+    cd docker-images
+    cp -r plex ghost
+    cd ghost
+    vi Dockerfile
+    ```
 1. Now we want to use the editor to change `FROM timhaak/plex:latest` to `FROM ghost:latest`, the `version` string to *0.11*, the web UI port to *2368*, and so on.  See the actual [Dockerfile](https://github.com/freenas/docker-images/blob/master/ghost/Dockerfile) to see the finished example.  The most important attributes will be the *org.freenas.port-mappings*, *org.freenas.volumes* and *org.freenas.settings* fields - these allow the FreeNAS Docker interfaces to expose the ports, volumes and variable settings for the container as appropriate.  If the container is able to update itself, other properties like *upgradable* should be set - again, the existing docker-images are the best working examples, which is why we suggest you start from one of them and then change just the "obvious" things until you get closer to an ideal Dockerfile.  Check it in with `git commit` and `git push` and then move to the next step!
 
 1. If you would like the Docker container to have some documentation associated with it, always a good idea, which will also be displayed by the `readme` sub-command in the CLI (or per-container README button in the UI) then also include a README.md file with your Dockerfile.  It can contain any text in the standard markdown format.
