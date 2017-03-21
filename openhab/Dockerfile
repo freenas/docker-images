@@ -1,4 +1,4 @@
-FROM linuxserver/couchpotato:latest
+FROM openhab/openhab:2.0.0-amd64
 LABEL org.freenas.interactive="false" \
       org.freenas.version="2.0.0" \
       org.freenas.upgradeable="true" \
