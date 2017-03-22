@@ -1,4 +1,4 @@
-FROM neo4j/neo4j:latest
+FROM neo4j:latest
 LABEL org.freenas.interactive="false"                     \
       org.freenas.version="3.1.2"                        \
       org.freenas.upgradeable="false"                     \
