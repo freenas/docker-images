@@ -1,4 +1,5 @@
 FROM hurricane/subsonic 
+ENV TERM=xterm
 LABEL org.freenas.interactive="false" \
       org.freenas.version="2" \
       org.freenas.upgradeable="true" \
@@ -11,15 +12,19 @@ LABEL org.freenas.interactive="false" \
       org.freenas.volumes="[                                            \
           {                                                             \
               \"name\": \"/subsonic\",                              \
-              \"descr\": \"Subsonic data volume\"                       \
+              \"descr\": \"Subsonic config volume\"                       \
           },                                                            \
           {                                                             \
-              \"name\": \"/media\",                                      \
-              \"descr\": \"Media volume\"                               \
+              \"name\": \"/music\",                                      \
+              \"descr\": \"Music volume\"                               \
           },                                                             \
           {                                                             \
-              \"name\": \"/config\",                                      \
-              \"descr\": \"Subsonic config volume\"                               \
+              \"name\": \"/podcasts\",                                      \
+              \"descr\": \"Podcast volume\"                               \
+          },                                                             \
+          {                                                             \
+              \"name\": \"/playlists\",                                      \
+              \"descr\": \"Playlists volume\"                               \
           }                                                             \
       ]" \
       org.freenas.settings="[                                           \
