@@ -34,5 +34,5 @@ LABEL org.freenas.interactive="false"         		\
               \"env\": \"PMA_ABSOLUTE_URI\",            \
               \"descr\": \"User Facing URI\",           \
               \"optional\": true                        \
-          },                                            \
+          }                                             \
       ]"

@@ -22,4 +22,4 @@ PMA_USER and PMA_PASSWORD - define username to use for config authentication met
 PMA_ABSOLUTE_URI - define user-facing URI
 
 ## Usage behind reverse proxys
-Set the variable PMA_ABSOLUTE_URI to the fully-qualified path (https://pma.example.net/) where the reverse proxy makes phpMyAdmin available.
+Set the variable PMA_ABSOLUTE_URI to the Fully Qualified Domain Name of where the reverse proxy makes phpMyAdmin available.
