@@ -10,11 +10,7 @@ LABEL org.freenas.interactive="false"				\
               \"descr\": \"Configuration files directory\"	\
           },							\
           {							\
-              \"name\": \"/jdownloader/downloads\",		\
-              \"descr\": \"downloads Folder\"			\
-          },							\
-          {							\
-              \"name\": \"/media\",				\
+              \"name\": \"/jdownloader/Downloads\",		\
               \"descr\": \"downloads Folder\"			\
           }							\	
        ]"							\
