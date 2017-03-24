@@ -9,3 +9,20 @@ If you need a dynamic dns provider, you can use the free provider duckdns.org wh
 The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. It also detects changes to the DHLEVEL parameter and replaces the dhparams file.
 
 If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file "letsencrypt htpasswd -c /config/nginx/.htpasswd <username>"
+
+## Variables
+PORT - the port(s)
+
+/config - all the config files including the webroot reside here
+
+EMAIL - your e-mail address for cert registration
+
+URL - the domain you have control over ("customdomain.com" if you own it, or "customsubdomain.ddnsprovider.com" if dynamic dns)
+
+SUBDOMAINS - subdomains you'd like the cert to cover (comma separated, no spaces) ie. www,ftp,cloud
+
+PGID for GroupID - see below for explanation
+
+PUID for UserID - see below for explanation
+
+TZ - timezone ie. America/New_York
