@@ -19,5 +19,5 @@ LABEL org.freenas.interactive="false" \
               \"env\": \"TZ\",					\
               \"descr\": \"homeassistant Container Timezone\",		\
               \"optional\": true				\
-          },							\
+          }							\
       ]"
