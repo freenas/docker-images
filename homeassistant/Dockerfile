@@ -12,7 +12,7 @@ LABEL org.freenas.interactive="false" \
           {	\
               \"name\": \"/config\",			\
               \"descr\": \"Configuration files\"	\
-          },	\
+          }	\
       ]" \
       org.freenas.settings="[ 					\
           {							\
