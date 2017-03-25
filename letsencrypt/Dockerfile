@@ -3,6 +3,10 @@ LABEL org.freenas.interactive="false" 					\
       org.freenas.version="1" 						\
       org.freenas.autostart="true" 					\
       org.freenas.privileged="true"					\
+      org.freenas.expose-ports-at-host="true" 				\
+      org.freenas.port-mappings="80:8080/tcp,443:4343/tcp"		\
+      org.freenas.web-ui-protocol="http" 				\
+      org.freenas.web-ui-port="80" 					\
       org.freenas.volumes="[						\
           {								\
               \"name\": \"/config\",					\
