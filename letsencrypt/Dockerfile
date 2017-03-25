@@ -1,53 +1,57 @@
 FROM linuxserver/letsencrypt:latest
 LABEL org.freenas.interactive="false" 				\
-      org.freenas.version="1" 				\
+      org.freenas.version="1" 					\
       org.freenas.autostart="true" 				\
       org.freenas.privileged="true"				\
+      org.freenas.expose-ports-at-host="true"			\
+      org.freenas.web-ui-port=80				\
+      org.freenas.web-ui-protocol="http" 			\
+      org.freenas.port-mappings="80:8080/tcp,443:4343/tcp"	\
       org.freenas.volumes="[					\
-          {						\
+          {							\
               \"name\": \"/config\",				\
-              \"descr\": \"Config storage space\"			\
-          }						\
+              \"descr\": \"Config storage space\"		\
+          }							\
       ]"							\
-      org.freenas.settings="[ 				\
-          {						\
+      org.freenas.settings="[ 					\
+          {							\
               \"env\": \"EMAIL\",				\
-              \"descr\": \"your email for cert registration\",	\
+              \"descr\": \"email for cert registration\",	\
               \"optional\": false				\
-          },						\
-          {						\
+          },							\
+          {							\
               \"env\": \"DHLEVEL\",				\
-              \"descr\": \"dhparams bit value - default=2048, can be set to 1024 or 4096\", \
+              \"descr\": \"dhparams bit value - default=2048\", \
               \"optional\": true				\
-          },						\
-          {						\
-              \"env\": \"URL\",				\
-              \"descr\": \"the top url you have control over customdomain.com if you own it, or customsubdomain.ddnsprovider.com if dynamic dns)\",	\
+          },							\
+          {							\
+              \"env\": \"URL\",					\
+              \"descr\": \"your domain name\",			\
               \"optional\": false				\
-          },						\
-          {						\
+          },							\
+          {							\
               \"env\": \"SUBDOMAINS\",				\
-              \"descr\": \"subdomains you'd like the cert to cover (comma separated, no spaces) ie. www,ftp,cloud\",				\
+              \"descr\": \"subdomains (ie. www,ftp)\",		\
               \"optional\": true				\
-          },						\
-          {						\
+          },							\
+          {							\
               \"env\": \"ONLY_SUBDOMAINS\",			\
-              \"descr\": \"if you wish to get certs only for certain subdomains, but not the main domain (main domain may be hosted on another machine and cannot be validated), set this to true\",				\
+              \"descr\": \"no cert for main domain\",		\
               \"optional\": true				\
-          },						\
-          {						\
-              \"env\": \"TZ\",				\
-              \"descr\": \"timezone ie. America/New_York\",		\
+          },							\
+          {							\
+              \"env\": \"TZ\",					\
+              \"descr\": \"timezone ie. America/New_York\",	\
               \"optional\": true				\
-          },						\
-          {						\
+          },							\
+          {							\
               \"env\": \"PGID\",				\
               \"descr\": \"GroupID\",				\
               \"optional\": true				\
-          },						\
-          {						\
+          },							\
+          {							\
               \"env\": \"PUID\",				\
               \"descr\": \"UserID\",				\
               \"optional\": true				\
-         }						\
+         }							\
       ]"
