@@ -1,6 +1,6 @@
 FROM clonedeploy/clonedeploy:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="1" \
+      org.freenas.version="1.2.1.0002" \
       org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="false" \
       org.freenas.autostart="false" \
