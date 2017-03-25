@@ -1,4 +1,4 @@
-# Home Assistant is an open-source home automation platform running on Python 3. Track and control all devices at home and automate control.
+# Home Assistant is an open-source home automation platform running on Python 3.
 
 The official documentation is located at [https://home-assistant.io/docs/](https://home-assistant.io/docs/)
 
