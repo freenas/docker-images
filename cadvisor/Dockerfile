@@ -7,7 +7,7 @@ LABEL org.freenas.version="2"                           \
       org.freenas.web-ui-protocol="http"                \
       org.freenas.web-ui-port=8080                      \
       org.freenas.port-mappings="8080:8080/tcp"         \
-      org.freenas.static-volumes="[                     \
+      org.freenas.volumes="[                     \
           {                                             \
               \"host_path\": \"/\",                     \
               \"container_path\": \"/rootfs\",          \
