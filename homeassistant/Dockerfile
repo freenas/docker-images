@@ -21,4 +21,3 @@ LABEL org.freenas.interactive="false" \
               \"optional\": true				\
           },							\
       ]"
-	  
