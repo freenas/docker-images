@@ -11,13 +11,14 @@ LABEL org.freenas.interactive="false" \
       org.freenas.volumes="[ \
           {	\
               \"name\": \"/config\",			\
-              \"descr\": \"Configuration files\" \
+              \"descr\": \"Configuration files\"	\
           },	\
       ]" \
       org.freenas.settings="[ 					\
           {							\
               \"env\": \"TZ\",					\
-              \"descr\": \"Plex container Timezone\",		\
+              \"descr\": \"homeassistant Container Timezone\",		\
               \"optional\": true				\
           },							\
       ]"
+	  
