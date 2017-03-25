@@ -14,27 +14,27 @@ LABEL org.freenas.interactive="false" 				\
       org.freenas.settings="[ 				\
           {						\
               \"env\": \"EMAIL\",				\
-              \"descr\": \"your email for cert registration\",	\
+              \"descr\": \"email for cert registration\",	\
               \"optional\": false				\
           },						\
           {						\
               \"env\": \"DHLEVEL\",				\
-              \"descr\": \"dhparams bit value - default=2048, can be set to 1024 or 4096\", \
+              \"descr\": \"dhparams bit value - default=2048\", \
               \"optional\": true				\
           },						\
           {						\
               \"env\": \"URL\",				\
-              \"descr\": \"the top url you have control over customdomain.com if you own it, or customsubdomain.ddnsprovider.com if dynamic dns)\",	\
+              \"descr\": \"your domain name\",	\
               \"optional\": false				\
           },						\
           {						\
               \"env\": \"SUBDOMAINS\",				\
-              \"descr\": \"subdomains you'd like the cert to cover (comma separated, no spaces) ie. www,ftp,cloud\",				\
+              \"descr\": \"subdomains (ie. www,ftp)\",				\
               \"optional\": true				\
           },						\
           {						\
               \"env\": \"ONLY_SUBDOMAINS\",			\
-              \"descr\": \"if you wish to get certs only for certain subdomains, but not the main domain (main domain may be hosted on another machine and cannot be validated), set this to true\",				\
+              \"descr\": \"no cert for main domain\",				\
               \"optional\": true				\
           },						\
           {						\
