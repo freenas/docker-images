@@ -25,6 +25,10 @@ LABEL org.freenas.interactive="false" \
           {                                                             \
               \"name\": \"/playlists\",                                      \
               \"descr\": \"Playlists volume\"                               \
+          },                                                             \
+          {                                                             \
+              \"name\": \"/media\",                                      \
+              \"descr\": \"Media volume\"                               \
           }                                                             \
       ]" \
       org.freenas.settings="[                                           \
@@ -46,6 +50,11 @@ LABEL org.freenas.interactive="false" \
           {                                                             \
               \"env\": \"HTTP_PORT\",                           \
               \"descr\": \"HTTP Port\",                         \
+              \"optional\": true                                        \
+          },                                                             \
+          {                                                             \
+              \"env\": \"HTTPS_PORT\",                           \
+              \"descr\": \"HTTPS Port\",                         \
               \"optional\": true                                        \
           },                                                             \
           {                                                             \
