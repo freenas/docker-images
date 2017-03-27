@@ -14,16 +14,8 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"ES data\"                  \
           },                                          \
           {                                           \
-              \"name\": \"/etc/elasticsearch\",       \
-              \"descr\": \"ES config\"                \
-          },                                          \
-          {                                           \
               \"name\": \"/etc/logstash/conf.d\",     \
               \"descr\": \"logstash config\"          \
-          },                                          \
-          {                                           \
-              \"name\": \"/opt/kibana/config\",       \
-              \"descr\": \"kibana config\"            \
           }                                           \
       ]" \
       org.freenas.settings="[                                                                                                            \

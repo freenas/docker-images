@@ -4,9 +4,7 @@ Elasticsearch, Logstash, Kibana (ELK) with X-Pack Docker image, based on the Doc
 ## Parameters
 
 - **/var/lib/elasticsearch** Elasticsearch data.
-- **/etc/elasticsearch** Elasticsearch config folder.
 - **/etc/logstash/conf.d** Logstash config folder.
-- **/opt/kibana/config** Kibana config folder.
 
 # Important
 As explained in https://github.com/spujadas/elk-docker/issues/92#issuecomment-263152557 please make sure the VM running this container is configured correctly.
