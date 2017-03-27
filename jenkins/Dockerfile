@@ -7,11 +7,10 @@ LABEL org.freenas.interactive="false"                                       \
       org.freenas.autostart="true"                                          \
       org.freenas.port-mappings="8080:8080/tcp,50000:50000/tcp"             \
       org.freenas.volumes="[                                                \
-      {                                                                     \
-            \"host_path\": \"\",                                            \
-            \"container_path\": \"/var/jenkins_home\",                      \
-            \"readonly\": false                                             \
-            }                                                               \
+          {                                                                 \
+            \"name\": \"/var/jenkins_home\",                                \
+            \"descr\": \"/var/jenkins_home\"                                \
+          }                                                                 \
       ]"                                                                    \
       org.freenas.settings="[                                               \
           {                                                                 \
