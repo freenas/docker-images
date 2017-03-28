@@ -7,7 +7,7 @@ LABEL org.freenas.interactive="false"                                         \
       org.freenas.port-mappings="80:8080/tcp,443:8081/tcp"                    \
       org.freenas.volumes="[						                  \
           {								                        \
-              \"name\": \"/var/www/html\",					      \
+              \"name\": \"/usr/share/nginx/html\",				      \
               \"descr\": \"html content\"		                              \
           },                                                                  \
           {								                        \
