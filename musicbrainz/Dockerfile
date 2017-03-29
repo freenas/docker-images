@@ -1,0 +1,1 @@
+FROM linuxserver/musicbrainz:latest
