@@ -1,4 +1,7 @@
-# linuxserver/musicbrainz
+[appurl]: https://musicbrainz.org/
+[hub]: https://hub.docker.com/r/linuxserver/musicbrainz/
+
+# linuxserver/musicbrainz with FreeNAS 10 Metadata
 
 [MusicBrainz][appurl] is an open music encyclopedia that collects music metadata and makes it available to the public.
 
