@@ -33,10 +33,5 @@ LABEL org.freenas.interactive="false"                                   \
               \"env\": \"TZ\",					                                \
               \"descr\": \"Timezone - eg Europe/London\",	           		\
               \"optional\": true					                              \
-          },								                                            \
-          {								                                              \
-              \"env\": \"BRAINZCODE\",					                        \
-              \"descr\": \"Code from Musicbrainz\",	              			\
-              \"optional\": false					                              \
-          },								                                            \
+          }								                                            \
       ]"
