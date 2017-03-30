@@ -1,4 +1,4 @@
-# elkx-docker
+# elk-docker
 Elasticsearch, Logstash, Kibana (ELK) Docker image, based on the Docker image of [Sébastien Pujadas](https://github.com/spujadas/elk-docker).
 
 ## Parameters
