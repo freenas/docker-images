@@ -38,10 +38,5 @@ LABEL org.freenas.interactive="false"                                   \
               \"env\": \"BRAINZCODE\",					                        \
               \"descr\": \"Code from Musicbrainz\",	              			\
               \"optional\": false					                              \
-          },								                                            \
-          {								                                              \
-              \"env\": \"UMASK\",					                              \
-              \"descr\": \"UID assigned to APP_USER upon creation\",		\
-              \"optional\": true					                              \
-          }								                                              \
+          }								                                            \
       ]"
