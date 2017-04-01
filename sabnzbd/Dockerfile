@@ -18,15 +18,15 @@ LABEL org.freenas.interactive="false" \
                \"descr\": \"SSL certs\"			\
           },								\
           {								\
-              \"name\": \"/config/Downloads/incomplete\",			\
+              \"name\": \"/downloads/incomplete\",			\
               \"descr\": \"incomplete downloads volume\"		\
           },								\
           {								\
-              \"name\": \"/config/Downloads/complete\",					\
+              \"name\": \"/downloads/complete\",					\
               \"descr\": \"downloads volume\"				\
            },								\
           {								\
-              \"name\": \"/config/Downloads/watched\",					\
+              \"name\": \"downloads/watched\",					\
               \"descr\": \"watched folder\"				\
           }								\
       ]" \
