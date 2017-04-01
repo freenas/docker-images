@@ -25,4 +25,6 @@ LABEL org.freenas.interactive="true"				\
           }                                           \
       ]"
 
+USER root
 RUN sudo apk add --update py-mysqldb
+USER seafile
