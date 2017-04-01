@@ -4,7 +4,6 @@ LABEL org.freenas.interactive="false"                                   \
       org.freenas.upgradeable="true"                                    \
       org.freenas.expose-ports-at-host="true"                           \
       org.freenas.autostart="true"                                      \
-      org.freenas.capabilities-add="RESTART"                            \
       org.freenas.port-mappings="9001:9001/tcp"                         \
       org.freenas.volumes="[                                            \
           {                                                             \
