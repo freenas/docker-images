@@ -11,7 +11,7 @@ LABEL org.freenas.interactive="true"				\
               \"name\": \"/home/seafile\",			\
               \"descr\": \"Internal Path\"			\
           }							\
-      ]"
+      ]"                                        \
       org.freenas.settings="[ 					\
           {							\
               \"env\": \"SEAHUB\",					\
@@ -22,7 +22,7 @@ LABEL org.freenas.interactive="true"				\
               \"env\": \"SEAFILE_FASTCGI_HOST\",			\
               \"descr\": \"Binding ip for seahub in FastCGI mode. Default: 127.0.0.1.\",	\
               \"optional\": true				\
-          }
+          }                                           \
       ]"
 
 RUN apk add --update py-mysqldb
