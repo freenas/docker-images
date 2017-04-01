@@ -5,7 +5,7 @@ LABEL org.freenas.interactive="false"                                       \
       org.freenas.upgradeable="false"                                       \
       org.freenas.expose-ports-at-host="true"                               \
       org.freenas.autostart="true"                                          \
-      org.freenas.port-mappings="8080:8080/tcp,50000:50000/tcp"             \
+      org.freenas.port-mappings="8080:8080/tcp,5000:5000/tcp"             \
       org.freenas.volumes="[                                                \
           {                                                                 \
             \"name\": \"/var/jenkins_home\",                                \
@@ -50,7 +50,7 @@ LABEL org.freenas.interactive="false"                                       \
           },                                                                \
           {                                                                 \
             \"env\": \"JENKINS_SLAVE_AGENT_PORT\",                          \
-            \"descr\": \"50000\",                                           \
+            \"descr\": \"5000\",                                           \
             \"optional\": true                                              \
           },                                                                \
           {                                                                 \
