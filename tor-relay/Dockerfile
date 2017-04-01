@@ -13,15 +13,15 @@ LABEL org.freenas.interactive="false"                                   \
           }                                                             \
       ]"                                                                \
        org.freenas.settings="[                                          \
-          {   \"env\": \"TORRC",                                        \
+          {   \"env\": \"TORRC\",                                        \
               \"descr\": \"/etc/tor/torrc.middle - See README\",        \
               \"optional\": false                                       \
           },                                                            \
-          {   \"env\": \"NICKNAME",                                     \
+          {   \"env\": \"NICKNAME\",                                     \
               \"descr\": \"eg. myTORrelay\",                            \
               \"optional\": false                                       \
           },                                                            \
-          {   \"env\": \"CONTACTINFO",                                  \
+          {   \"env\": \"CONTACTINFO\",                                  \
               \"descr\": \"eg. me@foo.bar - In case there are problems with node\", \
               \"optional\": true                                        \
           },                                                            \
