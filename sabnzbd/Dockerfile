@@ -26,7 +26,7 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"complete downloads folder\"				\
            },								\
           {								\
-              \"name\": \"downloads/watched\",					\
+              \"name\": \"/downloads/watched\",					\
               \"descr\": \"watched folder\"				\
           }								\
       ]" \
