@@ -25,4 +25,4 @@ LABEL org.freenas.interactive="true"				\
           }                                           \
       ]"
 
-RUN apk add --update py-mysqldb
+RUN sudo apk add --update py-mysqldb
