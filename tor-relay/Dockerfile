@@ -4,7 +4,6 @@ LABEL org.freenas.interactive="false"                                   \
       org.freenas.upgradeable="true"                                    \
       org.freenas.expose-ports-at-host="true"                           \
       org.freenas.autostart="true"                                      \
-      org.freenas.capabilities-add="RESTART"                            \
       org.freenas.port-mappings="9001:9001/tcp"                         \
       org.freenas.volumes="[                                            \
           {                                                             \
@@ -13,15 +12,15 @@ LABEL org.freenas.interactive="false"                                   \
           }                                                             \
       ]"                                                                \
        org.freenas.settings="[                                          \
-          {   \"env\": \"TORRC",                                        \
+          {   \"env\": \"TORRC\",                                        \
               \"descr\": \"/etc/tor/torrc.middle - See README\",        \
               \"optional\": false                                       \
           },                                                            \
-          {   \"env\": \"NICKNAME",                                     \
+          {   \"env\": \"NICKNAME\",                                     \
               \"descr\": \"eg. myTORrelay\",                            \
               \"optional\": false                                       \
           },                                                            \
-          {   \"env\": \"CONTACTINFO",                                  \
+          {   \"env\": \"CONTACTINFO\",                                  \
               \"descr\": \"eg. me@foo.bar - In case there are problems with node\", \
               \"optional\": true                                        \
           },                                                            \

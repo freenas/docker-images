@@ -1,22 +1,7 @@
-# Dockerized Tor Relay server
+# Dockerized Tor Relay server with FreeNAS metadata
 
 A simple Docker container for running a Tor relay server.
 The container is also configured to listen on port 9001 for the relay traffic. Make sure to open the in your firewall.
-
-## Usage
-
-### Minimal usage
-
-Running the relay is super simple.
-
-    $ docker run -d \
-        -v /etc/localtime:/etc/localtime \
-        -p 9001:9001 \
-        --restart=always \
-        -e 'TORRC=/etc/tor/torrc.middle' \
-        -e 'NICKNAME=hacktheplanet' \
-        --name=torrelay \
-        thezero/docker-tor-relay
 
 ### Required configuration
 
@@ -46,20 +31,3 @@ It is also recommended that you provide your contact information. This is mostly
 #### Use persistant storage
 
 Since Tor relies on keys on saved keys on disk for establishing trust, it is a good idea to use a volume to store your tor keys on the host (since Docker containers are ephemeral by nature).
-
-You can do this by passing on the following.
-
-    -v '/some/local/path:/home/tor/.tor' \
-
-#### Final configuraiton
-
-    $ docker run -d \
-        -v /etc/localtime:/etc/localtime \
-        -v '/var/torrelay:/home/tor/.tor' \
-        -p 9001:9001 \
-        --restart=always \
-        -e 'TORRC=/etc/tor/torrc.middle' \
-        -e 'NICKNAME=thezero' \
-        -e 'CONTACTINFO=TheZero <io@thezero.org>' \
-        --name=torrelay \
-        thezero/docker-tor-relay
