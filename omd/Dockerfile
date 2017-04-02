@@ -7,6 +7,10 @@ LABEL org.freenas.interactive="false"                                   \
       org.freenas.upgradeable="true"                                    \
       org.freenas.expose-ports-at-host="true"                           \
       org.freenas.autostart="true"                                      \
+      org.freenas.web-ui-protocol="http"                                \
+      org.freenas.web-ui-port=443                                       \
+      org.freenas.web-ui-path="/cmk"                                    \
+
       org.freenas.port-mappings="80:80/tcp,443:443/tcp,22:22/tcp,4730:4730/tcp,5666:5666/tcp" \
       org.freenas.volumes="[                                            \
           {                                                             \
