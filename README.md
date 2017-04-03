@@ -22,7 +22,7 @@ A list of container:host port mappings for the container in the following format
 * `org.freenas.settings` (default value: [])
 An array of `variable name`: `Long description` fields for various variables the container wishes to export as "user settable" (this need not be every possible variable the container supports, but those the container author wishes the user to see and set).
 * `org.freenas.static-volumes` (default value: [])
-An array of directory or file mapping dictionary entries that should be set just to allow the container to work at all and aren't user visible or settable (see `org.freenas.volumes` below for user-settable volume options).  Format for each dictionary entry is `name` and `descr` for the directory/filename and description, respectively (see existing Dockerfile for more helpful examples).
+An array of directory or file mapping dictionary entries that should be set just to allow the container to work at all and aren't user visible or settable (see `org.freenas.volumes` below for user-settable volume options).  Format for each dictionary entry is `container_path`, `host_path`, and `readonly`. `container_path`refers to the directory/filename on the container, `host_path` the directory/filename on the host, and `readonly` whether the container can write to the directory/filename on the host. See existing Dockerfile for more helpful examples.
 * `org.freenas.upgradeable` (default value: "false")
 If set to true, the container is capable of upgarding itself internally.
 * `org.freenas.version` (default value: '0')
