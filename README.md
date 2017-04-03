@@ -39,7 +39,7 @@ If the web UI requires a specific protocol, this property should be set
 # Making your own Docker container(s) for FreeNAS
 Perhaps you have a favorite Docker container that you think would be great for FreeNAS, in which case the FreeNAS 10 project happily accepts pull requests against this repo, but how might you test it first? How, for that matter, could you and your friends create your own *collections* of Docker containers for your own use?  We're glad you asked! The process is actually quite simple, so let's just dive right into the steps required:
 
-1. First, log into your gibhub account and fork this repo by clicking that little **fork** icon in the upper-right corner.  Just for the purpose of this tutorial, let's say your github account name is **inigomontoya** and you've just clicked the *fork* button, so now you have a github repo called https://github.com/inigomontoya/docker-images to work with. You are now ready to proceed to the next step.
+1. First, log into your GitHub account and fork this repo by clicking that little **fork** icon in the upper-right corner.  Just for the purpose of this tutorial, let's say your github account name is **inigomontoya** and you've just clicked the *fork* button, so now you have a github repo called https://github.com/inigomontoya/docker-images to work with. You are now ready to proceed to the next step.
 
 1. Working from a checkout of this repo, first look for a container that looks similar to the one you want to create and then use it as your template.  In this example, we'll create a new Dockerfire for the popular [Ghost](https://hub.docker.com/r/library/ghost/) container:
     ```
