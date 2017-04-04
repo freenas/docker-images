@@ -9,7 +9,7 @@ With our easy-to-install Plex Media Server software and your Plex apps, availabl
 
 ## Updates
 
-Using the docker tag plexpass this enabled this docker to update to the latest version during a restart. This image will dowoload and unpack the latest version of the pms-docker using the plexpass update train.  
+Using the docker tag plexpass enables this docker to update to the latest version during a restart. This image will dowoload and unpack the latest version of the pms-docker using the plexpass update train.  
 
 ## Usage
 
