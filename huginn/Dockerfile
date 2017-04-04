@@ -1,5 +1,4 @@
 FROM cantino/huginn 
-MAINTAINER Educated Warrior
 LABEL org.freenas.interactive="false" \
       org.freenas.version="2" \
       org.freenas.upgradeable="true" \
