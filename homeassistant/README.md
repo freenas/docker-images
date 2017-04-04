@@ -8,4 +8,4 @@ The official documentation is located at [https://home-assistant.io/docs/](https
 
 This container adds metadata to make using HomeAssistant easier to setup on FreeNAS Corral.
 
-HomeAssistant needs one config Folder to persist outside the Container as well as your corrisponding TimeZone setting
+HomeAssistant needs one config Folder to persist outside the Container as well as your corresponding TimeZone setting.
