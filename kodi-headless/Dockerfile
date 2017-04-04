@@ -10,7 +10,7 @@ LABEL org.freenas.interactive="false"                                   \
       org.freenas.port-mappings="8080:8080/tcp,9777:9777/udp"           \
       org.freenas.volumes="[				                \
           {						                \
-              \"name\": \"/config\",                                    \
+              \"name\": \"/config/.kodi\",                                    \
               \"descr\": \"Configuration files directory\"              \
           }                                                             \
       ]"                                                                \
