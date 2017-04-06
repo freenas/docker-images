@@ -3,20 +3,15 @@
 
 # linuxserver/kodi-headless with FreeNAS metadata
 
+This is running Kodi 17 - Krypton on a Alpine Linux base.
+
 A headless install of kodi in a docker container, most useful for a mysql setup of kodi to allow library updates to be sent without the need for a player system to be permanently on.
 
 [![kodi](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kodi-banner.png)][appurl]
 
-You can choose between ,using tags, various main versions of kodi.
+You can choose between, using tags, various main versions of kodi.
 
 Add one of the tags,  if required,  to the linuxserver/kodi-headless line of the run/create command in the following format, linuxserver/kodi-headless:Krypton
-
-#### Tags
-+ **Helix**
-+ **Isengard**
-+ **Jarvis**
-+ **Krypton** : current default branch.
-
 
 **Parameters**
 
@@ -28,17 +23,6 @@ Add one of the tags,  if required,  to the linuxserver/kodi-headless line of the
 * `-e TZ` - for timezone information *eg Europe/London, etc*
 
 It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it kodi-headless /bin/bash`.
-
-### User / Group Identifiers
-
-Sometimes when using data volumes (`-v` flags) permissions issues can arise between the host OS and the container. We avoid this issue by allowing you to specify the user `PUID` and group `PGID`. Ensure the data volume directory on the host is owned by the same user you specify and it will "just work" ™.
-
-In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as below:
-
-```
-  $ id <dockeruser>
-    uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
-```
 
 ## Setting up the application
 
