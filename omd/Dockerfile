@@ -78,7 +78,7 @@ ENV ANSIBLE_CONFIG=${ANSIBLE_DROPIN}/ansible.cfg
 ENV ANSIBLE_VERBOSITY=
 
 ### -- OMD site creation (DEMO) ##############################
-## ARG SITENAME=demo
+ARG SITENAME=demo
 ENV SITENAME=cmk
 RUN echo "export SITENAME=$SITENAME" > .sitename.env
 RUN sed -i 's|echo "on"$|echo "off"|' /opt/omd/versions/default/lib/omd/hooks/TMPFS
