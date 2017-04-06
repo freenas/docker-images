@@ -3,7 +3,7 @@
 
 # linuxserver/kodi-headless with FreeNAS metadata
 
-This is running Kodi 17 - Krypton on a Alpine Linux base.
+This is running Kodi 17.1 - Krypton on a Alpine Linux base.
 
 A headless install of kodi in a docker container, most useful for a mysql setup of kodi to allow library updates to be sent without the need for a player system to be permanently on.
 
