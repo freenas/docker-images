@@ -3,11 +3,11 @@ MAINTAINER Simon Meggle<simon.meggle@consol.de>
 EXPOSE 80 443 22 4730 5666
 
 LABEL org.freenas.interactive="false"                                   \
-      org.freenas.version="1"                                           \
+      org.freenas.version="20170323"                                    \
       org.freenas.upgradeable="true"                                    \
       org.freenas.expose-ports-at-host="true"                           \
       org.freenas.autostart="true"                                      \
-      org.freenas.web-ui-protocol="http"                                \
+      org.freenas.web-ui-protocol="https"                               \
       org.freenas.web-ui-port=443                                       \
       org.freenas.web-ui-path="/cmk"                                    \
 
