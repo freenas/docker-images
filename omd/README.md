@@ -19,6 +19,7 @@ Mount host directories for:
  * /opt/omd/sites/cmk/var
 
 Default user: omdadmin
+
 Default password: omd
 
 https:(ip-address)/cmk/
