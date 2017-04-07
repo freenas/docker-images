@@ -1,0 +1,8 @@
+---
+
+- name: execute ansible drop-in playbook
+  hosts: all
+  tasks:
+  - name: "DEBUG"
+    debug:
+      msg: "Nothing defined yet. Use this playbook to adapt the container/OMD site {{ SITENAME }} at runtime."
