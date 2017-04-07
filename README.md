@@ -22,7 +22,7 @@ A list of container:host port mappings for the container in the following format
 * `org.freenas.settings` (default value: [])
 An array of `variable name`: `Long description` fields for various variables the container wishes to export as "user settable" (this need not be every possible variable the container supports, but those the container author wishes the user to see and set).
 * `org.freenas.static-volumes` (default value: [])
-An array of directory or file mapping dictionary entries that should be set just to allow the container to work at all and aren't user visible or settable (see `org.freenas.volumes` below for user-settable volume options).  Format for each dictionary entry is `name` and `descr` for the directory/filename and description, respectively (see existing Dockerfile for more helpful examples).
+An array of directory or file mapping dictionary entries that should be set just to allow the container to work at all and aren't user visible or settable (see `org.freenas.volumes` below for user-settable volume options).  Format for each dictionary entry is `container_path`, `host_path`, and `readonly`. `container_path`refers to the directory/filename on the container, `host_path` the directory/filename on the host, and `readonly` whether the container can write to the directory/filename on the host. See existing Dockerfile for more helpful examples.
 * `org.freenas.upgradeable` (default value: "false")
 If set to true, the container is capable of upgarding itself internally.
 * `org.freenas.version` (default value: '0')
@@ -39,7 +39,7 @@ If the web UI requires a specific protocol, this property should be set
 # Making your own Docker container(s) for FreeNAS
 Perhaps you have a favorite Docker container that you think would be great for FreeNAS, in which case the FreeNAS 10 project happily accepts pull requests against this repo, but how might you test it first? How, for that matter, could you and your friends create your own *collections* of Docker containers for your own use?  We're glad you asked! The process is actually quite simple, so let's just dive right into the steps required:
 
-1. First, log into your gibhub account and fork this repo by clicking that little **fork** icon in the upper-right corner.  Just for the purpose of this tutorial, let's say your github account name is **inigomontoya** and you've just clicked the *fork* button, so now you have a github repo called https://github.com/inigomontoya/docker-images to work with. You are now ready to proceed to the next step.
+1. First, log into your GitHub account and fork this repo by clicking that little **fork** icon in the upper-right corner.  Just for the purpose of this tutorial, let's say your github account name is **inigomontoya** and you've just clicked the *fork* button, so now you have a github repo called https://github.com/inigomontoya/docker-images to work with. You are now ready to proceed to the next step.
 
 1. Working from a checkout of this repo, first look for a container that looks similar to the one you want to create and then use it as your template.  In this example, we'll create a new Dockerfire for the popular [Ghost](https://hub.docker.com/r/library/ghost/) container:
     ```

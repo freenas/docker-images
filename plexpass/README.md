@@ -7,6 +7,10 @@
 
 With our easy-to-install Plex Media Server software and your Plex apps, available on all your favorite phones, tablets, streaming devices, gaming consoles, and smart TVs, you can stream your video, music, and photo collections any time, anywhere, to any device.
 
+## Updates
+
+Using the docker tag plexpass enables this docker to update to the latest version during a restart. This image will dowoload and unpack the latest version of the pms-docker using the plexpass update train.  
+
 ## Usage
 
 Before you create your container, you must decide on the type of networking you wish to use.  There are essentially three types of networking available:

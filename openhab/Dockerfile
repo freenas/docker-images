@@ -22,4 +22,11 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"User Data\" \
           }  \
       ]" \
+      org.freenas.static-volumes="[  \
+          {  \
+              \"container_path\": \"/etc/localtime\",  \
+              \"host_path\": \"/etc/localtime\",  \
+              \"readonly\": \"true\"  \
+          } \
+      ]" \
       org.freenas.settings=""
