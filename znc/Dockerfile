@@ -12,7 +12,7 @@ LABEL org.freenas.interactive="false"			\
           {					\
               \"name\": \"/config\",			\
               \"descr\": \"Config storage space\"		\
-          }					\								\
+          }					\
       ]" 						\
       org.freenas.settings="[ 			\
           {					\
