@@ -11,7 +11,7 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Path to SSL certificates\"			\
           }								\
       ]"                                 \
-      org.freenas.static_volumes="[					\
+      org.freenas.static-volumes="[					\
           {								\
               \"host_path\": \"/var/run/docker.sock\",				\
               \"container_path\": \"/tmp/docker.sock\",				\
