@@ -7,25 +7,25 @@ LABEL org.freenas.version="2"                           \
       org.freenas.web-ui-protocol="http"                \
       org.freenas.web-ui-port=8080                      \
       org.freenas.port-mappings="8080:8080/tcp"         \
-      org.freenas.volumes="[                     \
+      org.freenas.volumes="[                     	\
           {                                             \
-              \"host_path\": \"/\",                     \
-              \"container_path\": \"/rootfs\",          \
+              \"name\": \"/\",                     	\
+              \"descr\": \"/rootfs\",          		\
               \"readonly\": true                        \
           },                                            \
           {                                             \
-              \"host_path\": \"/sys\",                  \
-              \"container_path\": \"/sys\",             \
+              \"name\": \"/sys\",                  	\
+              \"descr\": \"/sys\",             		\
               \"readonly\": true                        \
           },                                            \
           {                                             \
-              \"host_path\": \"/var/lib/docker\",       \
-              \"container_path\": \"/var/lib/docker\",  \
+              \"name\": \"/var/lib/docker\",       	\
+              \"descr\": \"/var/lib/docker\",  		\
               \"readonly\": true                        \
           },                                            \
           {                                             \
-              \"host_path\": \"/var/run\",              \
-              \"container_path\": \"/var/run\",         \
+              \"name\": \"/var/run\",              	\
+              \"descr\": \"/var/run\",         		\
               \"readonly\": false                       \
           }                                             \
       ]"                                                \
