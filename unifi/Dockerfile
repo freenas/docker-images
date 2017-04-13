@@ -1,6 +1,6 @@
-FROM goofball222/unifi:latest
+FROM goofball222/unifi:release-5.4.14
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="5.4.11" \
+      org.freenas.version="5.4.14" \
       org.freenas.upgradeable="false" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
