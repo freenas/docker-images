@@ -3,15 +3,11 @@
 [appurl]: https://lychee.electerious.com/
 [hub]: https://hub.docker.com/r/linuxserver/lychee/
 
-The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
-* [forum.linuxserver.io][forumurl]
-
 # linuxserver/lychee
 
 Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.
 
 [![lychee](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/lychee-icon.png)][appurl]
-
 https://lychee.electerious.com/
 
 ## Parameters
