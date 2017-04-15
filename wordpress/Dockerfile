@@ -4,7 +4,7 @@ LABEL org.freenas.interactive="false" 				\
       org.freenas.upgradeable="true" 				\
       org.freenas.expose-ports-at-host="true" 			\
       org.freenas.autostart="true" 				\
-      org.freenas.port-mappings="80:80/tcp,443:443/tcp" 	\
+      org.freenas.port-mappings="80:8888/tcp,443:4433/tcp" 	\
       org.freenas.settings="[					\
           {							\
               \"env\": \"WORDPRESS_DB_HOST\",			\
