@@ -2,6 +2,8 @@
 
 A process for watching your Docker containers and automatically restarting them whenever their base image is refreshed.
 
+Requires volume on host /var/run/docker.sock to container /var/run/docker.sock  This is setup as a FreeNAS static-volume, so should 'just work'.
+
 ## Overview
 
 Watchtower is an application that will monitor your running Docker containers and watch for changes to the images that those containers were originally started from. If watchtower detects that an image has changed, it will automatically restart the container using the new image.
