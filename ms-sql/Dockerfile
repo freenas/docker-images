@@ -8,7 +8,7 @@ LABEL org.freenas.interactive="false"                     \
       org.freenas.port-mappings="1433:1433/tcp"           \
       org.freenas.volumes="[                              \
           {                                               \
-              \"name\": \"/var/opt/mssql",                \
+              \"name\": \"/var/opt/mssql\",               \
               \"descr\": \"Database storage volume\"      \
           }                                               \
       ]"                                                  \
