@@ -20,7 +20,7 @@ LABEL org.freenas.interactive="false"                     \
           },                                              \
           {                                               \
               \"env\": \"ACCEPT_EULA\",                   \
-              \"descr\": \"Do you accept the license (Y\\N)?\", \
+              \"descr\": \"Enter Y to accept license\",   \
               \"optional\": false                         \
           }                                               \
       ]"
