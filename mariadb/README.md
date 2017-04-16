@@ -1,6 +1,6 @@
 ## MariaDB
 
-https://raw.githubusercontent.com/docker-library/docs/74e3b3d4d60389208732dbd2c95145868111d959/mariadb/logo.png
+[![mariadb] (https://raw.githubusercontent.com/docker-library/docs/74e3b3d4d60389208732dbd2c95145868111d959/mariadb/logo.png)]
 
 ## What is MariaDB?
 
