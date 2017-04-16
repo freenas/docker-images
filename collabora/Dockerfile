@@ -15,7 +15,7 @@ LABEL org.freenas.interactive="false"                                   \
               \"optional\": true                                        \
           },                                                            \
           {                                                             \
-              \"env\": \"username",                                     \
+              \"env\": \"username\",                                    \
               \"descr\": \"admin\",                                     \
               \"optional\": true                                        \
           },                                                            \
