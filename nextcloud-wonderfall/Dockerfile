@@ -20,7 +20,7 @@ LABEL org.freenas.interactive="false" \
           {							\
               \"name\": \"/apps2\",				\
               \"descr\": \"Nextcloud Downloaded Apps\"          \
-		   },                                           \
+          },                                                    \
           {							\
               \"name\": \"/nextcloud/themes\",                  \
               \"descr\": \"Nextcloud Themes Location\"          \
