@@ -4,7 +4,7 @@ LABEL org.freenas.interactive="false"                                           
       org.freenas.version="1"                                                   \
       org.freenas.upgradeable="true"                                            \
       org.freenas.expose-ports-at-host="false"                                  \
-      org.freenas.autostart="true"                                              \
+      org.freenas.autostart="flase"                                             \
       org.freenas.volumes="[                                                    \
           {                                                                     \
               \"name\": \"/var/run/docker.sock\",                               \
