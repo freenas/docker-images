@@ -20,7 +20,7 @@ LABEL org.freenas.interactive="false"                                   \
               \"optional\": true                                        \
           },                                                            \
           {                                                             \
-              \"env\": \"password",                                     \
+              \"env\": \"password\",                                    \
               \"descr\": \"secret\",                                    \
               \"optional\": true                                        \
           }                                                             \
