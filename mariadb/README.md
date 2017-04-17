@@ -1,7 +1,7 @@
 [appurl]: https://hub.docker.com/_/mariadb/
 ## MariaDB
 
-[![mariadb] (https://raw.githubusercontent.com/docker-library/docs/74e3b3d4d60389208732dbd2c95145868111d959/mariadb/logo.png)][appurl]
+[![mariadb](https://raw.githubusercontent.com/docker-library/docs/74e3b3d4d60389208732dbd2c95145868111d959/mariadb/logo.png)][appurl]
 
 ## What is MariaDB?
 
