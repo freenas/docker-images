@@ -23,12 +23,12 @@ LABEL org.freenas.interactive="false" 		\
               \"descr\": \"Media volume\"			\
           }							\
       ]"							\
-      org.freenas.settings="[ 					\
-          {							\
-              \"env\": \"TZ\",					\
-              \"descr\": \"Plex container Timezone\",		\
-              \"optional\": true				\
-          },							\
+      org.freenas.settings="[ 					\							\
+          {								\
+              \"env\": \"TZ\",						\
+              \"descr\": \"Timezone - eg Europe/London\",		\
+              \"optional\": true					\
+          },								\
           {							\
               \"env\": \"ADVERTISE_IP\",			\
               \"descr\": \"http://<hostIPAddress>:32400/\",	\
