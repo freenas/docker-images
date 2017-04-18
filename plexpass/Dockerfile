@@ -23,7 +23,7 @@ LABEL org.freenas.interactive="false" 		\
               \"descr\": \"Media volume\"			\
           }							\
       ]"							\
-      org.freenas.settings="[ 					\							\
+      org.freenas.settings="[ 					\
           {								\
               \"env\": \"TZ\",						\
               \"descr\": \"Timezone - eg Europe/London\",		\
