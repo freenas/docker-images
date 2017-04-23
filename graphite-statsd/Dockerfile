@@ -29,5 +29,21 @@ LABEL org.freenas.version="2"                           \
               \"name\": \"/var/log\",                   \
               \"descr\": \"log files\"                  \
           }                                             \
+      ]",                                               \
+      org.freenas.settings="[                           \
+          {                                             \
+              \"env\": \"PUID\",                        \
+              \"descr\": \"UserID\",                    \
+              \"optional\": true                        \
+          },                                            \
+          {                                             \
+              \"env\": \"PGID\",                        \
+              \"descr\": \"GroupID\",                   \
+              \"optional\": true                        \
+          },                                            \
+          {                                             \
+              \"env\": \"TZ\",                          \
+              \"descr\": \"Timezone - eg Europe/London\", \
+              \"optional\": true                        \
+          }                                             \
       ]"
-      
