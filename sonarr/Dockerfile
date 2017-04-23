@@ -27,7 +27,7 @@ LABEL org.freenas.interactive="false" \
               \"env\": \"TZ\",					                              \
               \"descr\": \"Europe/London\",				\
               \"optional\": false					                              \
-          },
+          },                                                                              \
           {								                                    \
               \"env\": \"PUID\",					                              \
               \"descr\": \"SONARR USER ID\",				\
