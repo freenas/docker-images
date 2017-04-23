@@ -29,7 +29,7 @@ LABEL org.freenas.version="2"                           \
               \"name\": \"/var/log\",                   \
               \"descr\": \"log files\"                  \
           }                                             \
-      ]",                                               \
+      ]"                                                \
       org.freenas.settings="[                           \
           {                                             \
               \"env\": \"PUID\",                        \
