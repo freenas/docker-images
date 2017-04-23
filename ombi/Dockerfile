@@ -12,11 +12,7 @@ LABEL org.freenas.interactive="false"                                   \
           {                                                             \
               \"name\": \"/config\",                                    \
               \"descr\": \"Config storage space\"                       \
-          },                                                            \
-          {                                                             \
-              \"name\": \"/logs\",                                 \
-              \"descr\": \"Plex logs directory\"                           \
-          }                                                            \
+          }                                                             \
       ]"                                                                \
       org.freenas.settings="[                                           \
           {                                                             \
