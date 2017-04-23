@@ -28,7 +28,7 @@ LABEL org.freenas.version="1.2.2"                       \
               \"optional\": true                        \
           },                                            \
           {                                             \
-              \"env"\: \"INFLUXDB_REPORTING_DISABLED\", \
+              \"env\": \"INFLUXDB_REPORTING_DISABLED\", \
               \"descr\": \"true will not sent anon data to usage.influxdata.com every 24 hours\", \
               \"optional\": true                        \
           },                                            \
