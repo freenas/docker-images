@@ -3,7 +3,7 @@ LABEL org.freenas.version="2"                           \
       org.freenas.web-ui-protocol="http"                \
       org.freenas.expose-ports-at-host="true"           \
       org.freenas.web-ui-port=5080                      \
-      org.freenas.port-mappings="80:5080/tcp,2003:2003/tcp,2004:2004/tcp,2023:2023/tcp,2024:2024/tcp,8125:8125/tcp,8126:8126/tcp"                                       \
+      org.freenas.port-mappings="5080:5080/tcp,2003:2003/tcp,2004:2004/tcp,2023:2023/tcp,2024:2024/tcp,8125:8125/tcp,8126:8126/tcp"                                       \
       org.freenas.volumes="[                            \
           {                                             \
               \"name\": \"/opt/graphite/conf\",         \
@@ -29,5 +29,21 @@ LABEL org.freenas.version="2"                           \
               \"name\": \"/var/log\",                   \
               \"descr\": \"log files\"                  \
           }                                             \
+      ]",                                               \
+      org.freenas.settings="[                           \
+          {                                             \
+              \"env\": \"PUID\",                        \
+              \"descr\": \"UserID\",                    \
+              \"optional\": true                        \
+          },                                            \
+          {                                             \
+              \"env\": \"PGID\",                        \
+              \"descr\": \"GroupID\",                   \
+              \"optional\": true                        \
+          },                                            \
+          {                                             \
+              \"env\": \"TZ\",                          \
+              \"descr\": \"Timezone - eg Europe/London\", \
+              \"optional\": true                        \
+          }                                             \
       ]"
-      
