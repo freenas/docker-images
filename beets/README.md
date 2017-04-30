@@ -3,7 +3,9 @@
 
 # Beets is a music library manager and not, for the most part, a music player.
 
-Beets does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools. [![linuxserver](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
+Beets does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools. 
+
+[![linuxserver](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)]
 
 ## Parameters
 
