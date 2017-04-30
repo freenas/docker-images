@@ -5,7 +5,7 @@
 
 Beets does include a simple player plugin and an experimental Web-based player, but it generally leaves actual sound-reproduction to specialized tools. 
 
-[!(https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)]
+[![linuxserver](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)]
 
 ## Parameters
 
