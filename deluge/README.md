@@ -1,12 +1,12 @@
 [appurl]: http://deluge-torrent.org/
-[![deluge](https://avatars2.githubusercontent.com/u/6733935?v=3&s=200)][appurl]
-Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
+[Deluge][appurl] is a lightweight, Free Software, cross-platform BitTorrent client.
 
 * Full Encryption
 * WebUI
 * Plugin System
 * Much more...
 
+[![deluge](https://avatars2.githubusercontent.com/u/6733935?v=3&s=200)][appurl]
 
 ## Usage
 
@@ -20,6 +20,7 @@ Deluge is a lightweight, Free Software, cross-platform BitTorrent client.
 * `PUID=<uid>` See below for explanation
 * `PGID=<gid>` See below for explanation
 * `TZ=<timezone>` e.g. Europe/London
+* `UMASK_SET=<umask>` for umask setting of Deluge, *optional*, default if left unset is 022.
 
 ### Ports:
 * 8112:8112
