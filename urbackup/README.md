@@ -11,3 +11,14 @@ Your files can be restored through the web interface, via the client or the Wind
 A web interface makes setting up your own backup server really easy. For a quick impression please look at the [screenshots here](https://www.urbackup.org/impressions.html).
 
 Currently there are over 10,000 running UrBackup server instances (with auto-update enabled) with some instances having hundreds of active clients.
+
+## NOTE:
+As it stands, the Docker implementation in FreeNAS Corral automatically uses Google's public DNS servers for name resolution within Docker hosts created by the system.  As such, any machines added to UrBackup will need to be added by IP address rather than hostname.  A work-around for this is to issue the following commands in the console of your Docker host VM:
+
+~~~~ 
+echo nameserver ip.ad.dr.ess > /etc/resolv.conf
+echo nameserver 2nd.ad.dr.ess >> /etc/resolv.conf
+echo search domain.tld >> /etc/resolv.conf
+~~~~
+
+Unfortunately, this work-around does not survive reboots, so if anyone has a more permanent solution, feel free to comment on this.
