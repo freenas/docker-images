@@ -17,4 +17,5 @@ LABEL org.freenas.version="1"                           \
                     \"env\": \"TZ\",                    \
                     \"descr\": \"Eg. America/Edmonton\", \
                     \"optional\": true                  \
-                }
+                }                                       \
+      ]"
