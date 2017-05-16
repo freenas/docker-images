@@ -33,5 +33,6 @@ LABEL org.freenas.interactive="false"                                   \
           {                                                             \
               \"env\": \"SYMFONY__ENV__FOSUSER_REGISTRATION\",          \
               \"descr\": \"Default 'true', enable public registration\",\
+              \"optional\": true                                        \
           }                                                             \
       ]"
