@@ -4,6 +4,8 @@
 
 With this application you will not miss content anymore. Click, save, read it when you want. It saves the content you select so that you can read it when you have time.
 
+Client's for Android and iOS.  Has plugins for most browsers.
+
 # How to use this image
 
 Default login is `wallabag:wallabag`.
@@ -81,42 +83,6 @@ Or you can start the container with the new image and run the migration command 
 ```
 $ docker exec -t NAME_OR_ID_OF_YOUR_WALLABAG_CONTAINER /var/www/wallabag/bin/console doctrine:migrations:migrate --env=prod --no-interaction
 ```
-
-## docker-compose
-
-It's a good way to use [docker-compose](https://docs.docker.com/compose/). Example:
-
-```
-version: '3'
-services:
-  wallabag:
-    image: wallabag/wallabag
-    environment:
-      - MYSQL_ROOT_PASSWORD=wallaroot
-      - SYMFONY__ENV__DATABASE_DRIVER=pdo_mysql
-      - SYMFONY__ENV__DATABASE_HOST=db
-      - SYMFONY__ENV__DATABASE_PORT=3306
-      - SYMFONY__ENV__DATABASE_NAME=wallabag
-      - SYMFONY__ENV__DATABASE_USER=wallabag
-      - SYMFONY__ENV__DATABASE_PASSWORD=wallapass
-      - SYMFONY__ENV__MAILER_HOST=127.0.0.1
-      - SYMFONY__ENV__MAILER_USER=~
-      - SYMFONY__ENV__MAILER_PASSWORD=~
-      - SYMFONY__ENV__FROM_EMAIL=wallabag@example.com
-    ports:
-      - "80"
-  db:
-    image: mariadb
-    environment:
-      - MYSQL_ROOT_PASSWORD=wallaroot
-    volumes:
-      - /opt/wallabag:/var/lib/mysql
-  redis:
-    image: redis:alpine
-```
-
-Note that you must fill out the mail related variables according to your mail config.
-
 ## nginx
 
 I use nginx to make wallabag public available. This is a example how to use it:
