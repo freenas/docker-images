@@ -6,7 +6,7 @@ LABEL org.freenas.interactive="false"                                   \
       org.freenas.autostart="true"                                      \
       org.freenas.web-ui-protocol="http"                                \
       org.freenas.web-ui-port=80                                        \
-      org.freenas.web-ui-path="/"                                       \
+      org.freenas.web-ui-path=""                                        \
       org.freenas.port-mappings="80:80/tcp"                             \
       org.freenas.volumes="[                                            \
           {                                                             \
@@ -17,7 +17,7 @@ LABEL org.freenas.interactive="false"                                   \
        org.freenas.settings="[                                          \
           {                                                             \
               \"env\": \"PUID\",                                        \
-              \"descr\": \"UserID\",	                                \
+              \"descr\": \"UserID\",	                              \
               \"optional\": true                                        \
           },                                                            \
           {                                                             \
@@ -32,6 +32,7 @@ LABEL org.freenas.interactive="false"                                   \
           },                                                            \
           {                                                             \
               \"env\": \"SYMFONY__ENV__FOSUSER_REGISTRATION\",          \
-              \"descr\": \"Default 'true', enable public registration\",\
+              \"descr\": \"Default 'true', enable public registration\", \
+              \"optional\": true                                        \
           }                                                             \
       ]"
