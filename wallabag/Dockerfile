@@ -31,8 +31,53 @@ LABEL org.freenas.interactive="false"                                   \
               \"optional\": true                                        \
           },                                                            \
           {                                                             \
+              \"env\": \"SYMFONY__ENV__DATABASE_DRIVER\",               \
+              \"descr\": \"defaults to "pdo_sqlite", this sets the database driver to use\", \
+              \"optional\": true                                        \
+          },                                                            \
+          {                                                             \
+              \"env\": \"SYMFONY__ENV__DATABASE_HOST\",                 \
+              \"descr\": \"defaults to "127.0.0.1", if use mysql this should be the name of the mariadb container\", \
+              \"optional\": true                                        \
+          },                                                            \
+          {                                                             \
+              \"env\": \"SYMFONY__ENV__DATABASE_PORT\",                 \
+              \"descr\": \"port of the database host\",                 \
+              \"optional\": true                                        \
+          },                                                            \
+          {                                                             \
+              \"env\": \"TZ\",                                          \
+              \"descr\": \"Timezone - eg Europe/London\",               \
+              \"optional\": true                                        \
+          },                                                            \
+          {                                                             \
+              \"env\": \"SYMFONY__ENV__DATABASE_NAME\",                 \
+              \"descr\": \"defaults to "symfony", this is the name of the database to use\", \
+              \"optional\": true                                        \
+          },                                                            \
+          {                                                             \
+              \"env\": \"SYMFONY__ENV__DATABASE_USER\",                 \
+              \"descr\": \"defaults to "root", this is the name of the database user to use\", \
+              \"optional\": true                                        \
+          },                                                            \
+          {                                                             \
+              \"env\": \"SYMFONY__ENV__DATABASE_PASSWORD\",             \
+              \"descr\": \"defaults to "~", this is the password of the database user to use\", \
+              \"optional\": true                                        \
+          },                                                            \
+          {                                                             \
               \"env\": \"SYMFONY__ENV__FOSUSER_REGISTRATION\",          \
               \"descr\": \"Default 'true', enable public registration\", \
               \"optional\": true                                        \
+          },                                                            \
+          {                                                             \
+              \"env\": \"MYSQL_ROOT_PASSWORD\",                         \
+              \"descr\": \"needed for the mariadb container to initialise\", \
+              \"optional\": true                                        \
+          },                                                            \
+          {                                                             \
+              \"env\": \"POPULATE_DATABASE\",                           \
+              \"descr\": \"defaults to "True". Does the DB has to be populated or is it an existing on\", \
+              \"optional\": true                                        \
           }                                                             \
-      ]"
+       ]"
