@@ -46,11 +46,6 @@ LABEL org.freenas.interactive="false"                                   \
               \"optional\": true                                        \
           },                                                            \
           {                                                             \
-              \"env\": \"TZ\",                                          \
-              \"descr\": \"Timezone - eg Europe/London\",               \
-              \"optional\": true                                        \
-          },                                                            \
-          {                                                             \
               \"env\": \"SYMFONY__ENV__DATABASE_NAME\",                 \
               \"descr\": \"defaults to "symfony", this is the name of the database to use\", \
               \"optional\": true                                        \
