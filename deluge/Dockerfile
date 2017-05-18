@@ -1,6 +1,6 @@
 FROM linuxserver/deluge:latest
 LABEL org.freenas.interactive="false"                                                           \
-      org.freenas.version="1.3.14"                                                              \
+      org.freenas.version="1.3.15"                                                              \
       org.freenas.upgradeable="true"                                                            \
       org.freenas.expose-ports-at-host="true"                                                   \
       org.freenas.autostart="true"                                                              \
