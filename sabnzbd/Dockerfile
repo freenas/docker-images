@@ -1,6 +1,6 @@
 FROM linuxserver/sabnzbd:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="2" \
+      org.freenas.version="2.1" \
       org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
@@ -11,22 +11,22 @@ LABEL org.freenas.interactive="false" \
       org.freenas.volumes="[						\
           {								\
               \"name\": \"/config\",					\
-              \"descr\": \"Sabnzbd config files\"			\
+              \"descr\": \"Sabnzbd config files folder\"			\
           },								\
           {								\
                \"name\": \"/config/admin/certs\",					\
-               \"descr\": \"SSL certs\"			\
+               \"descr\": \"SSL certificates\"			\
           },								\
           {								\
-              \"name\": \"/config/Downloads/incomplete\",			\
-              \"descr\": \"incomplete downloads volume\"		\
+              \"name\": \"/downloads/incomplete\",			\
+              \"descr\": \"incomplete downloads folder\"		\
           },								\
           {								\
-              \"name\": \"/config/Downloads/complete\",					\
-              \"descr\": \"downloads volume\"				\
+              \"name\": \"/downloads/complete\",					\
+              \"descr\": \"complete downloads folder\"				\
            },								\
           {								\
-              \"name\": \"/config/Downloads/watched\",					\
+              \"name\": \"/downloads/watched\",					\
               \"descr\": \"watched folder\"				\
           }								\
       ]" \
