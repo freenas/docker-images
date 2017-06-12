@@ -1,29 +1,29 @@
-FROM gfjardim/dropbox:latest
+FROM janeczku/dropbox:latest
 LABEL org.freenas.interactive="false" \
-      org.freenas.version="1" \
-      org.freenas.upgradeable="false" \
+      org.freenas.version="2" \
+      org.freenas.upgradeable="true" \
       org.freenas.expose-ports-at-host="true" \
       org.freenas.autostart="true" \
       org.freenas.privileged="true" \
       org.freenas.volumes="[						\
           {								\
-              \"name\": \"/home/.dropbox\",				\
+              \"name\": \"/dbox/.dropbox\",				\
               \"descr\": \"Dropbox config file\"			\
           },								\
           {								\
-              \"name\": \"/home/Dropbox\",				\
+              \"name\": \"/dbox/Dropbox\",				\
               \"descr\": \"Dropbox data directory\"			\
           }								\
       ]" 
       org.freenas.settings="[ 						\
                 {								\
-              \"env\": \"PGID\",					\
-              \"descr\": \"GroupID\",					\
+              \"env\": \"DBOX_GID\",					\
+              \"descr\": \"GroupID - default 1000\",					\
               \"optional\": true					\
           },								\
           {								\
-              \"env\": \"PUID\",					\
-              \"descr\": \"UserID\",					\
+              \"env\": \"DBOX_UID\",					\
+              \"descr\": \"UserID - default 1000\",					\
               \"optional\": true					\
          }								\
       ]"
