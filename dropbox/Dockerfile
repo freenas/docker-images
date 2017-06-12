@@ -14,7 +14,7 @@ LABEL org.freenas.interactive="false" \
               \"name\": \"/dbox/Dropbox\",				\
               \"descr\": \"Dropbox data directory\"			\
           }								\
-      ]" 
+      ]", \ 
       org.freenas.settings="[ 						\
                 {								\
               \"env\": \"DBOX_GID\",					\
