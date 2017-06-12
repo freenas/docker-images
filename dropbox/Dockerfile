@@ -15,3 +15,15 @@ LABEL org.freenas.interactive="false" \
               \"descr\": \"Dropbox data directory\"			\
           }								\
       ]" 
+      org.freenas.settings="[ 						\
+                {								\
+              \"env\": \"PGID\",					\
+              \"descr\": \"GroupID\",					\
+              \"optional\": true					\
+          },								\
+          {								\
+              \"env\": \"PUID\",					\
+              \"descr\": \"UserID\",					\
+              \"optional\": true					\
+         }								\
+      ]"
