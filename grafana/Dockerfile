@@ -1,5 +1,5 @@
 FROM grafana/grafana:latest
-LABEL org.freenas.version="2"                           \
+LABEL org.freenas.version="3"                           \
       org.freenas.web-ui-protocol="http"                \
       org.freenas.expose-ports-at-host="true"           \
       org.freenas.web-ui-port=3000                      \
@@ -18,6 +18,16 @@ LABEL org.freenas.version="2"                           \
           {                                             \
               \"env\": \"GF_INSTALL_PLUGINS\",          \
               \"descr\": \"CSV List of plugins to install\", \
+              \"optional\": true                        \
+          },                                            \
+          {                                             \
+              \"env\": \"GF_SERVER_ROOT_URL\",          \
+              \"descr\": \"Grafana server root URL\",   \
+              \"optional\": true                        \
+          },                                            \
+          {                                             \
+              \"env\": \"GF_SECURITY_ADMIN_PASSWORD\",  \
+              \"descr\": \"Grafana server admin password\", \
               \"optional\": true                        \
           }                                             \
       ]"
