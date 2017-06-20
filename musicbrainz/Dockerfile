@@ -34,6 +34,11 @@ LABEL org.freenas.interactive="false"                                   \
               \"descr\": \"Timezone - eg Europe/London\",	           		\
               \"optional\": true					                              \
           },								                                            \
+          { \
+              \"env\": \"WEBADDRESS\", \
+              \"descr\": \"Defaults to localhost\", \
+              \"optional\": true \
+          }, \
           {								                                              \
               \"env\": \"BRAINZCODE\",					                        \
               \"descr\": \"Code from Musicbrainz\",	              			\
