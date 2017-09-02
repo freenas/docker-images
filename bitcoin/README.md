@@ -1,4 +1,3 @@
-# xdm container
+# bitcoin core container
 
-This container is used with couchpotato, headphones, sickbeard and
-transmission containers.
+This container wraps https://hub.docker.com/r/amacneil/bitcoin.
